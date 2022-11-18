@@ -1,0 +1,232 @@
+@media only screen and (max-width: 768px) {
+  .searchIcon {
+    display: none;
+  }
+
+  .closeMovil::before {
+    content: url(../public/images/back.png);
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    transform: scale(0.35);
+  }
+
+  .headerSubMenu {
+    position: relative;
+  }
+
+  .menuImgContainer {
+    text-align: center;
+  }
+
+  .logo {
+    padding-right: 25px;
+    width: 60vw;
+  }
+
+  .nav-links>li {
+    width: 100% !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    transition: All 0.5s ease;
+    /*       min-height: 90vh; */
+  }
+
+  .nav-header {
+    width: 100% !important;
+    transition: All 0.5s ease;
+    overflow-y: scroll;
+    z-index: -1;
+  }
+
+  .menu2 {
+    display: none !important;
+  }
+
+  /*PRODUCTO CSS*/
+  .internal .nav-links-h {
+    display: none !important;
+  }
+
+  .each-slide-effect>div {
+    height: 80vw !important;
+  }
+
+  .boxesIni.partesbg {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .boxesIni.partesbg>div {
+    width: 50% !important;
+  }
+
+  .posRelative {
+    top: 0px;
+  }
+
+  .navSearch {
+    display: none !important;
+  }
+
+  .boxesIni {
+    flex-direction: column;
+  }
+
+  .boxesIniHeader {
+    flex-direction: column;
+  }
+
+  .boxesIniHeader .boxLeftHeader,
+  .boxesIniHeader .boxRightHeader {
+    width: 100%;
+  }
+
+  .content3 {
+    flex-direction: column-reverse;
+  }
+
+  .boxesIni>div {
+    width: 100% !important;
+  }
+
+  .colMenu {
+    width: 100% !important;
+  }
+
+  .rowMenu {
+    flex-direction: column;
+  }
+
+  .headerSubMenu {
+    flex-direction: row-reverse;
+    justify-content: center !important;
+  }
+
+  .colMenu p {
+    text-align: center;
+  }
+
+  .item-level-3 .colItem {
+    margin-right: 0px !important;
+  }
+
+  .boxesContact {
+    padding: 3vh 8vw;
+  }
+
+  .footer {
+    padding: 50px 20px !important;
+    flex-direction: column !important;
+  }
+
+  .footer .desc {
+    padding-right: 0px;
+    width: 100%;
+
+  }
+
+  .footer .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .col1 {
+    display: none;
+  }
+
+  .footer .info .social img {
+    width: 15% !important;
+  }
+
+  .boxesContact {
+    padding: 6vh 10vw !important;
+  }
+
+  .footer .info img {
+
+    width: 60% !important;
+
+  }
+
+  .boxesContact .buttonContact {
+    margin-bottom: 30px;
+  }
+
+
+  .text_icon_left {
+    order: 2;
+    border-style: none;
+    width: 50%;
+    padding: 0 0 0 0%;
+  }
+
+  .text_icon_center {
+    order: 4;
+    border-style: none;
+    width: 50%;
+    padding: 0 0% 0 0%;
+  }
+
+  .icon_right {
+    order: 3;
+    border-style: none;
+    width: 50%;
+    padding: 0 0% 0 0%;
+  }
+
+  .icon_center {
+    order: 1;
+    border-style: none;
+    width: 50%;
+    padding: 0 4% 0 4%;
+  }
+
+  .text_icon_center p {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .text_icon_left p {
+    text-align: center;
+  }
+
+  .textoImagenesProducto {
+
+    padding: 4% 0 4% 0;
+  }
+
+  .noResponsive {
+    display: none;
+  }
+
+  .responsive {
+    display: block;
+  }
+
+  .responsive .each-slide-effect>div {
+    height: 100vw !important;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 1300px) {}
+
+@media only screen and (max-width: 1160px) {}
+
+@media only screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 880px) {
+  /* 	ul.nav-links-h {
+  display : none !important;
+}
+
+.boxesIni > div{
+      width: 100% !important;
+  } */
+}
