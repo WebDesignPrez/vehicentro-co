@@ -210,6 +210,30 @@
     height: 100vw !important;
   }
 
+  .precioCamiones {
+    font-size: 9vw;
+  }
+
+  .vidaUtil {
+    font-size: 4vw !important;
+  }
+
+  .textoMotor1 {
+    font-size: 9vw;
+}
+
+.textoMotor2 {
+    font-size: 4vw;
+}
+
+.textoMotor3 {
+    font-size: 4vw;
+}
+
+.textoMotor4 {
+    font-size: 3vw ;
+}
+
 }
 
 

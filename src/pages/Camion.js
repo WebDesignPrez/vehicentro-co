@@ -509,26 +509,28 @@ function Camion() {
                 "../images/6-toneladas/camion-de-6-toneladas-freno-de-aire.webp",
                 "../images/6-toneladas/camion-de-6-toneladas-inyeccion-common-rail.webp"
             ]
-            cabina = "../images/5-toneladas/cabina-de-camion-de-5-toneladas-sinotruk.webp"
+            cabina = "../images/6-toneladas/cabina-de-camion-de-6-toneladas-sinotruk.webp"
             marcas = ""
             internas1 = [
-                "../images/5-toneladas/volante-deportivo.webp",
-                "../images/5-toneladas/ventilacion.webp"
+                "../images/6-toneladas/palanca-de-cambios.webp",
+                "../images/6-toneladas/Mandos-al-volante.webp",
+                "../images/6-toneladas/vidrios-electricos.webp"
             ];
             internas2 = [
-                "../images/5-toneladas/palanca-de-cambios.webp",
-                "../images/5-toneladas/bloqueo.webp"
+                "../images/6-toneladas/frenos-de-aire.webp",
+                "../images/6-toneladas/bloqueo.webp"
             ];
             internas1b = [
-                "../images/5-toneladas/radio-mp5.webp",
-                "../images/5-toneladas/vidrios-electricos.webp"
+                "../images/6-toneladas/tablero-con-pantalla.webp",
+                "../images/6-toneladas/ventilacion.webp"
             ];
             internas2b = [
-                "../images/5-toneladas/cabina.webp"
+                "../images/6-toneladas/radio-android-con-icar.webp",
+                "../images/6-toneladas/Litera.webp"
             ];
-            medidas = "../images/5-toneladas/dimensiones-de-camion-de-5-toneladas-sinotruk.webp"
-            medidasMovil = "../images/5-toneladas/dimensiones-de-camion-de-5-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/5-toneladas/motor.wav"
+            medidas = "../images/6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk.webp"
+            medidasMovil = "../images/6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk-responsive.webp"
+            audio_motor = "../images/6-toneladas/motor.wav"
 
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -633,7 +635,7 @@ function Camion() {
             <div className="marcasbg textoImagenesProducto" >
 
                 <div className="boxRightHeader  half text_icon_left" >
-                    <p>DESDE</p>
+                    <p className='vidaUtil'>DESDE</p>
                     <p className='precioCamiones' >{precio}</p>
                 </div>
 
@@ -642,7 +644,7 @@ function Camion() {
                 </div>
 
                 <div className="boxRightHeader  half text_icon_center" >
-                    <p>Vida útil de más de 1.5 MILLONES de kilómetros</p>
+                    <p className='vidaUtil'>Vida útil de más de 1.5 MILLONES de kilómetros</p>
                 </div>
 
                 <div className="boxRightHeader  half icon_right">
