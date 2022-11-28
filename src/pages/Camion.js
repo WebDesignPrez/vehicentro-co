@@ -32,6 +32,8 @@ let contenedorMarcas
 let tecnologia
 let slide3
 let slide3b
+let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
+
 
 function Camion() {
 
@@ -312,19 +314,6 @@ function Camion() {
                 "../images/19-toneladas/cabina.webp",
                 "../images/19-toneladas/portavasos.webp"
             ];
-            internas1b = [
-                "../images/19-toneladas/volante-deportivo-de-camion-de-19-toneladas.webp",
-                "../images/19-toneladas/palanca-de-cambios-de-camion-de-19-toneladas.webp",
-                "../images/19-toneladas/asiento-neumatico.webp",
-                "../images/19-toneladas/eleva-vidrios-electricos.webp",
-                "../images/19-toneladas/radio-touch-mp5.webp"
-            ];
-            internas2b = [
-                "../images/19-toneladas/climatizador.webp",
-                "../images/19-toneladas/radio-touch-mp5.webp",
-                "../images/19-toneladas/cabina.webp",
-                "../images/19-toneladas/portavasos.webp"
-            ];
             medidas = "../images/19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk.webp"
             medidasMovil = "../images/19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk-responsive.webp"
             audio_motor = "../images/19-toneladas/motor.wav"
@@ -563,8 +552,104 @@ function Camion() {
                 </div>
             </div>
 
+            contenedorVidaUtil = <div className="banner"><img src="../images/6-toneladas/eaton.webp" /></div>
 
             break;
+
+        //8 toneladas
+        case "camion-8-toneladas-1147":
+            console.log('8 toneladas')
+            images = [
+                "../images/8-toneladas/camion-blanco-sinotruk-de-8-toneladas-ecuador.webp",
+                "../images/8-toneladas/camion-blanco-sinotruk-de-8-toneladas-de-frente-ecuador.webp"
+            ];
+            textoMotor1 = "180 HP"
+            textoMotor2 = "Modelo 1147"
+            textoMotor3 = "8 Ton"
+            precio = "$42.990"
+            motor = "../images/8-toneladas/motor-sinotruk-de-camion-de-8-toneladas-ecuador.webp"
+            garantia = "../images/8-toneladas/5-anos-de-garantia.webp"
+            tecnologia = "../images/8-toneladas/tecnologia-alemana.webp"
+            caracteristicas = [
+                "../images/8-toneladas/camion-de-8-toneladas-potencia-180hp.webp",
+                "../images/8-toneladas/camion-de-8-toneladas-cilindraje.webp",
+                "../images/8-toneladas/camion-de-8-toneladas-freno-a-las-valvulas.webp",
+                "../images/8-toneladas/inyeccion.webp"
+            ]
+            cabina = "../images/8-toneladas/cabina-de-camion-de-8-toneladas-sinotruk.webp"
+            marcas = "../images/8-toneladas/marcas-vehicentro.webp"
+            internas1 = [
+                "../images/8-toneladas/palanca-de-cambios.webp",
+                "../images/8-toneladas/volante-deportivo.webp",
+                "../images/8-toneladas/radio-mp5.webp",
+                "../images/8-toneladas/cabina-amplia.webp"
+            ];
+            internas2 = [
+                "../images/8-toneladas/mandos-al-volante.webp",
+                "../images/8-toneladas/vidrios-amplios.webp",
+                "../images/8-toneladas/bloqueo.webp"
+            ];
+            medidas = "../images/8-toneladas/dimensiones-de-camion-de-8-toneladas-sinotruk.webp"
+            medidasMovil = "../images/8-toneladas/dimensiones-de-camion-de-8-toneladas-sinotruk-responsive.webp"
+            audio_motor = "../images/8-toneladas/motor.wav"
+
+            internas = internas1.concat(internas2)
+
+            contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
+                <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
+            </div>
+
+            break;
+
+        //20 toneladas
+        case "camion-20-toneladas-1256":
+            console.log('20 toneladas')
+            images = [
+                "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-ecuador.webp",
+                "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-de-frente-ecuador.webp"
+            ];
+            textoMotor1 = "430 HP"
+            textoMotor2 = "Modelo C7H-1256"
+            textoMotor3 = "20 Ton"
+            precio = "$96.990"
+            motor = "../images/20-toneladas/motor-sinotruk-de-camion-de-20-toneladas-ecuador.webp"
+            garantia = "../images/20-toneladas/5-anos-de-garantia.webp"
+            tecnologia = "../images/20-toneladas/tecnologia-alemana.webp"
+            caracteristicas = [
+                "../images/20-toneladas/camion-de-20-toneladas-potencia-430hp.webp",
+                "../images/20-toneladas/camion-de-20-toneladas-cilindraje.webp",
+                "../images/20-toneladas/camion-de-20-toneladas-freno-a-las-valvulas.webp",
+                "../images/20-toneladas/inyeccion.webp"
+            ]
+            cabina = "../images/20-toneladas/cabina-de-camion-de-20-toneladas-sinotruk.webp"
+            marcas = "../images/20-toneladas/marcas-vehicentro.webp"
+            internas1 = [
+                "../images/20-toneladas/palanca-de-cambios.webp",
+                "../images/20-toneladas/litera-de-descanso.webp",
+                "../images/20-toneladas/asiento-neumatico.webp",
+                "../images/20-toneladas/comportamiento-en-el-panel.webp",
+                "../images/20-toneladas/climatizador-y-mandos.webp"
+            ];
+            internas2 = [
+                "../images/20-toneladas/volante-deportivo.webp",
+                "../images/20-toneladas/radio-touch-mp5.webp",
+                "../images/20-toneladas/componentes-wabco.webp",
+                "../images/20-toneladas/retardador.webp",
+                "../images/20-toneladas/bodega.webp"
+            ];
+            medidas = "../images/20-toneladas/dimensiones-de-camion-de-20-toneladas-sinotruk.webp"
+            medidasMovil = "../images/20-toneladas/dimensiones-de-camion-de-20-toneladas-sinotruk-responsive.webp"
+            audio_motor = "../images/20-toneladas/motor.wav"
+
+            internas = internas1.concat(internas2)
+
+            contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
+                <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
+            </div>
+
+            break;
+
+        
 
 
         default:
@@ -607,7 +692,7 @@ function Camion() {
         </div>
     );
 
-
+    // ---- PÁGINA ----
     return <>
         <NavBarTop />
         <div className="boxesIni posRelative content2">
@@ -644,7 +729,7 @@ function Camion() {
                 </div>
 
                 <div className="boxRightHeader  half text_icon_center" >
-                    <p className='vidaUtil'>Vida útil de más de 1.5 MILLONES de kilómetros</p>
+                    <p className='vidaUtil'>{contenedorVidaUtil}</p>
                 </div>
 
                 <div className="boxRightHeader  half icon_right">

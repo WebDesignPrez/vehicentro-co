@@ -1,6 +1,7 @@
 import './styles.css'; 
 import './responsive.css'
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom'
 
 
 export default function NavBar(){
@@ -144,20 +145,7 @@ export default function NavBar(){
         });
         
         //INI PARAMS
-        const playBtn = document.querySelector(".boxesIni .c7h");
-          playBtn.addEventListener("click", () => {
-              modalVideo("c7h.mp4", "1.webp")
-          })
-          
-        const playBtn2 = document.querySelector(".boxesIni .t5g");
-          playBtn2.addEventListener("click", () => {
-              modalVideo("t5g.mp4", "4.webp")
-          })
-          
-        const playBtn3 = document.querySelector(".boxesIni .tecnologia");
-          playBtn3.addEventListener("click", () => {
-              modalVideo("tecnologia.mp4", "5.webp")
-          })  
+
   
         const searchBtn = document.querySelector(".searchIcon");
             searchBtn.addEventListener("click", () => {
@@ -291,13 +279,12 @@ export default function NavBar(){
                       <img src="./images/logoSinotruck.png" alt="Sinotruck" />
                   </div>
                   <div className="rowMenu">
-                      <div className="colMenu">
-                          <p className="colTitle">Carga liviana</p>
-                          <p className="colItem">1057 / 3.5 ton</p>
-                          <p className="colItem">1057 / 5 ton (chasis corto)</p>
-                          <p className="colItem">1067 / 5 ton (chasis largo)</p>
-                          <p className="colItem">1057 / 6 ton</p>
-                          <p className="colItem">1047 / 8 ton</p>
+                      <div className="colMenu ">
+                          <p className="colTitle">Serie 100</p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-3-5-toneladas-1057">1057 / 3.5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-5-toneladas-1067">1057 / 5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-6-toneladas-1067">1057 / 6 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-3-5-toneladas-1057">1047 / 8 ton</NavLink></p>
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
                           </div>
@@ -305,13 +292,14 @@ export default function NavBar(){
                       
                       <div className="colMenu">
                           <p className="colTitle">Serie T5G</p>
-                          <p className="colItem">T5G 1167 / 9 ton</p>
-                          <p className="colItem">T5G 1167 / 10.8 ton</p>
-                          <p className="colItem">T5G 1167 / 12 ton</p>
-                          <p className="colItem">T5G 1167 / 13 ton (280hp)</p>
-                          <p className="colItem">T5G 1167 / 13 ton (330hp)</p>
-                          <p className="colItem">T5G 1167 / 19.5 ton</p>
-                          <p className="colItem">T5G 1167 / 24 ton</p>
+                          
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-9-toneladas">T5G 1167 / 9 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-10-toneladas-t5g-1167">T5G 1167 / 10.8 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-12-toneladas-t5g-1167">T5G 1167 / 12 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (280hp)</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (330hp)</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camion/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/">T5G 1167 / 24 ton</NavLink></p>
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
                           </div>

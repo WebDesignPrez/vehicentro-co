@@ -499,7 +499,11 @@ ul.nav-links-h>li>a:hover,
     margin-right: 50px;
     margin-top: 0px !important;
 }
-
+.colItem.meniu a{
+    font-size: 16px;
+    margin: 0px;
+    color:#000;
+}
 .logob {
     background-color: #000;
 
@@ -918,3 +922,8 @@ ul.nav-links-h>li>a:hover,
 .vidaUtil{
     font-size: 1.8vw ;
 }
+
+.videoWidth{
+    width: 100%; 
+    height: auto;
+  }

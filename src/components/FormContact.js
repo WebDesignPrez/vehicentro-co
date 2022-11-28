@@ -179,6 +179,14 @@ function FormContact(props) {
       imagen = "../images/6-toneladas/camion-de-6-toneladas-en-la-carretera-sinotruk.webp"
       break;
 
+    case "camion-8-toneladas-1147":
+      imagen = "../images/8-toneladas/camion-de-8-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-20-toneladas-1256":
+      imagen = "../images/20-toneladas/camion-de-20-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
     default:
       break;
   }

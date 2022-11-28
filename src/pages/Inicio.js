@@ -80,8 +80,7 @@ function Content1() {
     return (
         <div className="boxesIni posRelative content1">
             <div className="boxLeft c7h">
-                <img src="./images/home/vehicentro-camion-amarillo-sinotruk-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
-                <div className="boxPlay"></div>
+                <video width="320" height="240" controls autoplay="true" muted poster="./images/1.webp" src="./images/c7h.mp4" className="videoWidth" />
             </div>
             <div className="boxRightText">
                 <img src="./images/home/marcas-con-las-que-vehicentro-trabaja-en-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
@@ -109,8 +108,10 @@ function Content2() {
 
             </div>
             <div className="boxRight tecnologia">
-                <img src="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
-                <div className="boxPlay"></div>
+
+                <div className="boxLeft c7h">
+                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/vehisntein.webm" className="videoWidth" />
+                </div>
             </div>
         </div>
     )
@@ -121,18 +122,29 @@ function Content3() {
     return (
         <div className="boxesIni posRelative content3">
             <div className="boxLeft t5g">
-                <img src="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
-                <div className="boxPlay"></div>
+
+                <div className="boxLeft c7h">
+                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" src="./images/c7h.mp4" className="videoWidth" />
+                </div>
             </div>
             <div>
-                <img src="./images/home/camion-naranja-sinotruk-de-venta-en-vehicentro-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
-                <div className="boxText"></div>
+                <div className="boxRightText">
+                    <img src="./images/home/camion-naranja-sinotruk-de-venta-en-vehicentro-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+                    <div className="boxText flex-table row">
+                        <div className="flex-row textMain">C7H</div>
+                        <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
+                        <div className="flex-row textModel">C7H 1256</div>
+                        <div className="flex-row textModel">C7H 540</div>
+                        <div className="flex-row textModel">C7H 540 catalinas</div>
+                    </div>
+                    <div className="boxText"></div>
+                </div>
             </div>
-
         </div>
     )
 
 }
+
 function News() {
     return (
         <div className="boxesIni posRelative news">
