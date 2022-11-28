@@ -91,7 +91,7 @@ nav.menu2 {
 
 .nav-links a:hover {
     color: #f44331;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 .burger {
@@ -499,11 +499,13 @@ ul.nav-links-h>li>a:hover,
     margin-right: 50px;
     margin-top: 0px !important;
 }
-.colItem.meniu a{
+
+.colItem.meniu a {
     font-size: 16px;
     margin: 0px;
-    color:#000;
+    color: #000;
 }
+
 .logob {
     background-color: #000;
 
@@ -889,7 +891,7 @@ ul.nav-links-h>li>a:hover,
 .textoMotor4 {
     position: absolute;
     width: max-content;
-    font-size: 1.8vw ;
+    font-size: 1.8vw;
     bottom: 10px;
     left: 20px;
 }
@@ -904,26 +906,34 @@ ul.nav-links-h>li>a:hover,
 .textoImagenesProducto {
 
     display: flex !important;
-    flex-wrap: wrap !important; 
-    background-color:#f3f6f6 !important;
+    flex-wrap: wrap !important;
+    background-color: #f3f6f6 !important;
     align-items: center !important;
     font-size: 22px;
-    padding: 0 5% 0 5% ;
+    padding: 0 5% 0 5%;
 }
 
 .responsive {
     display: none;
 }
 
-.precioCamiones{
-    font-size: 4vw ;
+.precioCamiones {
+    font-size: 4vw;
 }
 
-.vidaUtil{
-    font-size: 1.8vw ;
+.vidaUtil {
+    font-size: 1.8vw;
 }
 
-.videoWidth{
-    width: 100%; 
+.videoWidth {
+    width: 100%;
     height: auto;
-  }
+}
+
+.colItem.meniu a {
+    color: #000 !important;
+}
+
+.colItem.meniu a:hover {
+    color: #f44331;
+}
