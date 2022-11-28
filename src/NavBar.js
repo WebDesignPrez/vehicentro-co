@@ -281,10 +281,10 @@ export default function NavBar(){
                   <div className="rowMenu">
                       <div className="colMenu ">
                           <p className="colTitle">Serie 100</p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-3-5-toneladas-1057">1057 / 3.5 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-5-toneladas-1067">1057 / 5 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-6-toneladas-1067">1057 / 6 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-3-5-toneladas-1057">1047 / 8 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-de-3-5-toneladas-1057">1057 / 3.5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-de-5-toneladas-1067">1057 / 5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-de-6-toneladas-1067">1057 / 6 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-8-toneladas-1147">1047 / 8 ton</NavLink></p>
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
                           </div>
@@ -293,12 +293,12 @@ export default function NavBar(){
                       <div className="colMenu">
                           <p className="colTitle">Serie T5G</p>
                           
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-9-toneladas">T5G 1167 / 9 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-10-toneladas-t5g-1167">T5G 1167 / 10.8 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-12-toneladas-t5g-1167">T5G 1167 / 12 ton</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (280hp)</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (330hp)</NavLink></p>
-                          <p className="colItem meniu"><NavLink to="/camion/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-de-9-toneladas">T5G 1167 / 9 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-10-toneladas-t5g-1167">T5G 1167 / 10.8 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-12-toneladas-t5g-1167">T5G 1167 / 12 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (280hp)</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167-330hp">T5G 1167 / 13 ton (330hp)</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
                           <p className="colItem meniu"><NavLink to="/">T5G 1167 / 24 ton</NavLink></p>
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
@@ -306,18 +306,21 @@ export default function NavBar(){
                       </div>
                       <div className="colMenu">
                           <p className="colTitle">Serie T7H</p>
-                          <p className="colItem">T7H 390 / 28 ton</p>
-                          <p className="colItem">T7H 390 / 42 ton</p>
-                          <p className="colItem">T7H 430 / 45 ton</p>
+                          <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t7h-390-28-toneladas">T7H 390 / 28 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t7h-390-42-toneladas">T7H 390 / 42 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t7h-430-45-toneladas">T7H 430 / 45 ton</NavLink></p>
+
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
                           </div>
                       </div>
                       <div className="colMenu">
                           <p className="colTitle">Serie C7H</p>
-                          <p className="colItem">C7H 1256 / 20 ton</p>
-                          <p className="colItem">C7H 540 / 48 ton</p>
-                          <p className="colItem">C7H 540 / 48 ton offroad</p>
+
+                          <p className="colItem meniu"><NavLink to="/camion/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
+                          <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
+
                           <div className="menuImgContainer">
                               <img src="./images/menuThumb.webp" width="650" height="488" className="slideMain" alt="Punto de Venta" />
                           </div>

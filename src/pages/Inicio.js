@@ -131,7 +131,7 @@ function Content3() {
                 <div className="boxRightText">
                     <img src="./images/home/camion-naranja-sinotruk-de-venta-en-vehicentro-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                     <div className="boxText flex-table row">
-                        <div className="flex-row textMain">C7H</div>
+                        <div className="flex-row textMain">T5G</div>
                         <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
                         <div className="flex-row textModel">C7H 1256</div>
                         <div className="flex-row textModel">C7H 540</div>
