@@ -37,23 +37,22 @@ export default function Footer(){
                     <li><p className="subTitle">SUNWARD</p></li>
                     <li><p className="itemMenu">Excabadora SWE210</p></li>
                 </ul>
-                <ul className="list">
-                    <li><p className="subTitle">KEYTON</p></li>
-                    <li><p className="itemMenu">Furgoneta M70L</p></li>
-                </ul>
                 
             </div>
             <div className="col1 colSell">
                 <p className="title">POST VENTA</p>
                 <ul className="list listNonTitle">
                     <li><p className="itemMenu">Talleres</p></li>
-                    <li><p className="itemMenu">Garantia</p></li>
+                    <li><p className="itemMenu">Repuestos</p></li>
+                    <li><p className="itemMenu">Manteniento</p></li>
                 </ul>
             </div>
             <div className="col1 colTech">
                 <p className="title">TECNOLOGIA</p>
                 <ul className="list listNonTitle">
-                    <li><p>Garantía</p></li>
+                    <li><p className="itemMenu">Componentes</p></li>
+                    <li><p className="itemMenu">Medicion de rendimiento</p></li>
+                    
                 </ul>
             </div>
         </div>

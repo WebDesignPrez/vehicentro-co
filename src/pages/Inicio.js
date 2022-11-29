@@ -80,16 +80,17 @@ function Content1() {
     return (
         <div className="boxesIni posRelative content1">
             <div className="boxLeft c7h">
-                <video width="320" height="240" controls autoplay="true" muted poster="./images/1.webp" src="./images/c7h.mp4" className="videoWidth" />
+                <video width="320" height="240" controls autoplay="true" muted poster="./images/1.webp" src="./images/home/c7h.webm" className="videoWidth" />
             </div>
-            <div className="boxRightText">
+            <div className="boxRightText colorLinksSobreTexto">
                 <img src="./images/home/marcas-con-las-que-vehicentro-trabaja-en-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row">
                     <div className="flex-row textMain">C7H</div>
                     <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
-                    <div className="flex-row textModel">C7H 1256</div>
-                    <div className="flex-row textModel">C7H 540</div>
-                    <div className="flex-row textModel">C7H 540 catalinas</div>
+                    <div className="flex-row textModel"><NavLink to="/camion/camion-20-toneladas-1256">C7H 1256</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 catalinas</NavLink></div>
+
                 </div>
             </div>
         </div>
@@ -110,7 +111,7 @@ function Content2() {
             <div className="boxRight tecnologia">
 
                 <div className="boxLeft c7h">
-                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/vehisntein.webm" className="videoWidth" />
+                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/vehinstein.mp4" className="videoWidth" />
                 </div>
             </div>
         </div>
@@ -124,18 +125,27 @@ function Content3() {
             <div className="boxLeft t5g">
 
                 <div className="boxLeft c7h">
-                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" src="./images/c7h.mp4" className="videoWidth" />
+                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" src="./images/home/t5g.mp4" className="videoWidth" />
                 </div>
             </div>
             <div>
-                <div className="boxRightText">
+                <div className="boxRightText colorLinksSobreTexto">
                     <img src="./images/home/camion-naranja-sinotruk-de-venta-en-vehicentro-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+                    <div className="boxText flex-table row" style={{ 'bottom': `40px`, 'left': `105px` }}>
+                        <div className="flex-row textMain"> </div>
+
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-de-9-toneladas">9 TON</NavLink></div>
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-10-toneladas-t5g-1167">10.8 TON</NavLink></div>
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-12-toneladas-t5g-1167">12 TON</NavLink></div>
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-13-toneladas-t5g-1167">13 TON (280 HP)</NavLink></div>
+                    </div>
                     <div className="boxText flex-table row">
                         <div className="flex-row textMain">T5G</div>
                         <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
-                        <div className="flex-row textModel">C7H 1256</div>
-                        <div className="flex-row textModel">C7H 540</div>
-                        <div className="flex-row textModel">C7H 540 catalinas</div>
+
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-13-toneladas-t5g-1167-330hp">13 TON (330 HP)</NavLink></div>
+                        <div className="flex-row textModel"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">19.5 TON</NavLink></div>
+                        <div className="flex-row textModel"><NavLink to="/cabezales/cabezal-t5g-4187">24 TON</NavLink></div>
                     </div>
                     <div className="boxText"></div>
                 </div>
@@ -148,23 +158,26 @@ function Content3() {
 function News() {
     return (
         <div className="boxesIni posRelative news">
-            <div className="boxNews">
+            <div className="boxNews colorLinksSobreTexto">
                 <img src="./images/home/vehicentro-camion-blanco-serie-100-3-5-6--8-toneladas-sinotruk-ecuador.webp" width="1000" height="760" className="slideMain" alt="Series100" />
                 <div className="boxText flex-table row">
                     <div className="flex-row textMain">Serie 100</div>
                     <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
-                    <div className="flex-row textModel">3.5Ton</div>
-                    <div className="flex-row textModel">3.6Ton</div>
-                    <div className="flex-row textModel">5Ton</div>
-                    <div className="flex-row textModel">6Ton</div>
-                    <div className="flex-row textModel">8Ton</div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-3-5-toneladas-1057">3.5 TON</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-5-toneladas-1067">5 TON</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-6-toneladas-1067">6 TON</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-8-toneladas-1147">8 TON</NavLink></div>
                 </div>
             </div>
-            <div className="boxNews">
+            <div className="boxNews colorLinksSobreTexto">
                 <img src="./images/home/venta-de-volquetas-y-mixer-en-ecuador.webp" width="1000" height="760" className="slideMain" alt="Mixer" />
                 <div className="boxText flex-table row">
                     <div className="flex-row textMain textMain2">Volquetas y Mixer</div>
                     <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" /></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-3-5-toneladas-1057">T5G 280-330</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-5-toneladas-1067">T5G 430-330</NavLink></div>
+                    <div className="flex-row textModel"><NavLink to="/camiones/camion-de-6-toneladas-1067">A7 1257 / MIXER</NavLink></div>
+               
                 </div>
             </div>
             <div className="boxNews">

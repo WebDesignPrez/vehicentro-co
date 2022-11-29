@@ -298,7 +298,7 @@ ul.nav-links-h>li>a:hover,
     padding: 30px 50px;
     background-color: #131313;
     color: #fff;
-    height: 60vh;
+    height: auto;
 }
 
 .footer .col1 {
@@ -935,5 +935,12 @@ ul.nav-links-h>li>a:hover,
 }
 
 .colItem.meniu a:hover {
+    color: #f44331;
+}
+
+.colorLinksSobreTexto a{
+    color: white ;
+}
+.colorLinksSobreTexto a:hover{
     color: #f44331;
 }

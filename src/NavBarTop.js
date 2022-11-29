@@ -269,7 +269,7 @@ export default function NavBarTop() {
                             <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (280hp)</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167-330hp">T5G 1167 / 13 ton (330hp)</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
-                            <p className="colItem meniu"><NavLink to="/">T5G 1167 / 24 ton</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t5g-4187">T5G 1167 / 24 ton</NavLink></p>
 
                         </div>
                         <div className="colMenu">
