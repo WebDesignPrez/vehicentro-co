@@ -33,6 +33,8 @@ let tecnologia
 let slide3
 let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
+let nombreCamion
+let bdc
 
 
 function Camion() {
@@ -42,7 +44,9 @@ function Camion() {
 
         //10 toneladas
         case "camion-10-toneladas-t5g-1167":
-            console.log('entro')
+            nombreCamion = "Camion de 10 toneladas | T5G-1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB10TT5G1167"
+            console.log('10 Toneladas')
             images = [
                 "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador.webp",
                 "../images/10-toneladas/camion-gris-sinotruk-de-10-toneladas-ecuadorn-slide.webp"
@@ -90,6 +94,8 @@ function Camion() {
 
         //9 toneladas
         case "camion-de-9-toneladas":
+            nombreCamion = "Camion de 9 toneladas | T5G-1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHCR9T1167"
             console.log('entro')
             images = [
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador.webp",
@@ -103,7 +109,7 @@ function Camion() {
             garantia = "../images/9-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/9-toneladas/tecnologia-alemana.webp"
             caracteristicas = [
-                "../images/9-toneladas/camion-de-10-toneladas-potencia-210hp.webp",
+                "../images/9-toneladas/camion-de-9-toneladas-potencia-210hp.webp",
                 "../images/9-toneladas/camion-de-9-toneladas-4-cilindros-en-linea.webp",
                 "../images/9-toneladas/camion-de-9-toneladas-freno-a-camion-de-10-toneladas-freno-a-las-valvulas.webp",
                 "../images/9-toneladas/camion-de-9-toneladas-inyeccion-common-rail.webp"
@@ -139,6 +145,8 @@ function Camion() {
         //12 toneladas
         case "camion-12-toneladas-t5g-1167":
             console.log('12 toneladas')
+            nombreCamion = "Camion de 12 toneladas | T5G-1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
                 "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
                 "../images/12-toneladas/camion-gris-sinotruk-de-12-toneladas-ecuador-slide.webp"
@@ -187,6 +195,8 @@ function Camion() {
         //13 toneladas
         case "camion-13-toneladas-t5g-1167":
             console.log('13 toneladas')
+            nombreCamion = "Camion de 13 toneladas | T5G-1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB13T1167"
             images = [
                 "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
                 "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-de-frente-ecuador.webp"
@@ -235,6 +245,8 @@ function Camion() {
         //13 toneladas 330hp
         case "camion-13-toneladas-t5g-1167-330hp":
             console.log('13 toneladas 330Hp')
+            nombreCamion = "Camion de 13 toneladas 330Hp | T5G-1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web13TOVDT5G1167"
             images = [
                 "../images/13-toneladas-330/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
                 "../images/13-toneladas-330/camion-blanco-sinotruk-de-13-toneladas-de-frente-ecuador.webp"
@@ -282,6 +294,8 @@ function Camion() {
         //19 toneladas
         case "camion-de-19-toneladas-t5g-1257":
             console.log('19 toneladas')
+            nombreCamion = "Camion de 19 toneladas | T5G-1257"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
                 "../images/19-toneladas/camion-blanco-sinotruk-de-19-toneladas-ecuador.webp",
                 "../images/19-toneladas/camion-amarillo-sinotruk-de-19-toneladas-ecuador.webp"
@@ -329,13 +343,15 @@ function Camion() {
         //3.5 toneladas
         case "camion-de-3-5-toneladas-1057":
             console.log('3.5 toneladas')
+            nombreCamion = "Camion de 3.5 toneladas | 1057"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB3T1157"
             images = [
                 "../images/3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-ecuador.webp",
                 "../images/3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "87 HP"
-            textoMotor2 = "Modelo 1047"
-            textoMotor3 = "3.5 Ton"
+            textoMotor2 = "Modelo 1047 - 3.5 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$23.990"
             motor = "../images/3.5-toneladas/motor-sinotruk-de-camion-de-3.5-toneladas-ecuador.webp"
             garantia = "../images/3.5-toneladas/5-anos-de-garantia.webp"
@@ -399,29 +415,31 @@ function Camion() {
                 </div>
             </div>
 
-
+            contenedorVidaUtil = <div className="banner"><img src="../images/3.5-toneladas/homologado.webp" /></div>
             break;
 
         //5 toneladas
         case "camion-de-5-toneladas-1067":
             console.log('5 toneladas')
+            nombreCamion = "Camion de 5 toneladas | 1067"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB5T1167"
             images = [
                 "../images/5-toneladas/camion-blanco-sinotruk-de-5-toneladas-ecuador.webp",
                 "../images/5-toneladas/camion-blanco-sinotruk-de-5-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "141 HP"
-            textoMotor2 = "Modelo 1047"
-            textoMotor3 = "5 Ton"
+            textoMotor2 = "Modelo 1067 - 5 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$27.990"
             motor = "../images/5-toneladas/motor-sinotruk-de-camion-de-5-toneladas-ecuador.webp"
             garantia = "../images/5-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/5-toneladas/serie-100.webp"
 
             caracteristicas = [
-                "../images/3.5-toneladas/camion-de-3.5-toneladas-potencia-87hp.webp",
-                "../images/3.5-toneladas/camion-de-3.5-toneladas-cilindraje.webp",
-                "../images/3.5-toneladas/camion-de-3.5-toneladas-freno-de-aire.webp",
-                "../images/3.5-toneladas/camion-de-3.5-toneladas-inyeccion-common-rail.webp"
+                "../images/5-toneladas/camion-de-5-toneladas-potencia-141hp.webp",
+                "../images/5-toneladas/camion-de-5-toneladas-cilindros.webp",
+                "../images/5-toneladas/camion-de-5-toneladas-freno-de-aire.webp",
+                "../images/5-toneladas/camion-de-5-toneladas-inyeccion-common-rail.webp"
             ]
             cabina = "../images/5-toneladas/cabina-de-camion-de-5-toneladas-sinotruk.webp"
             marcas = ""
@@ -474,19 +492,22 @@ function Camion() {
                     </Slide>
                 </div>
             </div>
-
-
+            contenedorVidaUtil = "Chasis corto\n Chasis largo"
             break;
 
         //6 toneladas
         case "camion-de-6-toneladas-1067":
             console.log('6 toneladas')
+            nombreCamion = "Camion de 6 toneladas | 1067"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB6T1167"
             images = [
-                "../images/6-toneladas/camion-blanco-sinotruk-de-6-toneladas-ecuador.webp"
+                "../images/6-toneladas/camion-blanco-sinotruk-de-6-toneladas-ecuador.webp",
+                "../images/6-toneladas/camion-blanco-sinotruk-de-6-toneladas-de-frente-ecuador.webp"
+
             ];
             textoMotor1 = "154 HP"
-            textoMotor2 = "Modelo 1067"
-            textoMotor3 = "6 Ton"
+            textoMotor2 = "Modelo 1067 - 6 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$31.890"
             motor = "../images/6-toneladas/motor-sinotruk-de-camion-de-6-toneladas-ecuador.webp"
             garantia = "../images/6-toneladas/5-anos-de-garantia.webp"
@@ -559,13 +580,15 @@ function Camion() {
         //8 toneladas
         case "camion-8-toneladas-1147":
             console.log('8 toneladas')
+            nombreCamion = "Camion de 8 toneladas | 1147"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB8T1147"
             images = [
                 "../images/8-toneladas/camion-blanco-sinotruk-de-8-toneladas-ecuador.webp",
                 "../images/8-toneladas/camion-blanco-sinotruk-de-8-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "180 HP"
-            textoMotor2 = "Modelo 1147"
-            textoMotor3 = "8 Ton"
+            textoMotor2 = "Modelo 1147 - 8 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$42.990"
             motor = "../images/8-toneladas/motor-sinotruk-de-camion-de-8-toneladas-ecuador.webp"
             garantia = "../images/8-toneladas/5-anos-de-garantia.webp"
@@ -604,6 +627,8 @@ function Camion() {
         //20 toneladas
         case "camion-20-toneladas-1256":
             console.log('20 toneladas')
+            nombreCamion = "Camion de 20 toneladas | C7H-1256"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB20TC7H1256"
             images = [
                 "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-ecuador.webp",
                 "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-de-frente-ecuador.webp"
@@ -649,7 +674,7 @@ function Camion() {
 
             break;
 
-        
+
 
 
         default:
@@ -704,10 +729,11 @@ function Camion() {
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
-                    <div className="flex-row  textoMotor1">{textoMotor1}</div>
-                    <div className="flex-row  textoMotor2">{textoMotor2}</div>
-                    <div className="flex-row  textoMotor3">{textoMotor3}</div>
-                    <div className="flex-row  textoMotor4">Escucha tu motor</div>
+                    <div className="flex-row textoMotor1">{textoMotor1}</div>
+                    <div className="flex-row textoMotor2">{textoMotor2}</div>
+                    <div className="flex-row textoMotor3">{textoMotor3}</div>
+                    <div className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
+                    <div className="flex-row textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
                     <audio id="audioMotor" controls></audio>
@@ -789,7 +815,7 @@ function Camion() {
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
-        <FormContact />
+        <FormContact url="http://link" camion={nombreCamion} />
         <BannerContacto />
         <Footer />
     </>

@@ -76,13 +76,19 @@ function Menu2() {
         </nav>
     )
 }
+
+
 function Content1() {
     return (
-        <div className="boxesIni posRelative content1">
-            <div className="boxLeft c7h">
-                <video width="320" height="240" controls autoplay="true" muted poster="./images/1.webp" src="./images/home/c7h.webm" className="videoWidth" />
+        <div className="boxesIni posRelative content3">
+
+            <div className="boxRight tecnologia">
+
+                <div className="boxLeft c7h">
+                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/c7h.mp4" className="videoWidth" />
+                </div>
             </div>
-            <div className="boxRightText colorLinksSobreTexto">
+            <div className="boxLeft playMotor colorLinksSobreTexto">
                 <img src="./images/home/marcas-con-las-que-vehicentro-trabaja-en-ecuador.webp" width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row">
                     <div className="flex-row textMain">C7H</div>
@@ -90,7 +96,6 @@ function Content1() {
                     <div className="flex-row textModel"><NavLink to="/camion/camion-20-toneladas-1256">C7H 1256</NavLink></div>
                     <div className="flex-row textModel"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540</NavLink></div>
                     <div className="flex-row textModel"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 catalinas</NavLink></div>
-
                 </div>
             </div>
         </div>
@@ -118,6 +123,8 @@ function Content2() {
     )
 
 }
+
+
 
 function Content3() {
     return (
@@ -177,7 +184,7 @@ function News() {
                     <div className="flex-row textModel"><NavLink to="/camiones/camion-de-3-5-toneladas-1057">T5G 280-330</NavLink></div>
                     <div className="flex-row textModel"><NavLink to="/camiones/camion-de-5-toneladas-1067">T5G 430-330</NavLink></div>
                     <div className="flex-row textModel"><NavLink to="/camiones/camion-de-6-toneladas-1067">A7 1257 / MIXER</NavLink></div>
-               
+
                 </div>
             </div>
             <div className="boxNews">

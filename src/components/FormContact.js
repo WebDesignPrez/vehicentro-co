@@ -187,6 +187,30 @@ function FormContact(props) {
       imagen = "../images/20-toneladas/camion-de-20-toneladas-en-la-carretera-sinotruk.webp"
       break;
 
+    case "cabezal-t5g-4187":
+      imagen = "../images/24-toneladas/camion-de-24-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-390-28-toneladas":
+      imagen = "../images/28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-390-42-toneladas":
+      imagen = "../images/42-toneladas/camion-de-42-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-430-45-toneladas":
+      imagen = "../images/45-toneladas/camion-de-45-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-c7h-540":
+      imagen = "../images/48-toneladas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-c7h-540-catalinas-48-toneladas":
+      imagen = "../images/48-toneladas-catalinas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
     default:
       break;
   }

@@ -33,6 +33,9 @@ let tecnologia
 let slide3
 let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
+let nombreCamion
+let bdc
+
 
 
 function Camion() {
@@ -43,13 +46,15 @@ function Camion() {
         //24 toneladas
         case "cabezal-t5g-4187":
             console.log('24 ton')
+            nombreCamion = "Camion de 24 toneladas | T5G-4187"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
                 "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-ecuador.webp",
                 "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "340 HP"
             textoMotor2 = "Modelo T5G-4287"
-            textoMotor3 = "24 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$61.990"
             motor = "../images/24-toneladas/motor-sinotruk-de-camion-de-24-toneladas-ecuador.webp"
             garantia = "../images/24-toneladas/5-anos-de-garantia.webp"
@@ -94,13 +99,15 @@ function Camion() {
         //28 toneladas
         case "cabezal-t7h-390-28-toneladas":
             console.log('28 ton')
+            nombreCamion = "Camion de 28 toneladas | T7H-390"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB28TONA7380"
             images = [
                 "../images/28-toneladas/camion-blanco-sinotruk-de-28-toneladas-ecuador.webp",
                 "../images/28-toneladas/camion-blanco-sinotruk-de-28-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "390 HP"
             textoMotor2 = "Modelo T7H-390"
-            textoMotor3 = "28 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$69.990"
             motor = "../images/28-toneladas/motor-sinotruk-de-camion-de-28-toneladas-ecuador.webp"
             garantia = "../images/28-toneladas/5-anos-de-garantia.webp"
@@ -142,13 +149,15 @@ function Camion() {
         //42 toneladas
         case "cabezal-t7h-390-42-toneladas":
             console.log('42 ton')
+            nombreCamion = "Camion de 42 toneladas | T7H-390"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB42TT7H390"
             images = [
                 "../images/42-toneladas/camion-blanco-sinotruk-de-42-toneladas-ecuador.webp",
                 "../images/42-toneladas/camion-blanco-sinotruk-de-42-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "390 HP"
             textoMotor2 = "Modelo T7H-390"
-            textoMotor3 = "42 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$81.990"
             motor = "../images/42-toneladas/motor-sinotruk-de-camion-de-42-toneladas-ecuador.webp"
             garantia = "../images/42-toneladas/5-anos-de-garantia.webp"
@@ -190,13 +199,15 @@ function Camion() {
         //45 toneladas
         case "cabezal-t7h-430-45-toneladas":
             console.log('45 ton')
+            nombreCamion = "Camion de 45 toneladas | T7H-430"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB45TT7H430"
             images = [
                 "../images/45-toneladas/camion-blanco-sinotruk-de-45-toneladas-ecuador.webp",
                 "../images/45-toneladas/camion-blanco-sinotruk-de-45-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "430 HP"
             textoMotor2 = "Modelo T7H-430"
-            textoMotor3 = "45 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "$89.990"
             motor = "../images/45-toneladas/motor-sinotruk-de-camion-de-45-toneladas-ecuador.webp"
             garantia = "../images/45-toneladas/5-anos-de-garantia.webp"
@@ -238,13 +249,15 @@ function Camion() {
         //48 toneladas
         case "cabezal-c7h-540":
             console.log('48 ton')
+            nombreCamion = "Camion de 48 toneladas | C7H-540"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540"
             images = [
                 "../images/48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-ecuador.webp",
                 "../images/48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "430 HP"
             textoMotor2 = "Modelo C7H-540"
-            textoMotor3 = "48 Ton"
+            textoMotor3 = "Ficha técnica"
             precio = "102.990"
             motor = "../images/48-toneladas/motor-sinotruk-de-camion-de-48-toneladas-ecuador.webp"
             garantia = "../images/48-toneladas/5-anos-de-garantia.webp"
@@ -288,13 +301,15 @@ function Camion() {
         //48 toneladas con catalinas
         case "cabezal-c7h-540-catalinas-48-toneladas":
             console.log('48 ton con catalinas')
+            nombreCamion = "Camion de 48 toneladas con Catalinas | C7H-540"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540OFFROAD"
             images = [
                 "../images/48-toneladas-catalinas/camion-blanco-sinotruk-de-48-toneladas-ecuador.webp",
                 "../images/48-toneladas-catalinas/camion-blanco-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "430 HP"
             textoMotor2 = "Modelo C7H-540"
-            textoMotor3 = "48 Ton con Catalinas"
+            textoMotor3 = "Ficha técnica"
             precio = "106.990"
             motor = "../images/48-toneladas-catalinas/motor-sinotruk-de-camion-de-48-toneladas-ecuador.webp"
             garantia = "../images/48-toneladas-catalinas/5-anos-de-garantia.webp"
@@ -391,6 +406,7 @@ function Camion() {
                     <div className="flex-row  textoMotor1">{textoMotor1}</div>
                     <div className="flex-row  textoMotor2">{textoMotor2}</div>
                     <div className="flex-row  textoMotor3">{textoMotor3}</div>
+                    <div className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
                     <div className="flex-row  textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
@@ -473,7 +489,7 @@ function Camion() {
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
-        <FormContact />
+        <FormContact url="http://link" camion={nombreCamion} />
         <BannerContacto />
         <Footer />
     </>
