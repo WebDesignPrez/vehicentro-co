@@ -6,6 +6,7 @@ import Tecnologia from "./pages/Tecnologia"
 import { useParams } from "react-router";
 import Camion from "./pages/Camion"
 import Cabezal from "./pages/Cabezal"
+import Concesionarios from "./pages/Concesionarios"
 
 function App() {
 /*   
@@ -22,6 +23,7 @@ function App() {
           <Route path="/camiones/:id" element={<Camion/>} />
           <Route path="/cabezales/:id" element={<Cabezal/>} />
           <Route path="/tecnologia" element={<Tecnologia/>} />
+          <Route path="/concesionarios" element={<Concesionarios/>} />
         </Routes>
       </main>
     </BrowserRouter>

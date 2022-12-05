@@ -815,7 +815,7 @@ function Camion() {
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
-        <FormContact url="http://link" camion={nombreCamion} />
+        <FormContact url={bdc} camion={nombreCamion} />
         <BannerContacto />
         <Footer />
     </>
