@@ -7,6 +7,8 @@ import { useParams } from "react-router";
 import Camion from "./pages/Camion"
 import Cabezal from "./pages/Cabezal"
 import Concesionarios from "./pages/Concesionarios"
+import Excavadora from "./pages/Excavadora"
+
 
 function App() {
 /*   
@@ -22,6 +24,7 @@ function App() {
           <Route path="/producto" element={<Producto name="Camion_10_toneladas"/>}  />
           <Route path="/camiones/:id" element={<Camion/>} />
           <Route path="/cabezales/:id" element={<Cabezal/>} />
+          <Route path="/excavadoras/:id" element={<Excavadora/>} />
           <Route path="/tecnologia" element={<Tecnologia/>} />
           <Route path="/concesionarios" element={<Concesionarios/>} />
         </Routes>

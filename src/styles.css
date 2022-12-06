@@ -891,14 +891,14 @@ ul.nav-links-h>li>a:hover,
     left: 10px;
 }
 
-.textoMotorFlecha{
+.textoMotorFlecha {
     position: absolute;
     width: max-content;
     bottom: 86px;
     left: 13.4vw;
 }
 
-.textoMotorFlecha img{
+.textoMotorFlecha img {
     width: 90% !important;
 }
 
@@ -952,37 +952,38 @@ ul.nav-links-h>li>a:hover,
     color: #f44331;
 }
 
-.colorLinksSobreTexto a{
-    color: white ;
+.colorLinksSobreTexto a {
+    color: white;
 }
-.colorLinksSobreTexto a:hover{
+
+.colorLinksSobreTexto a:hover {
     color: #f44331;
 }
 
-.react-slideshow-container .default-nav{
+.react-slideshow-container .default-nav {
     padding: 4px;
 }
 
-.bannerMedidas{
+.bannerMedidas {
     margin: 3% 0 3% 0;
 }
 
 
 /*BTN CONCESIONARIOS*/
-.btnConcesionarios{
+.btnConcesionarios {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     margin: 20px auto;
     justify-content: center;
-  
-  }
-  
-  .btnConcesionarios button:hover{
+
+}
+
+.btnConcesionarios button:hover {
     cursor: pointer;
-  } 
-  
-  .btnConcesionarios button{
+}
+
+.btnConcesionarios button {
     margin: 3px 5px;
     padding: 0px 10px;
     min-width: 110px;
@@ -990,41 +991,44 @@ ul.nav-links-h>li>a:hover,
     border: 1px solid #828282;
     font-family: inherit;
     background: #e5e5e5;
-    background: -webkit-linear-gradient(#fff,#e5e5e5);
-    background: -o-linear-gradient(#fff,#e5e5e5);
-    background: -moz-linear-gradient(#fff,#e5e5e5);
-    background: linear-gradient(#fff,#e5e5e5);
+    background: -webkit-linear-gradient(#fff, #e5e5e5);
+    background: -o-linear-gradient(#fff, #e5e5e5);
+    background: -moz-linear-gradient(#fff, #e5e5e5);
+    background: linear-gradient(#fff, #e5e5e5);
     font-size: 17px
-  }
-  .boxConcesionarios {
+}
+
+.boxConcesionarios {
     display: flex;
     justify-content: center;
-  }
-  
-  .boxConcesionarios table{
+}
+
+.boxConcesionarios table {
     width: 75%;
     border-style: solid;
     border-color: #e1e1e1;
     border-width: 1px;
     margin: 20px 0px;
-  }
-  
-  .tituloConcesionario{
+}
+
+.tituloConcesionario {
     text-align: center;
-      font-size: 30px;
-      font-family: inherit;
-      margin-top: 30px;
-  }
-  
-  .nombreConcesionario{
+    font-size: 30px;
+    font-family: inherit;
+    margin-top: 30px;
+}
+
+.nombreConcesionario {
     font-size: 22px;
     margin: 20px 0px;
-  }
-  
-  .descConcesionario{
-  
-  }
-  
-  .imgConcesionario img{
+}
+
+.descConcesionario {}
+
+.imgConcesionario img {
     width: 300px;
-  }
+}
+
+.precioExcavadora {
+    font-size: 2.5vw;
+}
