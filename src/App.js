@@ -8,6 +8,7 @@ import Camion from "./pages/Camion"
 import Cabezal from "./pages/Cabezal"
 import Concesionarios from "./pages/Concesionarios"
 import Excavadora from "./pages/Excavadora"
+import Volqueta from "./pages/Volqueta"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/excavadoras/:id" element={<Excavadora/>} />
           <Route path="/tecnologia" element={<Tecnologia/>} />
           <Route path="/concesionarios" element={<Concesionarios/>} />
+          <Route path="/volquetas/:id" element={<Volqueta/>} />
         </Routes>
       </main>
     </BrowserRouter>

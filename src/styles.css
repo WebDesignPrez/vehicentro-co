@@ -504,7 +504,11 @@ ul.nav-links-h>li>a:hover,
     font-size: 16px;
     margin: 0px;
     color: #000;
+    display: contents;
 }
+
+
+
 
 .logob {
     background-color: #000;

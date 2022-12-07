@@ -50,7 +50,8 @@ function Camion() {
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
                 "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-ecuador.webp",
-                "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-de-frente-ecuador.webp"
+                "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-de-frente-ecuador.webp",
+                "../images/24-toneladas/camion-blanco-sinotruk-de-24-toneladas-ecuador.webp"
             ];
             textoMotor1 = "340 HP"
             textoMotor2 = "Modelo T5G-4287"

@@ -1,5 +1,8 @@
+import './styles.css';
+import './responsive.css'
 import { NavLink } from "react-router-dom"
 import { useEffect } from "react";
+
 export default function NavBarTop() {
     var auxMovil = 0;
 
@@ -122,8 +125,7 @@ export default function NavBarTop() {
                     if (link.style.animation) {
                         link.style.animation = "";
                     } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5
-                            }s `;
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
                     }
                 });
 
@@ -247,7 +249,7 @@ export default function NavBarTop() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <p>SINOTRUK</p>
+                        <span>SINOTRUK</span>
                         <img src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
@@ -281,7 +283,6 @@ export default function NavBarTop() {
                         </div>
                         <div className="colMenu">
                             <p className="colTitle">Serie C7H</p>
-
                             <p className="colItem meniu"><NavLink to="/camiones/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
@@ -410,7 +411,7 @@ export default function NavBarTop() {
         <ul className="nav-links-h">
             <li><NavLink to="/">INICIO</NavLink></li>
             <li>
-                <NavLink to="/producto">SINOTRUCK</NavLink>
+                <NavLink to="/producto">SINOTRUK</NavLink>
             </li>
             <li><NavLink to="/sinotruk">SUNWARD</NavLink></li>
             <li><NavLink to="/sinotruk">KEYTON</NavLink></li>

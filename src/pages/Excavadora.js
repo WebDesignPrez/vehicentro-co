@@ -35,6 +35,8 @@ let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 let nombreCamion
 let bdc
+let medidasMovilDos
+let medidasDos
 
 
 
@@ -84,7 +86,9 @@ function Camion() {
             ];
 
             medidas = "../images/swe210/medidas.webp"
+            medidasDos = "../images/swe210/medidas-2.webp"
             medidasMovil = "../images/swe210/medidas-movil.webp"
+            medidasMovilDos = "../images/swe210/medidas-movil-2.webp"
             audio_motor = "../images/swe210/motor.wav"
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -228,7 +232,9 @@ function Camion() {
 
             </div>
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
+            <div className="bannerMedidas noResponsive"><img src={medidasDos} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
+            <div className="bannerMedidas responsive"><img src={medidasMovilDos} /></div>
         </div>
         <FormContact url={bdc} camion={nombreCamion} />
         <BannerContacto />

@@ -220,19 +220,23 @@
 
   .textoMotor1 {
     font-size: 9vw;
-}
+  }
 
-.textoMotor2 {
+  .textoMotor2 {
     font-size: 4vw;
-}
+  }
 
-.textoMotor3 {
+  .textoMotor3 {
     font-size: 4vw;
-}
+  }
 
-.textoMotor4 {
-    font-size: 3vw ;
-}
+  .textoMotor4 {
+    font-size: 3vw;
+  }
+
+  .precioExcavadora {
+    font-size: 6vw;
+  }
 
 }
 

@@ -39,7 +39,7 @@ function Slide() {
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto">
                     <img src="./images/home/5-anos-de-garantia-vehicentro-ecuador.webp" className="slideMain" alt="Header 2" />
                     <div className="boxText flex-table row textoSobrepuesto">
-                        <div className="flex-row textMain ">Vehinstein</div>
+                        <div className="flex-row textMain ">Veinstein</div>
                     </div>
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto" >

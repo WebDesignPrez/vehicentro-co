@@ -1,7 +1,6 @@
-import './styles.css';
-import './responsive.css'
-import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom"
+import { useEffect } from "react";
+
 
 
 export default function NavBar() {
@@ -125,7 +124,7 @@ export default function NavBar() {
                     if (link.style.animation) {
                         link.style.animation = "";
                     } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards 0s `;
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
                     }
                 });
 
@@ -273,11 +272,11 @@ export default function NavBar() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <p>SINOTRUK</p>
-                        <img src="./images/logoSinotruck.png" alt="Sinotruck" />
+                        <span>SINOTRUK</span>
+                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
-                        <div className="colMenu ">
+                        <div className="colMenu">
                             <p className="colTitle">Serie 100</p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-3-5-toneladas-1057">1057 / 3.5 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-5-toneladas-1067">1057 / 5 ton</NavLink></p>
@@ -307,7 +306,6 @@ export default function NavBar() {
                         </div>
                         <div className="colMenu">
                             <p className="colTitle">Serie C7H</p>
-
                             <p className="colItem meniu"><NavLink to="/camiones/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
@@ -332,7 +330,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
                         <p>EXCAVADORA</p>
-                        <img src="./images/logoSinotruck.png" alt="Sinotruck" />
+                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -347,7 +345,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="2"></div>
                         <p>KEYTON</p>
-                        <img src="./images/logoSinotruck.png" alt="Sinotruck" />
+                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -432,6 +430,7 @@ export default function NavBar() {
                 <a href="#">QUIERO COMUNICARME CON UN ASESOR</a>
             </li>
         </ul>
+    
 
         <img className="searchIcon" src="./images/search.png" />
     </nav>
