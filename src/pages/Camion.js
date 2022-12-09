@@ -291,7 +291,55 @@ function Camion() {
 
             break;
 
-        //19 toneladas
+        //18 toneladas
+        case "camion-de-18-toneladas-t5g-1257":
+            console.log('18 toneladas')
+            nombreCamion = "Camion de 18 toneladas | T5G-1257"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
+            images = [
+                "../images/18-toneladas/camion-blanco-sinotruk-de-18-toneladas-ecuador.webp"
+            ];
+            textoMotor1 = "340 HP"
+            textoMotor2 = "Modelo T5G-1257"
+            textoMotor3 = "18 Ton"
+            precio = "$80.990"
+            motor = "../images/18-toneladas/motor-sinotruk-de-camion-de-18-toneladas-ecuador.webp"
+            garantia = "../images/18-toneladas/5-anos-de-garantia.webp"
+            tecnologia = "../images/18-toneladas/tecnologia-alemana.webp"
+            caracteristicas = [
+                "../images/18-toneladas/camion-de-18-toneladas-potencia-340hp.webp",
+                "../images/18-toneladas/camion-de-18-toneladas-6-cilindros-en-linea.webp",
+                "../images/18-toneladas/camion-de-18-toneladas-freno-a-las-valvulas.webp",
+                "../images/18-toneladas/camion-de-18-toneladas-inyeccion-common-rail.webp"
+            ]
+            cabina = "../images/18-toneladas/cabina-de-camion-de-18-toneladas-sinotruk.webp"
+            marcas = "../images/18-toneladas/marcas-vehicentro.webp"
+            internas1 = [
+                "../images/18-toneladas/volante-deportivo-de-camion-de-18-toneladas.webp",
+                "../images/18-toneladas/palanca-de-cambios-de-camion-de-18-toneladas.webp",
+                "../images/18-toneladas/asiento-neumatico.webp",
+                "../images/18-toneladas/eleva-vidrios-electricos.webp",
+                "../images/18-toneladas/radio-touch-mp5.webp"
+            ];
+            internas2 = [
+                "../images/18-toneladas/climatizador.webp",
+                "../images/18-toneladas/radio-touch-mp5.webp",
+                "../images/18-toneladas/cabina.webp",
+                "../images/18-toneladas/portavasos.webp"
+            ];
+            medidas = "../images/18-toneladas/dimensiones-de-camion-de-18-toneladas-sinotruk.webp"
+            medidasMovil = "../images/18-toneladas/dimensiones-de-camion-de-18-toneladas-sinotruk-responsive.webp"
+            audio_motor = "../images/18-toneladas/motor.wav"
+
+            internas = internas1.concat(internas2)
+
+            contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
+                <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
+            </div>
+
+            break;
+
+            //19 toneladas
         case "camion-de-19-toneladas-t5g-1257":
             console.log('19 toneladas')
             nombreCamion = "Camion de 19 toneladas | T5G-1257"
@@ -748,6 +796,7 @@ function Camion() {
                 <div className="boxRightHeader  half text_icon_left" >
                     <p className='vidaUtil'>DESDE</p>
                     <p className='precioCamiones' >{precio}</p>
+                    <p className='cuotas'>Cuotas desde: $123</p>                    
                 </div>
 
                 <div className="boxRightHeader  half icon_center" >

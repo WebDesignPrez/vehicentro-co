@@ -211,9 +211,14 @@ function FormContact(props) {
       imagen = "../images/48-toneladas-catalinas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
       break;
 
-      case "swe210":
-        imagen = "../images/swe210\/excavadora-en-carretera-vehicentro-ecuador.webp"
-        break;
+    case "swe210":
+      imagen = "../images/swe210/excavadora-en-carretera-vehicentro-ecuador.webp"
+      break;
+
+      
+    case "camion-de-18-toneladas-t5g-1257":
+      imagen = "../images/18-toneladas/camion-de-18-toneladas-en-la-carretera-sinotruk.webp"
+      break;
 
     default:
       break;
