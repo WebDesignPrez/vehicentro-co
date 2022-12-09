@@ -2,7 +2,6 @@ import './styles.css';
 import './responsive.css'
 import { NavLink } from "react-router-dom"
 import { useEffect } from "react";
-
 export default function NavBarTop() {
     var auxMovil = 0;
 
@@ -10,6 +9,13 @@ export default function NavBarTop() {
         const navSlideClickH = () => {
             const burger = document.querySelector(".burger");
             const navLinks = document.querySelectorAll(".nav-links-h a");
+
+            const navLinksIn = document.querySelectorAll(".rowMenu .colItem");
+            navLinksIn.forEach((link, index) => {
+                link.addEventListener("click", (ev) => {
+                    burger.click()
+                })
+            })
 
             navLinks.forEach((link, index) => {
                 link.addEventListener("click", (ev) => {
@@ -114,7 +120,13 @@ export default function NavBarTop() {
             const navLinks = document.querySelectorAll(".nav-links a");
             const navSearch = document.querySelectorAll("div.navSearch");
 
-            burger.addEventListener("click", () => {
+/*             burger.removeEventListener("click", ()=>{
+
+
+
+            }) */
+              
+            const burgerEvent= () => {
                 nav.classList.toggle("nav-active");
                 navSearch[0].classList.toggle("nav-search-active");
 
@@ -125,23 +137,21 @@ export default function NavBarTop() {
                     if (link.style.animation) {
                         link.style.animation = "";
                     } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
-                    }
-                });
+                        link.style.animation = `navLinkFade 0.4s ease forwards 0.5s `;
+                    } 
+                }); 
 
                 document.querySelector(".internal").classList.add("logob")
-
                 if (auxMovil == 0)
                     resetMenu();
 
-                burger.classList.toggle("toggle");
                 if (burger.classList.contains('toggle')) {
 
                 } else {
                     document.querySelector(".internal").classList.remove("logob")
                 }
-            });
-
+            }
+            burger.addEventListener("click", burgerEvent);
             //INI PARAMS
             /*         const playBtn = document.querySelector(".boxesIni .c7h");
                       playBtn.addEventListener("click", () => {
@@ -229,9 +239,7 @@ export default function NavBarTop() {
         navSlideClickH()
 
         // make sure to catch any error
-
-
-    });
+    }, []);
 
 
     return <nav className="internal">
@@ -249,7 +257,7 @@ export default function NavBarTop() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <span>SINOTRUK</span>
+                        <p>SINOTRUK</p>
                         <img src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
@@ -259,7 +267,6 @@ export default function NavBarTop() {
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-5-toneladas-1067">1057 / 5 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-6-toneladas-1067">1057 / 6 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-8-toneladas-1147">1047 / 8 ton</NavLink></p>
-
                         </div>
 
                         <div className="colMenu">
@@ -283,7 +290,8 @@ export default function NavBarTop() {
                         </div>
                         <div className="colMenu">
                             <p className="colTitle">Serie C7H</p>
-                            <p className="colItem meniu"><NavLink to="/camiones/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
+
+                            <p className="colItem meniu"><NavLink to="/camion/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
 
@@ -411,7 +419,7 @@ export default function NavBarTop() {
         <ul className="nav-links-h">
             <li><NavLink to="/">INICIO</NavLink></li>
             <li>
-                <NavLink to="/producto">SINOTRUK</NavLink>
+                <NavLink to="/producto">SINOTRUCK</NavLink>
             </li>
             <li><NavLink to="/sinotruk">SUNWARD</NavLink></li>
             <li><NavLink to="/sinotruk">KEYTON</NavLink></li>
