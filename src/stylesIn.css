@@ -23,6 +23,7 @@ nav.internal{
   align-items: center;
   color: #fff;
   max-height: 80px;
+
 }
 
 .internal .nav-links {
@@ -61,7 +62,7 @@ nav.internal{
   /*transition:0.5s ease;
   transform: translateX(0%);*/
   opacity: 0;
-  font-size: 1.1vw
+  font-size: 1em;
 }
 
 .internal .nav-links a:hover{
@@ -187,7 +188,7 @@ color:red;
 }
 
 .internal .nav-links > li {
-  width: 26vw;
+  width: 27vw;
 }
 
 .colorSvg { color: white; }
@@ -313,9 +314,19 @@ color:red;
 }
 
 
+@media only screen and (min-width: 820px) {
+  .navSearch{
+    display:none;
+  }
+}
+
 @media only screen and (min-width: 2000px) {
   .internal .nav-links > li > a {
     padding-bottom: 3.5vh;
+  }
+
+  .internal .nav-links a{
+    font-size: 1.1vw
   }
 
 }
@@ -323,6 +334,10 @@ color:red;
 @media only screen and (min-width: 2800px) {
   .internal .nav-links > li > a {
     padding-bottom: 4.1vh;
+  }
+
+  .internal .nav-links a{
+    font-size: 1.1vw
   }
 
 }
