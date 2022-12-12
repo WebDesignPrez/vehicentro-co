@@ -12,14 +12,19 @@ function FormContact(props) {
 
   const url = props.url
   const nomCamion = props.camion
+  const listSerie = props.camion
+  const listCamion = props.camion
 
   const [nombre_y_apellido, setName] = useState('');
   const [ciudad, setCity] = useState('');
   const [email, setEmail] = useState('');
   const [celular, setTel] = useState('');
   const [cedula, setCed] = useState('');
+  const [serie, setSerie] = useState(listSerie);
+  const [camionSerie, setSerieCamion] = useState(listCamion);
   const [camion, setCam] = useState(nomCamion);
   const [escoge_tu_concesionario_mas_cercano, setCon] = useState('Concesionario');
+
 
 
   const handleChange = (e) => {
@@ -44,6 +49,15 @@ function FormContact(props) {
 
   const handleChangeCon = (e) => {
     setCon(e.target.value);
+  }
+
+  //let camionesListOpt;
+  const handleChangeSerie = (e) => {
+    setSerie(e.target.value);
+  }
+
+  const handleChangeSerieCamion = (e) => {
+    setSerieCamion(e.target.value)
   }
 
   const handleChangeCam = (e) => {
@@ -104,7 +118,6 @@ function FormContact(props) {
       return false
   }
 
-
   const handleFocusCed = (e) => {
     let aux = e.target.closest('.input-group');
     if (validateCed(e.target.value)) {
@@ -121,7 +134,6 @@ function FormContact(props) {
     else
       return false
   }
-
 
   function handleSumbit(e) {
     e.preventDefault();
@@ -141,7 +153,11 @@ function FormContact(props) {
       NotificationManager.error('No se puede enviar datos, completar los datos correctamente.', '');
     }
   }
-  console.log(url)
+
+  //console.log(url)
+
+
+
   switch ((useParams("id").id)) {
     case "camion-10-toneladas-t5g-1167":
       imagen = "../images/10-toneladas/camion-de-10-toneladas-en-la-carretera-sinotruk.webp"
@@ -224,6 +240,43 @@ function FormContact(props) {
       break;
   }
 
+  const serie100 = ['1057 / 3.5 TON', '1057 / 5 TON', '1057 / 6 TON', '1047 / 8 TON'];
+  const serieT5G = ['T5G 1167 / 9 TON', 'T5G 1167 / 10.8 TON', 'T5G 1167 / 12 TON', 'T5G 1167 / 13 TON (280HP)', 'T5G 1167 / 13 TON (330HP)', 'T5G 1167 / 19.5 TON', 'T5G 1167 / 24 TON'];
+  const serieT7H = ['T7H 390 / 28 TON', 'T7H 390 / 42 TON', 'T7H 430 / 45 TON'];
+  const serieC7H = ['C7H 1256 / 20 TON', 'C7H 540 / 48 TON', 'C7H 540 / 48 TON OFFROAD'];
+  const especiales = ['VOLQUETA T5G 280-330 8-9M2', 'VOLQUETA T5G 430-330 10-14M2', 'A7 1257 / MIXER'];
+
+  let type = null;
+  
+  /** This will be used to create set of options that user will see */
+  let options = null;
+
+
+  console.log(serie)
+
+  if (serie === "Serie 100") {
+    type = serie100;
+  } else if (serie === "Serie T5G") {
+    type = serieT5G;
+  } else if (serie === "Serie T7H") {
+    type = serieT7H;
+  } else if (serie === "Serie C7H"){
+    type = serieC7H;
+  } else if (serie === "Especiales"){
+    type = especiales;
+  }
+
+  if (type) {
+    options = type.map((el) => <option key={el}>{el}</option>);
+  }
+
+/*      let countriesList = countries.length > 0
+    	&& countries.map((item, i) => {
+      return (
+        <option key={i} value={item.id}>{item.name}</option>
+      )
+    }, this);
+*/
   return <div>
     <div className="boxesIni posRelative">
       <div>
@@ -288,7 +341,28 @@ function FormContact(props) {
                 </select>
               </div>
 
+              <label className="input_title">*Serie</label>
               <div className="input-group">
+                <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
+                <select name="serie" onBlur={(e) => { handleFocus(e) }} onChange={(e) => { handleChangeSerie(e) }} value={serie}>
+                  <option value="Serie 100">Serie 100</option>
+                  <option value="Serie T5G">Serie T5G</option>
+                  <option value="Serie T7H">Serie T7H</option>
+                  <option value="Serie C7H">Serie C7H</option>
+                  <option value="Especiales">Especiales</option>
+                </select>
+              </div>
+
+              <label className="input_title">*Camion</label>
+              <div className="input-group">
+                <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
+                <select name="serie" value={camionSerie}>
+                  {options}
+                </select>
+              </div>
+
+
+              <div className="input-group inputCamionInt">
                 <span className="userIcon"></span>
                 <input name="camion" type="text" value={camion} onChange={(e) => { handleChangeCam(e) }} />
               </div>
