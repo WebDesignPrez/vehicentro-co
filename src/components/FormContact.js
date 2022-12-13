@@ -12,8 +12,9 @@ function FormContact(props) {
 
   const url = props.url
   const nomCamion = props.camion
-  const listSerie = props.camion
-  const listCamion = props.camion
+  const listSerie = props.serie
+  const listCamion = props.camionSerie
+  const imagen = props.imagen
 
   const [nombre_y_apellido, setName] = useState('');
   const [ciudad, setCity] = useState('');
@@ -247,12 +248,7 @@ function FormContact(props) {
   const especiales = ['VOLQUETA T5G 280-330 8-9M2', 'VOLQUETA T5G 430-330 10-14M2', 'A7 1257 / MIXER'];
 
   let type = null;
-  
-  /** This will be used to create set of options that user will see */
   let options = null;
-
-
-  console.log(serie)
 
   if (serie === "Serie 100") {
     type = serie100;
@@ -270,18 +266,13 @@ function FormContact(props) {
     options = type.map((el) => <option key={el}>{el}</option>);
   }
 
-/*      let countriesList = countries.length > 0
-    	&& countries.map((item, i) => {
-      return (
-        <option key={i} value={item.id}>{item.name}</option>
-      )
-    }, this);
-*/
   return <div>
     <div className="boxesIni posRelative">
-      <div>
+      {
+      <div >
         <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
       </div>
+      }
       <div>
         <div className="form-box">
           <h5 className="form-step"> ¿Necesitas información? </h5>

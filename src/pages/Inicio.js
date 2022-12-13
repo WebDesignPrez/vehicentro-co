@@ -1,7 +1,7 @@
 import NavBar from "../NavBar"
 import { NavLink } from 'react-router-dom'
 import Footer from '../components/Footer'
-import BannerContact from '../components/BannerContacto'
+import BannerContacto from '../components/BannerContacto'
 function Inicio() {
     return (
         <>
@@ -13,7 +13,7 @@ function Inicio() {
             <Content3 />
             <News />
             <Banner />
-            <Contact />
+            <BannerContacto />
             <Footer />
             <Modal />
         </>
@@ -85,7 +85,7 @@ function Content1() {
             <div className="boxRight tecnologia">
 
                 <div className="boxLeft c7h">
-                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/c7h.mp4" className="videoWidth" />
+                    <video width="320" height="240" controls autoPlay={true} muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/c7h.mp4" className="videoWidth" />
                 </div>
             </div>
             <div className="boxLeft playMotor colorLinksSobreTexto">
@@ -116,7 +116,7 @@ function Content2() {
             <div className="boxRight tecnologia">
 
                 <div className="boxLeft c7h">
-                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/vehinstein.mp4" className="videoWidth" />
+                    <video width="320" height="240" controls autoPlay={true} muted poster="./images/home/vehicentro-vehinstein-sinotruk-ecuador.webp" src="./images/home/vehinstein.mp4" className="videoWidth" />
                 </div>
             </div>
         </div>
@@ -132,7 +132,7 @@ function Content3() {
             <div className="boxLeft t5g">
 
                 <div className="boxLeft c7h">
-                    <video width="320" height="240" controls autoplay="true" muted poster="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" src="./images/home/t5g.mp4" className="videoWidth" />
+                    <video width="320" height="240" controls autoPlay={true} muted poster="./images/home/vehicentro-serie-t5g-camiones-de-venta-en-ecuador-sinotruk.webp" src="./images/home/t5g.mp4" className="videoWidth" />
                 </div>
             </div>
             <div>
