@@ -16,6 +16,7 @@ export default function BannerContacto(){
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
+        
       },
     };
 
@@ -46,7 +47,7 @@ export default function BannerContacto(){
           onAfterOpen={afterOpenModal}
           onRequestClose={closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
+          contentLabel="Formulario de contacto"
       >
           
           <button onClick={closeModal}>Cerrar</button>

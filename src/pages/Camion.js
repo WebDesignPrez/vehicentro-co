@@ -10,6 +10,7 @@ import '../slider.css';
 import { useEffect } from "react";
 import { nodeName } from "jquery";
 
+let imagen
 let images
 let motor
 let caracteristicas
@@ -730,6 +731,91 @@ function Camion() {
     }
 
 
+    
+
+  switch ((useParams("id").id)) {
+    case "camion-10-toneladas-t5g-1167":
+      imagen = "../images/10-toneladas/camion-de-10-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-de-9-toneladas":
+      imagen = "../images/9-toneladas/camion-de-9-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-12-toneladas-t5g-1167":
+      imagen = "../images/12-toneladas/camion-de-12-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-13-toneladas-t5g-1167":
+      imagen = "../images/13-toneladas/camion-de-13-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-13-toneladas-t5g-1167-330hp":
+      imagen = "../images/13-toneladas-330/camion-de-13-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-de-19-toneladas-t5g-1257":
+      imagen = "../images/19-toneladas/camion-de-19-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-de-3-5-toneladas-1057":
+      imagen = "../images/3.5-toneladas/camion-de-3.5-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-de-5-toneladas-1067":
+      imagen = "../images/5-toneladas/camion-de-5-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-de-6-toneladas-1067":
+      imagen = "../images/6-toneladas/camion-de-6-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-8-toneladas-1147":
+      imagen = "../images/8-toneladas/camion-de-8-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "camion-20-toneladas-1256":
+      imagen = "../images/20-toneladas/camion-de-20-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t5g-4187":
+      imagen = "../images/24-toneladas/camion-de-24-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-390-28-toneladas":
+      imagen = "../images/28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-390-42-toneladas":
+      imagen = "../images/42-toneladas/camion-de-42-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-t7h-430-45-toneladas":
+      imagen = "../images/45-toneladas/camion-de-45-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-c7h-540":
+      imagen = "../images/48-toneladas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "cabezal-c7h-540-catalinas-48-toneladas":
+      imagen = "../images/48-toneladas-catalinas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    case "swe210":
+      imagen = "../images/swe210/excavadora-en-carretera-vehicentro-ecuador.webp"
+      break;
+
+      
+    case "camion-de-18-toneladas-t5g-1257":
+      imagen = "../images/18-toneladas/camion-de-18-toneladas-en-la-carretera-sinotruk.webp"
+      break;
+
+    default:
+      break;
+  }
+
+
     useEffect(() => {
         const motorPlayer = document.getElementById('audioMotor')
         motorPlayer.src = audio_motor
@@ -864,7 +950,16 @@ function Camion() {
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
-        <FormContact url={bdc} camion={nombreCamion} />
+        
+
+        <div className="boxesIni posRelative">
+            <div >
+                <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+            </div>
+            <div>
+            <FormContact url={bdc} camion={nombreCamion} />
+            </div>
+        </div>
         <BannerContacto />
         <Footer />
     </>
