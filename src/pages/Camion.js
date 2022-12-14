@@ -36,6 +36,8 @@ let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 let nombreCamion
 let bdc
+let nombreSerie
+let camionSerie
 
 
 function Camion() {
@@ -471,6 +473,8 @@ function Camion() {
         case "camion-de-5-toneladas-1067":
             console.log('5 toneladas')
             nombreCamion = "Camion de 5 toneladas | 1067"
+            camionSerie = "1067 / 5 TON"
+            nombreSerie = "Serie 100"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB5T1167"
             images = [
                 "../images/5-toneladas/camion-blanco-sinotruk-de-5-toneladas-ecuador.webp",
@@ -957,7 +961,7 @@ function Camion() {
                 <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
             </div>
             <div>
-            <FormContact url={bdc} camion={nombreCamion} />
+            <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie}/>
             </div>
         </div>
         <BannerContacto />
