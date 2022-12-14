@@ -48,6 +48,8 @@ function Camion() {
         //10 toneladas
         case "camion-10-toneladas-t5g-1167":
             nombreCamion = "Camion de 10 toneladas | T5G-1167"
+            camionSerie = "T5G 1167 / 10.8 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB10TT5G1167"
             console.log('10 Toneladas')
             images = [
@@ -98,8 +100,10 @@ function Camion() {
         //9 toneladas
         case "camion-de-9-toneladas":
             nombreCamion = "Camion de 9 toneladas | T5G-1167"
+            camionSerie = "T5G 1167 / 9 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHCR9T1167"
-            console.log('entro')
+            console.log('9 toneladas')
             images = [
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador.webp",
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador-de-frente.webp"
@@ -149,6 +153,8 @@ function Camion() {
         case "camion-12-toneladas-t5g-1167":
             console.log('12 toneladas')
             nombreCamion = "Camion de 12 toneladas | T5G-1167"
+            camionSerie = "T5G 1167 / 12 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
                 "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
@@ -199,6 +205,8 @@ function Camion() {
         case "camion-13-toneladas-t5g-1167":
             console.log('13 toneladas')
             nombreCamion = "Camion de 13 toneladas | T5G-1167"
+            camionSerie = "T5G 1167 / 13 TON (280HP)"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB13T1167"
             images = [
                 "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
@@ -249,6 +257,8 @@ function Camion() {
         case "camion-13-toneladas-t5g-1167-330hp":
             console.log('13 toneladas 330Hp')
             nombreCamion = "Camion de 13 toneladas 330Hp | T5G-1167"
+            camionSerie = "T5G 1167 / 13 TON (330HP)"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web13TOVDT5G1167"
             images = [
                 "../images/13-toneladas-330/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
@@ -298,6 +308,8 @@ function Camion() {
         case "camion-de-18-toneladas-t5g-1257":
             console.log('18 toneladas')
             nombreCamion = "Camion de 18 toneladas | T5G-1257"
+            camionSerie = "T5G 1167 / 18 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
                 "../images/18-toneladas/camion-blanco-sinotruk-de-18-toneladas-ecuador.webp"
@@ -346,6 +358,8 @@ function Camion() {
         case "camion-de-19-toneladas-t5g-1257":
             console.log('19 toneladas')
             nombreCamion = "Camion de 19 toneladas | T5G-1257"
+            camionSerie = "T5G 1167 / 19.5 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
                 "../images/19-toneladas/camion-blanco-sinotruk-de-19-toneladas-ecuador.webp",
@@ -395,6 +409,8 @@ function Camion() {
         case "camion-de-3-5-toneladas-1057":
             console.log('3.5 toneladas')
             nombreCamion = "Camion de 3.5 toneladas | 1057"
+            camionSerie = "1057 / 3.5 TON"
+            nombreSerie = "Serie 100"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB3T1157"
             images = [
                 "../images/3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-ecuador.webp",
@@ -552,6 +568,8 @@ function Camion() {
         case "camion-de-6-toneladas-1067":
             console.log('6 toneladas')
             nombreCamion = "Camion de 6 toneladas | 1067"
+            camionSerie = "1067 / 6 TON"
+            nombreSerie = "Serie 100"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB6T1167"
             images = [
                 "../images/6-toneladas/camion-blanco-sinotruk-de-6-toneladas-ecuador.webp",
@@ -634,6 +652,8 @@ function Camion() {
         case "camion-8-toneladas-1147":
             console.log('8 toneladas')
             nombreCamion = "Camion de 8 toneladas | 1147"
+            camionSerie = "1147 / 8 TON"
+            nombreSerie = "Serie 100"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB8T1147"
             images = [
                 "../images/8-toneladas/camion-blanco-sinotruk-de-8-toneladas-ecuador.webp",

@@ -35,7 +35,8 @@ let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 let nombreCamion
 let bdc
-
+let camionSerie
+let nombreSerie
 
 
 function Camion() {
@@ -47,6 +48,8 @@ function Camion() {
         case "cabezal-t5g-4187":
             console.log('24 ton')
             nombreCamion = "Camion de 24 toneladas | T5G-4187"
+            camionSerie = "T5G 1167 / 19.5 TON"
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
                 "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-ecuador.webp",
