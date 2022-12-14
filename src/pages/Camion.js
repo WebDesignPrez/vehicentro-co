@@ -701,6 +701,8 @@ function Camion() {
         case "camion-20-toneladas-1256":
             console.log('20 toneladas')
             nombreCamion = "Camion de 20 toneladas | C7H-1256"
+            camionSerie = "C7H 1256 / 20 TON"
+            nombreSerie = "Serie C7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB20TC7H1256"
             images = [
                 "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-ecuador.webp",

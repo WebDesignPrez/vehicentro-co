@@ -35,6 +35,8 @@ let slide3b
 let contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 let nombreCamion
 let bdc
+let camionSerie
+let nombreSerie
 
 
 
@@ -47,6 +49,8 @@ function Camion() {
         case "volqueta-t5g-280":
             console.log('volqueta 280')
             nombreCamion = "Volqueta | T5G-280-330"
+            camionSerie = "VOLQUETA T5G 280-330 8-9M2"
+            nombreSerie = "Especiales"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVOLQUETA280"
             images = [
                 "../images/volqueta-280/volqueta-blanca-sinotruk-de-venta-en-ecuador.webp",
@@ -100,6 +104,8 @@ function Camion() {
         case "volqueta-t7h-430":
             console.log('volqueta T7H-430')
             nombreCamion = "Volqueta | T7H-430"
+            camionSerie = "VOLQUETA T5G 430-330 10-14M2"
+            nombreSerie = "Especiales"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVOLQUETA280"
             images = [
                 "../images/volqueta-430/volqueta-blanca-sinotruk-de-venta-en-ecuador.webp"
