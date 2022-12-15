@@ -104,6 +104,8 @@ function Camion() {
         case "cabezal-t7h-390-28-toneladas":
             console.log('28 ton')
             nombreCamion = "Camion de 28 toneladas | T7H-390"
+            camionSerie = "T7H 390 / 28 TON"
+            nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB28TONA7380"
             images = [
                 "../images/28-toneladas/camion-blanco-sinotruk-de-28-toneladas-ecuador.webp",
@@ -154,6 +156,8 @@ function Camion() {
         case "cabezal-t7h-390-42-toneladas":
             console.log('42 ton')
             nombreCamion = "Camion de 42 toneladas | T7H-390"
+            camionSerie = "T7H 390 / 42 TON"
+            nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB42TT7H390"
             images = [
                 "../images/42-toneladas/camion-blanco-sinotruk-de-42-toneladas-ecuador.webp",
@@ -204,6 +208,8 @@ function Camion() {
         case "cabezal-t7h-430-45-toneladas":
             console.log('45 ton')
             nombreCamion = "Camion de 45 toneladas | T7H-430"
+            camionSerie = "T7H 430 / 45 TON"
+            nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB45TT7H430"
             images = [
                 "../images/45-toneladas/camion-blanco-sinotruk-de-45-toneladas-ecuador.webp",
@@ -254,6 +260,8 @@ function Camion() {
         case "cabezal-c7h-540":
             console.log('48 ton')
             nombreCamion = "Camion de 48 toneladas | C7H-540"
+            camionSerie = "C7H 540 / 48 TON"
+            nombreSerie = "Serie C7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540"
             images = [
                 "../images/48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-ecuador.webp",
@@ -306,6 +314,8 @@ function Camion() {
         case "cabezal-c7h-540-catalinas-48-toneladas":
             console.log('48 ton con catalinas')
             nombreCamion = "Camion de 48 toneladas con Catalinas | C7H-540"
+            camionSerie = "C7H 540 / 48 TON OFFROAD"
+            nombreSerie = "Serie C7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540OFFROAD"
             images = [
                 "../images/48-toneladas-catalinas/camion-blanco-sinotruk-de-48-toneladas-ecuador.webp",

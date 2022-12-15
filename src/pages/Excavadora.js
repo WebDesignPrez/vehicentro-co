@@ -37,6 +37,8 @@ let nombreCamion
 let bdc
 let medidasMovilDos
 let medidasDos
+let camionSerie
+let nombreSerie
 
 
 
@@ -49,6 +51,8 @@ function Camion() {
         case "swe210":
             console.log('24 ton')
             nombreCamion = "Excavadora SE210"
+            camionSerie = "VOLQUETA T5G 430-330 10-14M2"
+            nombreSerie = "Especiales"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
                 "../images/swe210/vehicentro-excavadora-ecuador.webp"

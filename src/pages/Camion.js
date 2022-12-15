@@ -87,7 +87,7 @@ function Camion() {
 
             medidas = "../images/10-toneladas/dimensiones-de-camion-de-10-toneladas-sinotruk.webp"
             medidasMovil = "../images/10-toneladas/dimensiones-de-camion-de-10-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/10-toneladas/motor.wav"
+            audio_motor = "../images/10-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -139,7 +139,7 @@ function Camion() {
 
             medidas = "../images/9-toneladas/dimensiones-de-camion-de-9-toneladas-sinotruk.webp"
             medidasMovil = "../images/9-toneladas/dimensiones-de-camion-de-9-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/9-toneladas/motor.wav"
+            audio_motor = "../images/9-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -191,7 +191,7 @@ function Camion() {
 
             medidas = "../images/12-toneladas/dimensiones-de-camion-de-12-toneladas-sinotruk.webp"
             medidasMovil = "../images/12-toneladas/dimensiones-de-camion-de-12-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/12-toneladas/motor.wav"
+            audio_motor = "../images/12-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -243,7 +243,7 @@ function Camion() {
 
             medidas = "../images/13-toneladas/dimensiones-de-camion-de-13-toneladas-sinotruk.webp"
             medidasMovil = "../images/13-toneladas/dimensiones-de-camion-de-13-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/13-toneladas/motor.wav"
+            audio_motor = "../images/13-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -294,7 +294,7 @@ function Camion() {
             ];
             medidas = "../images/13-toneladas-330/dimensiones-de-camion-de-13-toneladas-sinotruk.webp"
             medidasMovil = "../images/13-toneladas-330/dimensiones-de-camion-de-13-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/13-toneladas-330/motor.wav"
+            audio_motor = "../images/13-toneladas-330/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -344,7 +344,7 @@ function Camion() {
             ];
             medidas = "../images/18-toneladas/dimensiones-de-camion-de-18-toneladas-sinotruk.webp"
             medidasMovil = "../images/18-toneladas/dimensiones-de-camion-de-18-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/18-toneladas/motor.wav"
+            audio_motor = "../images/18-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -395,7 +395,7 @@ function Camion() {
             ];
             medidas = "../images/19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk.webp"
             medidasMovil = "../images/19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/19-toneladas/motor.wav"
+            audio_motor = "../images/19-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -449,7 +449,7 @@ function Camion() {
             ];
             medidas = "../images/3.5-toneladas/dimensiones-de-camion-de-3.5-toneladas-sinotruk.webp"
             medidasMovil = "../images/3.5-toneladas/dimensiones-de-camion-de-3.5-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/3.5-toneladas/motor.wav"
+            audio_motor = "../images/3.5-toneladas/motor.mp3"
 
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -529,7 +529,7 @@ function Camion() {
             ];
             medidas = "../images/5-toneladas/dimensiones-de-camion-de-5-toneladas-sinotruk.webp"
             medidasMovil = "../images/5-toneladas/dimensiones-de-camion-de-5-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/5-toneladas/motor.wav"
+            audio_motor = "../images/5-toneladas/motor.mp3"
 
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -611,7 +611,7 @@ function Camion() {
             ];
             medidas = "../images/6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk.webp"
             medidasMovil = "../images/6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/6-toneladas/motor.wav"
+            audio_motor = "../images/6-toneladas/motor.mp3"
 
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -687,7 +687,7 @@ function Camion() {
             ];
             medidas = "../images/8-toneladas/dimensiones-de-camion-de-8-toneladas-sinotruk.webp"
             medidasMovil = "../images/8-toneladas/dimensiones-de-camion-de-8-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/8-toneladas/motor.wav"
+            audio_motor = "../images/8-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -701,6 +701,8 @@ function Camion() {
         case "camion-20-toneladas-1256":
             console.log('20 toneladas')
             nombreCamion = "Camion de 20 toneladas | C7H-1256"
+            camionSerie = "C7H 1256 / 20 TON"
+            nombreSerie = "Serie C7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB20TC7H1256"
             images = [
                 "../images/20-toneladas/camion-blanco-sinotruk-de-20-toneladas-ecuador.webp",
@@ -737,7 +739,7 @@ function Camion() {
             ];
             medidas = "../images/20-toneladas/dimensiones-de-camion-de-20-toneladas-sinotruk.webp"
             medidasMovil = "../images/20-toneladas/dimensiones-de-camion-de-20-toneladas-sinotruk-responsive.webp"
-            audio_motor = "../images/20-toneladas/motor.wav"
+            audio_motor = "../images/20-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -894,7 +896,7 @@ function Camion() {
                     <div className="flex-row textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
-                    <audio id="audioMotor" controls></audio>
+                    <audio id="audioMotor" controls  type="audio/mpeg"></audio>
                 </div>
             </div>
 

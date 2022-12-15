@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "../form.css";
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
@@ -7,20 +7,20 @@ import { useParams } from "react-router";
 
 function FormContact(props) {
 
-  const url = props.url
-  const nomCamion = props.camion
-  const listSerie = (props.serie=="")?'':props.serie
-  const listCamion = (props.camionSerie=="")?'':props.camionSerie
+  let url = props.url
+  let nomCamion = props.camion
+  let listSerie = (props.serie=="")?'':props.serie
+  let listCamion = (props.camionSerie=="")?'':props.camionSerie
 
-  const [nombre_y_apellido, setName] = useState('');
-  const [ciudad, setCity] = useState('');
-  const [email, setEmail] = useState('');
-  const [celular, setTel] = useState('');
-  const [cedula, setCed] = useState('');
-  const [serie, setSerie] = useState(listSerie);
-  const [camionSerie, setSerieCamion] = useState(listCamion);
-  const [camion, setCam] = useState(nomCamion);
-  const [escoge_tu_concesionario_mas_cercano, setCon] = useState('Concesionario');
+  let [nombre_y_apellido, setName] = useState('');
+  let [ciudad, setCity] = useState('');
+  let [email, setEmail] = useState('');
+  let [celular, setTel] = useState('');
+  let [cedula, setCed] = useState('');
+  let [serie, setSerie] = useState(listSerie);
+  let [camionSerie, setSerieCamion] = useState(listCamion);
+  let [camion, setCam] = useState(nomCamion);
+  let [escoge_tu_concesionario_mas_cercano, setCon] = useState('Concesionario');
 
   const handleChange = (e) => {
     setName(e.target.value);
@@ -123,6 +123,7 @@ function FormContact(props) {
     }
   }
 
+
   const validateCed = (e) => {
     if (e === "" || !(/^\d+$/.test(e)) || (e.length !== 10 && e.length !== 13))
       return true
@@ -147,6 +148,16 @@ function FormContact(props) {
     } else {
       NotificationManager.error('No se puede enviar datos, completar los datos correctamente.', '');
     }
+  }
+  useEffect(() => {
+    setValues();
+    }, [nomCamion]) 
+
+
+  function setValues(){
+    setSerie(listSerie)
+    setSerieCamion(listCamion)
+    setCam(nomCamion)
   }
 
   const serie100 = ['1057 / 3.5 TON', '1067 / 5 TON', '1067 / 6 TON', '1147 / 8 TON'];
@@ -173,6 +184,8 @@ function FormContact(props) {
   if (type) {
     options = type.map((el) => <option key={el}>{el}</option>);
   }
+
+
 
   return <div>
             <div className="form-box">
@@ -254,7 +267,7 @@ function FormContact(props) {
                   </div>
 
 
-                  <div className="input-group inputCamionInt">
+                  <div className="input-group">
                     <span className="userIcon"></span>
                     <input name="camion" type="text" value={camion} onChange={(e) => { handleChangeCam(e) }} />
                   </div>
