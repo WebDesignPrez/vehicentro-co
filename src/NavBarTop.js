@@ -342,7 +342,7 @@ export default function NavBarTop() {
                 </div>
             </li>
             <li>
-                <a href="#" option="concesionarios">CONCESIONARIOS</a>
+                <a href="/consesionarios" option="concesionarios">CONCESIONARIOS</a>
                 <div className="item-level-3 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="3"></div>
@@ -425,7 +425,7 @@ export default function NavBarTop() {
             </li>
             <li><NavLink to="/sinotruk">SUNWARD</NavLink></li>
             <li><NavLink to="/sinotruk">KEYTON</NavLink></li>
-            <li className="concesionariosCss"><NavLink to="/sinotruk">CONCESIONARIOS</NavLink></li>
+            <li className="concesionariosCss"><NavLink to="/concesionarios">CONCESIONARIOS</NavLink></li>
             <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
             <li className="companiaCss"><NavLink to="/sinotruk">COMPAÑIA</NavLink></li>
             <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
