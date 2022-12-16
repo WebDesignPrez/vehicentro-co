@@ -267,7 +267,7 @@ function FormContact(props) {
                   </div>
 
 
-                  <div className="input-group">
+                  <div className="input-group inputCamionInt">
                     <span className="userIcon"></span>
                     <input name="camion" type="text" value={camion} onChange={(e) => { handleChangeCam(e) }} />
                   </div>
