@@ -10,6 +10,7 @@ import Concesionarios from "./pages/Concesionarios"
 import Excavadora from "./pages/Excavadora"
 import Volqueta from "./pages/Volqueta"
 import Camion_en_uso from "./pages/Camion_en_uso"
+import Compania from "./pages/Compania"
 
 
 function App() {
@@ -31,6 +32,8 @@ function App() {
           <Route path="/concesionarios" element={<Concesionarios/>} />
           <Route path="/volquetas/:id" element={<Volqueta/>} />
           <Route path="/camion-en-uso" element={<Camion_en_uso/>} />
+          <Route path="/compania" element={<Compania/>} />
+
         </Routes>
       </main>
     </BrowserRouter>

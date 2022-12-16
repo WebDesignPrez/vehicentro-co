@@ -37,9 +37,9 @@ export default function BannerContacto(){
 
   return (
     <>
-          <div className="boxesContact posRelative">
-              <p className="buttonContact" onClick={openModal}>QUIERO SER CONTACTADO AHORA</p>
-              <p className="textContact">Dejanos tus datos y uno de nuestros asesores se contactara contigo</p>
+          <div className="boxesContact posRelative fix">
+              <p className="buttonContact f" onClick={openModal}>QUIERO SER CONTACTADO AHORA</p>
+              <p className="textContact">Déjanos tus datos y uno de nuestros asesores se contactará contigo</p>
           </div>
         
       <Modal
