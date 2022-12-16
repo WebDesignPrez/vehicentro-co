@@ -342,7 +342,7 @@ export default function NavBarTop() {
                 </div>
             </li>
             <li>
-                <a href="/consesionarios" option="concesionarios">CONCESIONARIOS</a>
+                <a href="/concesionarios" option="concesionarios">CONCESIONARIOS</a>
                 <div className="item-level-3 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="3"></div>
