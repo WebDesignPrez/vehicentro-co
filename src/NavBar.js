@@ -273,7 +273,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
                         <span>SINOTRUK</span>
-                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
+                        <img className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -296,7 +296,7 @@ export default function NavBar() {
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-18-toneladas-t5g-1257">T5G 1167 / 18 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t5g-4187">T5G 1167 / 24 ton</NavLink></p>
-s
+
                         </div>
                         <div className="colMenu">
                             <p className="colTitle">Serie T7H</p>
@@ -316,9 +316,9 @@ s
                     <div className="rowMenu">
                         <div className="colMenu">
                             <p className="colTitle">Especiales</p>
+                            <p className="colItem meniu"><NavLink to="/">A7 1257 / Mixer</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t5g-280">Volqueta T5G 280-330 8-9m2</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t7h-430">Volqueta T5G 430-330 10-14m2</NavLink></p>
-                            <p className="colItem meniu"><NavLink to="/">A7 1257 / Mixer</NavLink></p>
                             <div>
                             </div>
                         </div>
@@ -331,15 +331,15 @@ s
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
                         <p>EXCAVADORA</p>
-                        <img src="../images/logo-sunward.webp" alt="sunward" />
+                        <img className="imgnMenu" src="../images/logo-sunward.webp" alt="sunward" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
                             <p className="colItem meniu"><NavLink to="/excavadoras/swe210">Excavadora SWE210</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/excavadoras/swe365e">Excavadora SWE365E</NavLink></p>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
             </li>
@@ -434,7 +434,7 @@ s
                 <a href="#">QUIERO COMUNICARME CON UN ASESOR</a>
             </li>
         </ul>
-    
+
 
         <img className="searchIcon" src="./images/search.png" />
     </nav>

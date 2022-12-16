@@ -416,6 +416,10 @@ ul.nav-links-h>li>a:hover,
     height: auto;
 }
 
+.imgnMenu{
+    max-width: 52px;
+}
+
 .footer .info .list {
     margin-top: 40px;
 }
