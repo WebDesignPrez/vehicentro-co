@@ -64,6 +64,10 @@
     text-align: center;
     padding: 8vh 30vw;
 }
+.boxesContact.fix{
+    
+    padding: 8vh 25vw;
+}
 
 .boxesContact .buttonContact{
     border-style: solid;
@@ -72,6 +76,10 @@
     padding: 15px;
     margin-bottom: 5%;
     font-size:25px;
+}
+
+.boxesContact .buttonContact.f{
+    margin: 0 6% 5% 6%;
 }
 
 .colMenu img{

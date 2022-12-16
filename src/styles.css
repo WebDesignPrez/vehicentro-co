@@ -412,7 +412,7 @@ ul.nav-links-h>li>a:hover,
 
 .footer .info img {
     margin-top: 15px;
-    width: 30%;
+    width: 50%;
     height: auto;
 }
 
@@ -710,6 +710,23 @@ ul.nav-links-h>li>a:hover,
     height: auto;
 }
 
+.boxesIniHeader .companiavehicentro {
+    width: 60%;
+    height: auto;
+}
+
+.companiatexto {
+    margin: 15% 0 15% 2%;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.textContact{
+    
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
 .boxesIniHeader {
     flex-direction: row;
     background-color: #000000;
@@ -722,6 +739,91 @@ ul.nav-links-h>li>a:hover,
 
 .boxesIniHeader.main {
     background-color: #0d0d0d;
+}
+
+.boxesIniHeader.main.compania {
+    background-color: #fbfbfb;
+}
+
+.boxesIniHeader.main.compania2 {
+    background-color: #373737;
+}
+
+.boxesIniHeader.main.compania2 .boxLeftHeader {
+    padding: 3% 2% 3% 8%;
+    display: inline-block;
+}
+
+.boxesIniHeader.main.compania2 .boxRightHeader {
+    padding: 3% 8% 3% 2%;
+    display: inline-block;
+}
+
+.boxesIniHeader.main.compania .boxLeftHeader {
+    padding: 3% 2% 3% 8%;
+    display: inline-block;
+}
+
+.boxesIniHeader.main.compania .boxRightHeader {
+    padding: 3% 8% 3% 2%;
+    display: inline-block;
+}
+
+.boxesIni.posRelative.news.compania {
+    background-color: #373737;
+    flex-wrap: wrap !important;
+    padding: 3% 8% 3% 8%;
+}
+
+.boxesIni.posRelative.news.compania.b{
+    background-color: #fbfbfb;
+}
+
+.boxesIni.posRelative.news.compania.c{
+    background-color: #f4f4f4;
+    
+}
+
+.boxNews.companiatext2 {
+    width: 100%;
+}
+
+.boxNews.companiaimg2 {
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.boxNews.companiaimg2.b {
+    width: 20%;
+}
+.boxNews.companiaimg2.c {
+    width: 50%;
+    flex-direction: column;
+}
+.boxNews.companiaimg2.c.d img {
+    max-width: 100%;
+}
+.boxNews.companiaimg2 img{
+    max-width: 60%;
+}
+
+.companiatexto2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    padding: 0 0 3% 0;
+}
+
+.companiatexto2.b{
+    color: #000;
+}
+
+.companiatexto2.c{
+    margin: 8% 0 0 0;
+    color: #000;
+    line-height: 45px;
 }
 
 .boxRightHeader.inside {

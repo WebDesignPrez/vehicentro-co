@@ -293,6 +293,7 @@ export default function NavBar() {
                             <p className="colItem meniu"><NavLink to="/camiones/camion-12-toneladas-t5g-1167">T5G 1167 / 12 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167">T5G 1167 / 13 ton (280hp)</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-13-toneladas-t5g-1167-330hp">T5G 1167 / 13 ton (330hp)</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">T5G 1167 / 18 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/camiones/camion-de-19-toneladas-t5g-1257">T5G 1167 / 19.5 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-t5g-4187">T5G 1167 / 24 ton</NavLink></p>
 
@@ -315,9 +316,9 @@ export default function NavBar() {
                     <div className="rowMenu">
                         <div className="colMenu">
                             <p className="colTitle">Especiales</p>
-                            <p className="colItem">Volqueta T5G 280-330 8-9m2</p>
-                            <p className="colItem">Volqueta T5G 430-330 10-14m2</p>
-                            <p className="colItem">A7 1257 / Mixer</p>
+                            <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t5g-280">Volqueta T5G 280-330 8-9m2</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t7h-430">Volqueta T5G 430-330 10-14m2</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/">A7 1257 / Mixer</NavLink></p>
                             <div>
                             </div>
                         </div>
@@ -330,12 +331,15 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
                         <p>EXCAVADORA</p>
-                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
+                        <img src="../images/logo-sunward.webp" alt="sunward" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
-                            <p className="colItem">Excavadora SWE210</p>
+                            <p className="colItem meniu"><NavLink to="/excavadoras/swe210">Excavadora SWE210</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/excavadoras/swe210">Excavadora SWE210</NavLink></p>
+                            
                         </div>
+                        
                     </div>
                 </div>
             </li>
@@ -345,7 +349,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="2"></div>
                         <p>KEYTON</p>
-                        <img src="../images/logoSinotruck.png" alt="Sinotruck" />
+                        <img src="../images/logo-keyton.webp" alt="Keyotn" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -355,7 +359,7 @@ export default function NavBar() {
                 </div>
             </li>
             <li>
-                <a href="#" option="concesionarios">CONCESIONARIOS</a>
+                <a href="/concesionarios" option="concesionarios">CONCESIONARIOS</a>
                 <div className="item-level-3 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="3"></div>
