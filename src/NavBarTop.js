@@ -321,7 +321,7 @@ export default function NavBarTop() {
                     <div className="rowMenu">
                         <div className="colMenu">
                             <p className="colItem meniu"><NavLink to="/excavadoras/swe210">Excavadora SWE210</NavLink></p>
-                            <p className="colItem meniu"><NavLink to="/excavadoras/swe210">Excavadora SWE210</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/excavadoras/swe365e">Excavadora SWE365E</NavLink></p>
                         </div>
                     </div>
                 </div>
