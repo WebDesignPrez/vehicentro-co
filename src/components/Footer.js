@@ -11,6 +11,7 @@ export default function Footer(){
                     <li><p>TECNOLOGÍA ALEMANA</p></li>
                 </ul>
                 <br />
+                <p className="title titleNumero"><a href="tel:032294740">032 994 740</a></p>
                 <p className="title titleContacto">CONTACTO DIRECTO</p>
                 <div className="social row">
                   <div className="flex-row imgMain">
@@ -48,10 +49,10 @@ export default function Footer(){
                 </ul>
             </div>
             <div className="col1 colTech">
-                <p className="title">TECNOLOGIA</p>
+                <p className="title">TECNOLOGÍA</p>
                 <ul className="list listNonTitle">
                     <li><p className="itemMenu">Componentes</p></li>
-                    <li><p className="itemMenu">Medicion de rendimiento</p></li>
+                    <li><p className="itemMenu">Medición de rendimiento</p></li>
                     
                 </ul>
             </div>

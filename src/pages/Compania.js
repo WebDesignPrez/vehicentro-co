@@ -20,7 +20,7 @@ function Compania() {
 
 function Content1() {
     return (
-        <div className="boxesIniHeader main compania">
+        <div className="boxesIniHeader main compania rep">
             <div className="boxLeftHeader">
                 <img src="./images/compania/conpania-vehicentro.webp" />
                 <p className="companiatexto">Empresa Ecuatoriana con 14 años de experiencia en el
