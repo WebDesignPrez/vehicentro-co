@@ -270,6 +270,7 @@ ul.nav-links-h>li>a:hover,
     padding-right: 1rem;
     padding-top: 1.7rem;
     padding-bottom: 1.65rem;
+    
 }
 
 
@@ -417,7 +418,7 @@ ul.nav-links-h>li>a:hover,
 }
 
 .imgnMenu {
-    max-width: 52px;
+    max-width: 85px;
     height: -webkit-fill-available;
 }
 
@@ -435,6 +436,15 @@ ul.nav-links-h>li>a:hover,
 .footer .info .titleNumero a{
     color: #fff;
     text-decoration: none;
+}
+
+.titleFooter a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titleFooter a:hover{
+    color: #f44331;
 }
 
 .footer .info .list p {

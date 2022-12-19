@@ -5,8 +5,8 @@ export default function Footer(){
             <div className="info">
             <img src="../images/vehicentro-logo-blanco.png" width="230" height="80" />
                  <ul className="list">
-                    <li><p>NOSOTROS</p></li>
-                    <li><p>CONCESIONARIOS</p></li>
+                    <li><p className="titleFooter"><a href="/compania">NOSOTROS</a></p></li>
+                    <li><p className="titleFooter"><a href="/concesionarios">CONCESIONARIOS</a></p></li>
                     <li><p>VEHINSTEIN</p></li>
                     <li><p>TECNOLOGÍA ALEMANA</p></li>
                 </ul>

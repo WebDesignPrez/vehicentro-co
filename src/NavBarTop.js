@@ -257,7 +257,7 @@ export default function NavBarTop() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <p>SINOTRUK</p>
+                        <p>SINOTRUK</p> 
                         <img  className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
@@ -401,7 +401,7 @@ export default function NavBarTop() {
                 </div>
             </li>
             <li className="item-level-6">
-                <a href="#">COMPAÑIA</a>
+                <a href="/compania">COMPAÑIA</a>
                 <div className="item-level-6 nav-header nav-header-h" >
 
                 </div>
@@ -427,7 +427,7 @@ export default function NavBarTop() {
             <li><NavLink to="/sinotruk">KEYTON</NavLink></li>
             <li className="concesionariosCss"><NavLink to="/concesionarios">CONCESIONARIOS</NavLink></li>
             <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
-            <li className="companiaCss"><NavLink to="/sinotruk">COMPAÑIA</NavLink></li>
+            <li className="companiaCss"><NavLink to="/compania">COMPAÑIA</NavLink></li>
             <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
         </ul>
         <div className="navSearch">
