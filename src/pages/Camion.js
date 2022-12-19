@@ -7,8 +7,11 @@ import { useParams } from "react-router";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../slider.css';
-import { useEffect } from "react";
-import { nodeName } from "jquery";
+import { useEffect, useState } from "react";
+import Modal from 'react-modal';
+import '../modalContact.css';
+import FormContactFicha from "../components/FormContactFicha";
+
 
 let imagen
 let images
@@ -41,6 +44,31 @@ let camionSerie
 
 
 function Camion() {
+    Modal.setAppElement('#root');
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    const customStyles = {
+        content: {
+          top: '5%',
+          left: '50%',
+          right: 'auto',
+          bottom: 'auto',
+          marginRight: '-50%',
+          transform: 'translate(-50%, -0%)',
+          
+        },
+      };
+
+      function openModal() {
+        setIsOpen(true);
+      }
+      
+      function closeModal() {
+        setIsOpen(false);
+      }
+    
+      function afterOpenModal() {
+      }
 
     //Comparacion paginas
     switch ((useParams("id").id)) {
@@ -889,11 +917,11 @@ function Camion() {
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
-                    <div className="flex-row textoMotor1">{textoMotor1}</div>
-                    <div className="flex-row textoMotor2">{textoMotor2}</div>
-                    <div className="flex-row textoMotor3">{textoMotor3}</div>
-                    <div className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
-                    <div className="flex-row textoMotor4">Escucha tu motor</div>
+                    <div onClick={openModal} className="flex-row textoMotor1">{textoMotor1}</div>
+                    <div onClick={openModal} className="flex-row textoMotor2">{textoMotor2}</div>
+                    <div onClick={openModal} className="flex-row textoMotor3">{textoMotor3}</div>
+                    <div onClick={openModal} className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
+                    <div onClick={openModal} className="flex-row textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
                     <audio id="audioMotor" controls  type="audio/mpeg"></audio>
@@ -901,6 +929,7 @@ function Camion() {
             </div>
 
         </div>
+
         <div className="contentProduct">
 
             <div className="marcasbg textoImagenesProducto" >
@@ -988,6 +1017,17 @@ function Camion() {
         </div>
         <BannerContacto />
         <Footer />
+        <Modal
+          isOpen={modalIsOpen}
+          onAfterOpen={afterOpenModal}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Formulario de contacto"
+      >
+          
+        
+          <FormContactFicha />
+      </Modal>
     </>
 }
 

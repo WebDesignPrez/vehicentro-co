@@ -57,3 +57,7 @@
     content: url(../public/images/call.png);
     margin-left: 10px;
   }
+
+  .ReactModal__Overlay--after-open{
+    position: static !important;
+  }

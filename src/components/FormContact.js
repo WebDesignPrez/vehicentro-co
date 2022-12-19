@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import "../form.css";
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
-import { useParams } from "react-router";
 
 function FormContact(props) {
 
@@ -192,7 +191,7 @@ function FormContact(props) {
               <h5 className="form-step"> ¿Necesitas información? </h5>
               <form action={url} method="post" onSubmit={(ev) => handleSumbit(ev)}>
                 <div className="field1">
-                  <label> Cotizador Sinutruck Modelo T5G-1167 </label>
+                  <label> Cotizador Sinutruck Modelo {listCamion} </label>
 
                   <label className="input_title">*Nombre y Apellido</label>
                   <div className="input-group">
@@ -275,9 +274,10 @@ function FormContact(props) {
                   <input name="redirect_url" value="https://vehicentro.com/gracias-por-contactarnos-sobre-camiones/" type="hidden" />
                 </div>
                 <button className="nextBtn" type="submit"> Cotizar </button>
+                <NotificationContainer />
               </form>
             </div>
-          <NotificationContainer />
+          
         </div>
 }
 
