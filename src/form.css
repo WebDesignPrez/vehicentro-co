@@ -153,3 +153,8 @@ input[type=text] {
 .ReactModalPortal > div{
     z-index: 5;
 }
+
+
+.form-box .formCol{
+    display: flex;
+}

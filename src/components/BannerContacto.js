@@ -41,8 +41,7 @@ export default function BannerContacto(){
     }
   
     function afterOpenModal() {
-      // references are now sync'd and can be accessed.
-     // subtitle.style.color = '#f00';
+     
     }
   
     function closeModal() {
