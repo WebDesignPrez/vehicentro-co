@@ -1,25 +1,15 @@
 import { useState, useEffect } from "react";
-import FormContact from "./FormContact";
-import Modal from 'react-modal';
 import '../modalContact.css';
 import FormContactFicha from "./FormContactFicha";
 
-export default function BannerContacto(){
+export default function BannerContacto(props){
+  let url = props.url
+  let nomCamion = props.camion
+  let listSerie = (props.serie=="")?'':props.serie
+  let listCamion = (props.camionSerie=="")?'':props.camionSerie
  
   const [modalContactIsOpen, setContactIsOpen] = useState(false);
   const [modalFormIsOpen, setFormIsOpen] = useState(false);
-
-  const customStyles = {
-      content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-        
-      },
-    };
 
     useEffect(() => {
       const keyDownHandler = event => {
@@ -86,7 +76,7 @@ export default function BannerContacto(){
           }
         
         {modalFormIsOpen &&
-            <FormContactFicha />
+            <FormContactFicha url={url} camion={nomCamion} serie={listSerie} camionSerie={listCamion} />
         }
     </>
 
