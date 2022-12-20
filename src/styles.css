@@ -270,6 +270,7 @@ ul.nav-links-h>li>a:hover,
     padding-right: 1rem;
     padding-top: 1.7rem;
     padding-bottom: 1.65rem;
+    
 }
 
 
@@ -416,8 +417,9 @@ ul.nav-links-h>li>a:hover,
     height: auto;
 }
 
-.imgnMenu{
-    max-width: 52px;
+.imgnMenu {
+    max-width: 100px;
+    height: -webkit-fill-available;
 }
 
 .footer .info .list {
@@ -425,7 +427,24 @@ ul.nav-links-h>li>a:hover,
 }
 
 .footer .info .titleContacto {
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+.footer .info .titleNumero {
+    margin-top: 20px;
+}
+.footer .info .titleNumero a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titleFooter a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titleFooter a:hover{
+    color: #f44331;
 }
 
 .footer .info .list p {
@@ -721,12 +740,19 @@ ul.nav-links-h>li>a:hover,
 
 .companiatexto {
     margin: 15% 0 15% 2%;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 25px;
 }
 
-.textContact{
-    
+.repuestotexto {
+    margin: 5% 0 5% 0%;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.textContact {
+
     font-size: 19px;
     letter-spacing: 1px;
 }
@@ -747,6 +773,11 @@ ul.nav-links-h>li>a:hover,
 
 .boxesIniHeader.main.compania {
     background-color: #fbfbfb;
+}
+
+.boxesIniHeader.main.compania.rep {
+    background: rgb(239, 239, 239);
+    background: linear-gradient(0deg, rgba(239, 239, 239, 1) 25%, rgba(251, 251, 251, 1) 25%);
 }
 
 .boxesIniHeader.main.compania2 {
@@ -779,13 +810,29 @@ ul.nav-links-h>li>a:hover,
     padding: 3% 8% 3% 8%;
 }
 
-.boxesIni.posRelative.news.compania.b{
+.boxesIni.posRelative.news.repuesto {
+    background-color: #efefef;
+    flex-wrap: wrap !important;
+    padding: 3% 8% 3% 8%;
+}
+
+.boxesIni.posRelative.news.trabajanosotros {
+    background-color: #efefef;
+    flex-wrap: wrap !important;
+}
+
+.boxesIni.posRelative.news.repuesto.grad {
+    background: rgb(251,251,251);
+    background: linear-gradient(0deg, rgba(251,251,251,1) 75%, rgba(239,239,239,1) 75%);
+}
+
+.boxesIni.posRelative.news.compania.b {
     background-color: #fbfbfb;
 }
 
-.boxesIni.posRelative.news.compania.c{
+.boxesIni.posRelative.news.compania.c {
     background-color: #f4f4f4;
-    
+
 }
 
 .boxNews.companiatext2 {
@@ -798,17 +845,21 @@ ul.nav-links-h>li>a:hover,
     align-items: center;
     display: flex;
 }
+
 .boxNews.companiaimg2.b {
     width: 20%;
 }
+
 .boxNews.companiaimg2.c {
     width: 50%;
     flex-direction: column;
 }
+
 .boxNews.companiaimg2.c.d img {
     max-width: 100%;
 }
-.boxNews.companiaimg2 img{
+
+.boxNews.companiaimg2 img {
     max-width: 60%;
 }
 
@@ -820,11 +871,11 @@ ul.nav-links-h>li>a:hover,
     padding: 0 0 3% 0;
 }
 
-.companiatexto2.b{
+.companiatexto2.b {
     color: #000;
 }
 
-.companiatexto2.c{
+.companiatexto2.c {
     margin: 8% 0 0 0;
     color: #000;
     line-height: 45px;
@@ -1050,7 +1101,7 @@ ul.nav-links-h>li>a:hover,
 }
 
 .cuotas {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .videoWidth {

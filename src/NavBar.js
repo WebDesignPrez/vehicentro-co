@@ -272,7 +272,7 @@ export default function NavBar() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <span>SINOTRUK</span>
+                        <p>CAMIONES</p>
                         <img className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
@@ -330,7 +330,7 @@ export default function NavBar() {
                 <div className="item-level-1 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
-                        <p>EXCAVADORA</p>
+                        <p>EXCAVADORAS</p>
                         <img className="imgnMenu" src="../images/logo-sunward.webp" alt="sunward" />
                     </div>
                     <div className="rowMenu">
@@ -418,7 +418,7 @@ export default function NavBar() {
                 </div>
             </li>
             <li className="item-level-6">
-                <a href="#">COMPAÑIA</a>
+                <a href="/compania">COMPAÑIA</a>
                 <div className="item-level-6 nav-header nav-header-h" >
 
                 </div>

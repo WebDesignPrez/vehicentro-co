@@ -1,5 +1,5 @@
 import Inicio from "./pages/Inicio"
-import Nosotros from "./pages/Nosotros"
+import Repuestos from "./pages/Repuestos"
 import Producto from "./pages/Producto"
 import {Route, Routes, BrowserRouter} from "react-router-dom"
 import Tecnologia from "./pages/Tecnologia"
@@ -11,6 +11,7 @@ import Excavadora from "./pages/Excavadora"
 import Volqueta from "./pages/Volqueta"
 import Camion_en_uso from "./pages/Camion_en_uso"
 import Compania from "./pages/Compania"
+import Trabaja_con_nosotros from "./pages/Trabaja_con_nosotros"
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Inicio/>} />
-          <Route path="/nosotros" element={<Nosotros/>} />
+          <Route path="/repuestos" element={<Repuestos/>} />
           <Route path="/producto" element={<Producto name="Camion_10_toneladas"/>}  />
           <Route path="/camiones/:id" element={<Camion/>} />
           <Route path="/cabezales/:id" element={<Cabezal/>} />
@@ -33,6 +34,7 @@ function App() {
           <Route path="/volquetas/:id" element={<Volqueta/>} />
           <Route path="/camion-en-uso" element={<Camion_en_uso/>} />
           <Route path="/compania" element={<Compania/>} />
+          <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros/>} />
 
         </Routes>
       </main>
