@@ -1,7 +1,7 @@
 import $ from "jquery";
 import { useState, useEffect } from 'react';
 import "../form.css";
-import { NotificationContainer, NotificationManager } from 'react-notifications';
+import { NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 
 function FormContactFicha(props) {
@@ -184,9 +184,7 @@ function FormContactFicha(props) {
     options = type.map((el) => <option key={el}>{el}</option>);
   }
 
-
-
-  return <div>
+  return <div className="modalForm">
             <div className="form-box">
               <h5 className="form-step"> ¿Necesitas información? </h5>
               <form action={url} method="post" onSubmit={(ev) => handleSumbit(ev)}>
@@ -274,7 +272,7 @@ function FormContactFicha(props) {
                   <input name="redirect_url" value="https://vehicentro.com/gracias-por-contactarnos-sobre-camiones/" type="hidden" />
                 </div>
                 <button className="nextBtn" type="submit"> Cotizar </button>
-                <NotificationContainer />
+
               </form>
             </div>
           

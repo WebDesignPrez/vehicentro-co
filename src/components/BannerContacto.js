@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import FormContact from "./FormContact";
 import Modal from 'react-modal';
 import '../modalContact.css';
+import FormContactFicha from "./FormContactFicha";
 
 export default function BannerContacto(){
-
-  Modal.setAppElement('#root');
-  const [modalIsOpen, setIsOpen] = useState(false);
+ 
   const [modalContactIsOpen, setContactIsOpen] = useState(false);
+  const [modalFormIsOpen, setFormIsOpen] = useState(false);
 
   const customStyles = {
       content: {
@@ -26,6 +26,7 @@ export default function BannerContacto(){
         if (event.key === 'Escape') {
           event.preventDefault();
           closeContact()
+          closeFormContact()
         }
       };
   
@@ -35,17 +36,17 @@ export default function BannerContacto(){
       };
     }, []);
 
-  function openModal() {
-      setIsOpen(true);
+    function openModal() {
+      openFormContact();
       closeContact()
     }
-  
-    function afterOpenModal() {
-     
+
+    function openFormContact(){
+      setFormIsOpen(true)
     }
   
-    function closeModal() {
-      setIsOpen(false);
+    function closeFormContact(){
+      setFormIsOpen(false)
     }
 
     function openContact(){
@@ -82,19 +83,11 @@ export default function BannerContacto(){
               <div className="btnModalContact" onClick={openModal}><span>DEJANOS TUS DATOS</span></div>
             </div>
           </div>
-}
+          }
         
-      <Modal
-          isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Formulario de contacto"
-      >
-          
-        
-          <FormContact />
-      </Modal>
+        {modalFormIsOpen &&
+            <FormContactFicha />
+        }
     </>
 
 )

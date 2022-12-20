@@ -42,33 +42,31 @@ let bdc
 let nombreSerie
 let camionSerie
 
-
 function Camion() {
-    Modal.setAppElement('#root');
-    const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalFormIsOpen, setFormIsOpen] = useState(false);
 
-    const customStyles = {
-        content: {
-          top: '5%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -0%)',
-          
-        },
-      };
-
-      function openModal() {
-        setIsOpen(true);
-      }
-      
-      function closeModal() {
-        setIsOpen(false);
-      }
+    useEffect(() => {
+        const keyDownHandler = event => {
+          if (event.key === 'Escape') {
+            event.preventDefault();
+            closeFormContact()
+          }
+        };
     
-      function afterOpenModal() {
-      }
+        document.addEventListener('keydown', keyDownHandler);
+        return () => {
+          document.removeEventListener('keydown', keyDownHandler);
+        };
+      }, []);
+
+
+    function openFormContact(){
+        setFormIsOpen(true)
+    }
+    
+    function closeFormContact(){
+        setFormIsOpen(false)
+    }
 
     //Comparacion paginas
     switch ((useParams("id").id)) {
@@ -871,6 +869,7 @@ function Camion() {
 
 
     useEffect(() => {
+        
         const motorPlayer = document.getElementById('audioMotor')
         motorPlayer.src = audio_motor
     })
@@ -917,11 +916,11 @@ function Camion() {
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
-                    <div onClick={openModal} className="flex-row textoMotor1">{textoMotor1}</div>
-                    <div onClick={openModal} className="flex-row textoMotor2">{textoMotor2}</div>
-                    <div onClick={openModal} className="flex-row textoMotor3">{textoMotor3}</div>
-                    <div onClick={openModal} className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
-                    <div onClick={openModal} className="flex-row textoMotor4">Escucha tu motor</div>
+                    <div onClick={openFormContact} className="flex-row textoMotor1">{textoMotor1}</div>
+                    <div onClick={openFormContact} className="flex-row textoMotor2">{textoMotor2}</div>
+                    <div onClick={openFormContact} className="flex-row textoMotor3">{textoMotor3}</div>
+                    <div onClick={openFormContact} className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
+                    <div onClick={openFormContact} className="flex-row textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
                     <audio id="audioMotor" controls  type="audio/mpeg"></audio>
@@ -1017,17 +1016,10 @@ function Camion() {
         </div>
         <BannerContacto />
         <Footer />
-        <Modal
-          isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Formulario de contacto"
-      >
-          
-        
-          <FormContactFicha />
-      </Modal>
+
+        {modalFormIsOpen &&
+            <FormContactFicha />
+        }
     </>
 }
 

@@ -46,18 +46,34 @@
 
 .btnModalContact span.wa::after {
     position: absolute;
-    top:5px;
+    top:12px;
     content: url(../public/images/wasap.png);
     margin-left: 10px;
   }
 
   .btnModalContact span.ca::after {
     position: absolute;
-    top:5px;
+    top:12px;
     content: url(../public/images/call.png);
     margin-left: 10px;
   }
 
   .ReactModal__Overlay--after-open{
     position: static !important;
+  }
+
+
+  .modalForm{
+    width: 50vw;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 5;
+    border-radius: 15px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 3%;
+    overflow-y: scroll;
   }
