@@ -38,6 +38,7 @@ let nombreCamion
 let bdc
 let camionSerie
 let nombreSerie
+let cuotas
 
 
 function Camion() {
@@ -49,7 +50,7 @@ function Camion() {
         case "cabezal-t5g-4187":
             console.log('24 ton')
             nombreCamion = "Camion de 24 toneladas | T5G-4187"
-            camionSerie = "T5G 1167 / 19.5 TON"
+            camionSerie = "T5G 1167 / 24 TON"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
@@ -61,6 +62,7 @@ function Camion() {
             textoMotor2 = "Modelo T5G-4287"
             textoMotor3 = "Ficha técnica"
             precio = "$61.990"
+            cuotas = 'Cuotas desde: $1.117,00'
             motor = "../images/24-toneladas/motor-sinotruk-de-camion-de-24-toneladas-ecuador.webp"
             garantia = "../images/24-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/24-toneladas/tecnologia-alemana.webp"
@@ -116,6 +118,7 @@ function Camion() {
             textoMotor2 = "Modelo T7H-390"
             textoMotor3 = "Ficha técnica"
             precio = "$69.990"
+            cuotas = 'Cuotas desde: $1.258,00'
             motor = "../images/28-toneladas/motor-sinotruk-de-camion-de-28-toneladas-ecuador.webp"
             garantia = "../images/28-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/28-toneladas/tecnologia-alemana.webp"
@@ -168,6 +171,7 @@ function Camion() {
             textoMotor2 = "Modelo T7H-390"
             textoMotor3 = "Ficha técnica"
             precio = "$81.990"
+            cuotas = 'Cuotas desde: $1.469,00'
             motor = "../images/42-toneladas/motor-sinotruk-de-camion-de-42-toneladas-ecuador.webp"
             garantia = "../images/42-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/42-toneladas/tecnologia-alemana.webp"
@@ -220,6 +224,7 @@ function Camion() {
             textoMotor2 = "Modelo T7H-430"
             textoMotor3 = "Ficha técnica"
             precio = "$89.990"
+            cuotas = 'Cuotas desde: $1.610,00'
             motor = "../images/45-toneladas/motor-sinotruk-de-camion-de-45-toneladas-ecuador.webp"
             garantia = "../images/45-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/45-toneladas/tecnologia-alemana.webp"
@@ -272,6 +277,7 @@ function Camion() {
             textoMotor2 = "Modelo C7H-540"
             textoMotor3 = "Ficha técnica"
             precio = "102.990"
+            cuotas = 'Cuotas desde: $1.840,00'
             motor = "../images/48-toneladas/motor-sinotruk-de-camion-de-48-toneladas-ecuador.webp"
             garantia = "../images/48-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/48-toneladas/tecnologia-alemana.webp"
@@ -326,6 +332,7 @@ function Camion() {
             textoMotor2 = "Modelo C7H-540"
             textoMotor3 = "Ficha técnica"
             precio = "106.990"
+            cuotas = 'Cuotas desde: $1.910,00'
             motor = "../images/48-toneladas-catalinas/motor-sinotruk-de-camion-de-48-toneladas-ecuador.webp"
             garantia = "../images/48-toneladas-catalinas/5-anos-de-garantia.webp"
             tecnologia = "../images/48-toneladas-catalinas/tecnologia-alemana.webp"
@@ -372,89 +379,38 @@ function Camion() {
 
 
 
-     
 
-  switch ((useParams("id").id)) {
-    case "camion-10-toneladas-t5g-1167":
-      imagen = "../images/10-toneladas/camion-de-10-toneladas-en-la-carretera-sinotruk.webp"
-      break;
 
-    case "camion-de-9-toneladas":
-      imagen = "../images/9-toneladas/camion-de-9-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+    switch ((useParams("id").id)) {
 
-    case "camion-12-toneladas-t5g-1167":
-      imagen = "../images/12-toneladas/camion-de-12-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-t5g-4187":
+            imagen = "../images/24-toneladas/camion-de-24-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-13-toneladas-t5g-1167":
-      imagen = "../images/13-toneladas/camion-de-13-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-t7h-390-28-toneladas":
+            imagen = "../images/28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-13-toneladas-t5g-1167-330hp":
-      imagen = "../images/13-toneladas-330/camion-de-13-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-t7h-390-42-toneladas":
+            imagen = "../images/42-toneladas/camion-de-42-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-de-19-toneladas-t5g-1257":
-      imagen = "../images/19-toneladas/camion-de-19-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-t7h-430-45-toneladas":
+            imagen = "../images/45-toneladas/camion-de-45-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-de-3-5-toneladas-1057":
-      imagen = "../images/3.5-toneladas/camion-de-3.5-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-c7h-540":
+            imagen = "../images/48-toneladas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-de-5-toneladas-1067":
-      imagen = "../images/5-toneladas/camion-de-5-toneladas-en-la-carretera-sinotruk.webp"
-      break;
+        case "cabezal-c7h-540-catalinas-48-toneladas":
+            imagen = "../images/48-toneladas-catalinas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
+            break;
 
-    case "camion-de-6-toneladas-1067":
-      imagen = "../images/6-toneladas/camion-de-6-toneladas-en-la-carretera-sinotruk.webp"
-      break;
 
-    case "camion-8-toneladas-1147":
-      imagen = "../images/8-toneladas/camion-de-8-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "camion-20-toneladas-1256":
-      imagen = "../images/20-toneladas/camion-de-20-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-t5g-4187":
-      imagen = "../images/24-toneladas/camion-de-24-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-t7h-390-28-toneladas":
-      imagen = "../images/28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-t7h-390-42-toneladas":
-      imagen = "../images/42-toneladas/camion-de-42-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-t7h-430-45-toneladas":
-      imagen = "../images/45-toneladas/camion-de-45-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-c7h-540":
-      imagen = "../images/48-toneladas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "cabezal-c7h-540-catalinas-48-toneladas":
-      imagen = "../images/48-toneladas-catalinas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    case "swe210":
-      imagen = "../images/swe210/excavadora-en-carretera-vehicentro-ecuador.webp"
-      break;
-
-      
-    case "camion-de-18-toneladas-t5g-1257":
-      imagen = "../images/18-toneladas/camion-de-18-toneladas-en-la-carretera-sinotruk.webp"
-      break;
-
-    default:
-      break;
-  }
+        default:
+            break;
+    }
 
 
     useEffect(() => {
@@ -523,6 +479,7 @@ function Camion() {
                 <div className="boxRightHeader  half text_icon_left" >
                     <p className='vidaUtil'>DESDE</p>
                     <p className='precioCamiones' >{precio}</p>
+                    <p className='cuotas'>{cuotas}</p>
                 </div>
 
                 <div className="boxRightHeader  half icon_center" >
@@ -590,7 +547,14 @@ function Camion() {
             <div className="bannerMedidas noResponsive"><img src={medidas} /></div>
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
-        <FormContact url={bdc} camion={nombreCamion} />
+        <div className="boxesIni posRelative">
+            <div >
+                <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+            </div>
+            <div>
+                <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+            </div>
+        </div>
         <BannerContacto />
         <Footer />
     </>

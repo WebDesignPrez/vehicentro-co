@@ -257,7 +257,7 @@ export default function NavBarTop() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <p>SINOTRUK</p> 
+                        <p>CAMIONES</p> 
                         <img  className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
@@ -292,7 +292,7 @@ export default function NavBarTop() {
                         <div className="colMenu">
                             <p className="colTitle">Serie C7H</p>
 
-                            <p className="colItem meniu"><NavLink to="/camion/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/camiones/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
 
@@ -315,7 +315,7 @@ export default function NavBarTop() {
                 <div className="item-level-1 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
-                        <p>EXCAVADORA</p>
+                        <p>EXCAVADORAS</p>
                         <img className="imgnMenu" src="../images/logo-sunward.webp" alt="sunward" />
                     </div>
                     <div className="rowMenu">

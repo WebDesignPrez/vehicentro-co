@@ -373,8 +373,14 @@ function Camion() {
 
 
             </div>
+        </div>        <div className="boxesIni posRelative">
+            <div >
+                <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+            </div>
+            <div>
+                <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+            </div>
         </div>
-        <FormContact url={bdc} camion={nombreCamion} />
         <BannerContacto />
         <Footer />
     </>
