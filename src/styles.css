@@ -432,10 +432,16 @@ ul.nav-links-h>li>a:hover,
 
 .footer .info .titleNumero {
     margin-top: 20px;
+    font-size: 22px;
 }
+
 .footer .info .titleNumero a{
     color: #fff;
     text-decoration: none;
+}
+
+.footer .info .titleNumero a:hover{
+    color: #f44331;
 }
 
 .titleFooter a{

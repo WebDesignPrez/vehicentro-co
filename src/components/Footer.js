@@ -7,7 +7,7 @@ export default function Footer(){
                  <ul className="list">
                     <li><p className="titleFooter"><a href="/compania">NOSOTROS</a></p></li>
                     <li><p className="titleFooter"><a href="/concesionarios">CONCESIONARIOS</a></p></li>
-                    <li><p>VEHINSTEIN</p></li>
+                    <li><p>VEINSTEIN</p></li>
                     <li><p>TECNOLOGÍA ALEMANA</p></li>
                 </ul>
                 <br />
@@ -36,7 +36,8 @@ export default function Footer(){
                 </ul>
                 <ul className="list">
                     <li><p className="subTitle">SUNWARD</p></li>
-                    <li><p className="itemMenu">Excabadora SWE210</p></li>
+                    <li><p  className="titleFooter"><a href="/excavadoras/swe210">Excabadora SWE210</a></p></li>
+                    <li><p  className="titleFooter"><a href="/excavadoras/swe365e">Excabadora SWE365E</a></p></li>
                 </ul>
                 
             </div>
@@ -46,6 +47,7 @@ export default function Footer(){
                     <li><p className="itemMenu">Talleres</p></li>
                     <li><p className="itemMenu">Repuestos</p></li>
                     <li><p className="itemMenu">Manteniento</p></li>
+                    <li><p className="itemMenu">Garantia</p></li>
                 </ul>
             </div>
             <div className="col1 colTech">
