@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 export default function NavBar() {
     var auxMovil = 0;
+    
     useEffect(() => {
         const navSlideClickH = () => {
             const burger = document.querySelector(".burger");
@@ -96,7 +97,7 @@ export default function NavBar() {
 
         }
 
-        const resetMenu = () => {
+        const resetMenu = () => { 
             document.querySelector(".item-level-0").classList.remove("nav-header-h")
             document.querySelector(".item-level-0").classList.add("nav-header-s")
             document.querySelector(".item-level-1").classList.remove("nav-header-s")
@@ -107,6 +108,11 @@ export default function NavBar() {
 
         const navSlide = () => {
             const burger = document.querySelector(".burger");
+            const sinotruk = document.querySelector(".sinotruk");
+            const sunward = document.querySelector(".sunward");
+            const keyton = document.querySelector(".keyton");
+            const concesionarios = document.querySelector(".concesionarios");
+
             const nav = document.querySelector(".nav-links");
             const navh = document.querySelector(".nav-links-h");
 
@@ -140,7 +146,114 @@ export default function NavBar() {
                     document.querySelector(".menu1").classList.remove("logob")
                 }
             });
+            sinotruk.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navSearch[0].classList.toggle("nav-search-active");
 
+                document.querySelector('nav > .logo').classList.toggle("logoNav");
+                navh.classList.toggle("nav-inactive");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+                    }
+                });
+
+                document.querySelector(".menu1").classList.add("logob")
+
+                if (auxMovil == 0)
+                    resetMenu();
+
+                burger.classList.toggle("toggle");
+                if (burger.classList.contains('toggle')) {
+
+                } else {
+                    document.querySelector(".menu1").classList.remove("logob")
+                }
+            });
+            sunward.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navSearch[0].classList.toggle("nav-search-active");
+
+                document.querySelector('nav > .logo').classList.toggle("logoNav");
+                navh.classList.toggle("nav-inactive");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+                    }
+                });
+
+                document.querySelector(".menu1").classList.add("logob")
+
+                if (auxMovil == 0)
+                    resetMenu();
+
+                burger.classList.toggle("toggle");
+                if (burger.classList.contains('toggle')) {
+
+                } else {
+                    document.querySelector(".menu1").classList.remove("logob")
+                }
+            });
+            keyton.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navSearch[0].classList.toggle("nav-search-active");
+
+                document.querySelector('nav > .logo').classList.toggle("logoNav");
+                navh.classList.toggle("nav-inactive");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+                    }
+                });
+
+                document.querySelector(".menu1").classList.add("logob")
+
+                if (auxMovil == 0)
+                    resetMenu();
+
+                burger.classList.toggle("toggle");
+                if (burger.classList.contains('toggle')) {
+
+                } else {
+                    document.querySelector(".menu1").classList.remove("logob")
+                }
+            });
+            concesionarios.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navSearch[0].classList.toggle("nav-search-active");
+
+                document.querySelector('nav > .logo').classList.toggle("logoNav");
+                navh.classList.toggle("nav-inactive");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+                    }
+                });
+
+                document.querySelector(".menu1").classList.add("logob")
+
+                if (auxMovil == 0)
+                    resetMenu();
+
+                burger.classList.toggle("toggle");
+                if (burger.classList.contains('toggle')) {
+
+                } else {
+                    document.querySelector(".menu1").classList.remove("logob")
+                }
+            });
             //INI PARAMS
 
 
@@ -253,7 +366,7 @@ export default function NavBar() {
 
     });
 
-    return <nav className="menu1">
+    return <nav className="menu1 internal">
         <div className="burger">
             <div className="line1"></div>
             <div className="line2"></div>
@@ -438,4 +551,4 @@ export default function NavBar() {
 
         <img className="searchIcon" src="./images/search.png" />
     </nav>
-}
+} 

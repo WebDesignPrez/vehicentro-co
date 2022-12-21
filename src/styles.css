@@ -270,7 +270,7 @@ ul.nav-links-h>li>a:hover,
     padding-right: 1rem;
     padding-top: 1.7rem;
     padding-bottom: 1.65rem;
-    
+
 }
 
 
@@ -435,21 +435,21 @@ ul.nav-links-h>li>a:hover,
     font-size: 22px;
 }
 
-.footer .info .titleNumero a{
+.footer .info .titleNumero a {
     color: #fff;
     text-decoration: none;
 }
 
-.footer .info .titleNumero a:hover{
+.footer .info .titleNumero a:hover {
     color: #f44331;
 }
 
-.titleFooter a{
+.titleFooter a {
     color: #fff;
     text-decoration: none;
 }
 
-.titleFooter a:hover{
+.titleFooter a:hover {
     color: #f44331;
 }
 
@@ -828,8 +828,8 @@ ul.nav-links-h>li>a:hover,
 }
 
 .boxesIni.posRelative.news.repuesto.grad {
-    background: rgb(251,251,251);
-    background: linear-gradient(0deg, rgba(251,251,251,1) 75%, rgba(239,239,239,1) 75%);
+    background: rgb(251, 251, 251);
+    background: linear-gradient(0deg, rgba(251, 251, 251, 1) 75%, rgba(239, 239, 239, 1) 75%);
 }
 
 .boxesIni.posRelative.news.compania.b {
@@ -1206,4 +1206,19 @@ ul.nav-links-h>li>a:hover,
 
 .fondonegro {
     background-color: #0d0d0d;
+}
+
+.mouseA {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 5px;
+    font-size: 15px;
+}
+
+li.mouseA:hover {
+    color: #f44331;
+    border-bottom-color: #f44331;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
 }

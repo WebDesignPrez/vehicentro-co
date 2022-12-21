@@ -65,13 +65,13 @@ function Menu2() {
         <nav className="menu2">
             <ul className="nav-links-h">
                 <li><NavLink to="/">INICIO</NavLink></li>
-                <li><NavLink to="/producto" option="sinotruk">SINOTRUK</NavLink></li>
-                <li><NavLink to="/sunward" option="sunward">SUNWARD</NavLink></li>
-                <li><NavLink to="/keyton" option="keyton">KEYTON</NavLink></li>
-                <li className="concesionariosCss"><NavLink to="/concesionarios" option="concesionarios">CONCESIONARIOS</NavLink></li>
-                <li className="camionesCss"><NavLink to="/camiones">CAMIONES EN USO</NavLink></li>
-                <li className="companiaCss"><NavLink to="/nosotros">COMPAÑIA</NavLink></li>
-                <li className="tecnologiaCss"><NavLink to="/tecnologia">TECNOLOGIA</NavLink></li>
+                <li ><a className="sinotruk mouseA" option="sinotruk">SINOTRUK</a></li>
+                <li ><a className="sunward mouseA" option="sunward">SUNWARD</a></li>
+                <li ><a className="keyton mouseA" option="keyton">KEYTON</a></li>
+                <li ><a className="concesionarios mouseA" option="concesionarios">CONCESIONARIOS</a></li>
+                <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
+                <li className="companiaCss"><NavLink to="/compania">COMPAÑIA</NavLink></li>
+                <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
             </ul>
         </nav>
     )

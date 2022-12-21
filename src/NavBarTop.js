@@ -2,6 +2,7 @@ import './styles.css';
 import './responsive.css'
 import { NavLink } from "react-router-dom"
 import { useEffect } from "react";
+
 export default function NavBarTop() {
     var auxMovil = 0;
 
@@ -9,8 +10,8 @@ export default function NavBarTop() {
         const navSlideClickH = () => {
             const burger = document.querySelector(".burger");
             const navLinks = document.querySelectorAll(".nav-links-h a");
-
             const navLinksIn = document.querySelectorAll(".rowMenu .colItem");
+
             navLinksIn.forEach((link, index) => {
                 link.addEventListener("click", (ev) => {
                     burger.click()
@@ -114,19 +115,24 @@ export default function NavBarTop() {
 
         const navSlide = () => {
             const burger = document.querySelector(".burger");
+            const sinotruk = document.querySelector(".sinotruk");
+            const sunward = document.querySelector(".sunward");
+            const keyton = document.querySelector(".keyton");
+            const concesionarios = document.querySelector(".concesionarios");
+
             const nav = document.querySelector(".nav-links");
             const navh = document.querySelector(".nav-links-h");
 
             const navLinks = document.querySelectorAll(".nav-links a");
             const navSearch = document.querySelectorAll("div.navSearch");
 
-/*             burger.removeEventListener("click", ()=>{
+            /*             burger.removeEventListener("click", ()=>{
+            
+            
+            
+                        }) */
 
-
-
-            }) */
-              
-            const burgerEvent= () => {
+            const burgerEvent = () => {
                 nav.classList.toggle("nav-active");
                 navSearch[0].classList.toggle("nav-search-active");
 
@@ -138,8 +144,8 @@ export default function NavBarTop() {
                         link.style.animation = "";
                     } else {
                         link.style.animation = `navLinkFade 0.4s ease forwards 0.5s `;
-                    } 
-                }); 
+                    }
+                });
 
                 document.querySelector(".internal").classList.add("logob")
                 if (auxMovil == 0)
@@ -152,6 +158,11 @@ export default function NavBarTop() {
                 }
             }
             burger.addEventListener("click", burgerEvent);
+            sinotruk.addEventListener("click", burgerEvent);
+            sunward.addEventListener("click", burgerEvent);
+            keyton.addEventListener("click", burgerEvent);
+            concesionarios.addEventListener("click", burgerEvent);
+
             //INI PARAMS
             /*         const playBtn = document.querySelector(".boxesIni .c7h");
                       playBtn.addEventListener("click", () => {
@@ -257,8 +268,8 @@ export default function NavBarTop() {
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
-                        <p>CAMIONES</p> 
-                        <img  className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
+                        <p>CAMIONES</p>
+                        <img className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -420,12 +431,10 @@ export default function NavBarTop() {
 
         <ul className="nav-links-h">
             <li><NavLink to="/">INICIO</NavLink></li>
-            <li>
-                <NavLink to="/producto">SINOTRUK</NavLink>
-            </li>
-            <li><NavLink to="/sinotruk">SUNWARD</NavLink></li>
-            <li><NavLink to="/sinotruk">KEYTON</NavLink></li>
-            <li className="concesionariosCss"><NavLink to="/concesionarios">CONCESIONARIOS</NavLink></li>
+            <li ><a className="sinotruk mouseA" option="sinotruk">SINOTRUK</a></li>
+            <li ><a className="sunward mouseA" option="sunward">SUNWARD</a></li>
+            <li ><a className="keyton mouseA" option="keyton">KEYTON</a></li>
+            <li ><a className="concesionarios mouseA" option="concesionarios">CONCESIONARIOS</a></li>
             <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
             <li className="companiaCss"><NavLink to="/compania">COMPAÑIA</NavLink></li>
             <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
@@ -434,4 +443,4 @@ export default function NavBarTop() {
             <input className="search-nav-input" data-testid="search-input" type="search" title="Search" placeholder="Buscar..." id="global-search-input" aria-controls="searchNavSuggestions" aria-autocomplete="list" aria-expanded="false" aria-activedescendant="search-suggestion-null" role="combobox" aria-describedby="searchBoxHelpText" />
         </div>
     </nav>
-}
+} 
