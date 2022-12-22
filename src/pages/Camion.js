@@ -4,7 +4,7 @@ import BannerContacto from "../components/BannerContacto";
 import Footer from "../components/Footer";
 import '../stylesIn.css';
 import { useParams } from "react-router";
-import { Slide } from 'react-slideshow-image';
+import { Slide, Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../slider.css';
 import { useEffect, useState } from "react";
@@ -46,7 +46,11 @@ let cuotas
 function Camion() {
     const [modalFormIsOpen, setFormIsOpen] = useState(false);
 
+
     useEffect(() => {
+        const motorPlayer = document.getElementById('audioMotor')
+        motorPlayer.src = audio_motor
+
         const keyDownHandler = event => {
           if (event.key === 'Escape') {
             event.preventDefault();
@@ -505,16 +509,31 @@ function Camion() {
             );
 
             contenedorMarcas = <div style={{ display: `contents` }} >
-                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
-                        {slide3}
-                    </Slide>
-                </div>
-                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
-                        {slide3b}
-                    </Slide>
-                </div>
+                {internas1b.length>1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                        <Fade >
+                            {slide3}
+                        </Fade>
+                    </div>
+                }
+                {internas1b.length==1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                       <img src={internas1b[0]} alt=""/>
+                    </div>
+                }
+
+                {internas2b.length>1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                        <Fade >
+                            {slide3b}
+                        </Fade>
+                    </div>
+                }
+                {internas2b.length==1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                       <img src={internas2b[0]} alt=""/>
+                    </div>
+                }
             </div>
 
             contenedorVidaUtil = <div className="banner"><img src="../images/3.5-toneladas/homologado.webp" /></div>
@@ -523,6 +542,7 @@ function Camion() {
         //5 toneladas
         case "camion-de-5-toneladas-1067":
             console.log('5 toneladas')
+            console.log("AQUI")
             nombreCamion = "Camion de 5 toneladas | 1067"
             camionSerie = "1067 / 5 TON"
             nombreSerie = "Serie 100"
@@ -586,18 +606,35 @@ function Camion() {
             );
 
             contenedorMarcas = <div style={{ display: `contents` }} >
-                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
-                        {slide3}
-                    </Slide>
-                </div>
-                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
-                        {slide3b}
-                    </Slide>
-                </div>
+                {internas1b.length>1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                        <Fade >
+                            {slide3}
+                        </Fade>
+                    </div>
+                }
+                {internas1b.length==1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                       <img src={internas1b[0]} alt=""/>
+                    </div>
+                }
+
+                {internas2b.length>1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                        <Fade >
+                            {slide3b}
+                        </Fade>
+                    </div>
+                }
+                {internas2b.length==1 &&
+                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                       <img src={internas2b[0]} alt=""/>
+                    </div>
+                }
             </div>
             contenedorVidaUtil = "Chasis corto\n Chasis largo"
+
+        
             break;
 
         //6 toneladas
@@ -670,14 +707,14 @@ function Camion() {
 
             contenedorMarcas = <div style={{ display: `contents` }} >
                 <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
+                    <Fade >
                         {slide3}
-                    </Slide>
+                    </Fade>
                 </div>
                 <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                    <Slide >
+                    <Fade >
                         {slide3b}
-                    </Slide>
+                    </Fade>
                 </div>
             </div>
 
@@ -853,12 +890,6 @@ function Camion() {
     }
 
 
-    useEffect(() => {
-        
-        const motorPlayer = document.getElementById('audioMotor')
-        motorPlayer.src = audio_motor
-    })
-
     //loop primer slide
     let slide1 = images.map((image) =>
         <div className="each-slide-effect">
@@ -966,20 +997,20 @@ function Camion() {
 
                 <div className="marcasbg" style={{ display: `flex`, 'flexWrap': `wrap` }}>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <Slide >
+                        <Fade >
                             {slide2}
-                        </Slide>
+                        </Fade>
                     </div>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }} >
-                        <Slide >
+                        <Fade >
                             {slide2b}
-                        </Slide>
+                        </Fade>
                     </div>
-                    <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
-                        <Slide >
+{/*                     <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
+                        <Fade >
                             {slide2c}
-                        </Slide>
-                    </div>
+                        </Fade>
+                    </div> */}
                     {contenedorMarcas}
 
                 </div>
