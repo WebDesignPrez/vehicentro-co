@@ -159,7 +159,7 @@ function Camion() {
             internas1 = [
                 "../images/9-toneladas/volante-deportivo-de-camion-de-9-toneladas.webp",
                 "../images/9-toneladas/palanca-de-cambios-de-camion-de-9-toneladas.webp",
-                "../images/9-toneladas/asiento-neumatico-dos.webp",
+                "../images/9-toneladas/asiento-neumatico.webp",
                 "../images/9-toneladas/eleva-vidrios-electricos.webp",
                 "../images/9-toneladas/radio-touch-mp5.webp"
             ];
