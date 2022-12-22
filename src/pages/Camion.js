@@ -48,24 +48,24 @@ function Camion() {
 
     useEffect(() => {
         const keyDownHandler = event => {
-          if (event.key === 'Escape') {
-            event.preventDefault();
-            closeFormContact()
-          }
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                closeFormContact()
+            }
         };
-    
+
         document.addEventListener('keydown', keyDownHandler);
         return () => {
-          document.removeEventListener('keydown', keyDownHandler);
+            document.removeEventListener('keydown', keyDownHandler);
         };
-      }, []);
+    }, []);
 
 
-    function openFormContact(){
+    function openFormContact() {
         setFormIsOpen(true)
     }
-    
-    function closeFormContact(){
+
+    function closeFormContact() {
         setFormIsOpen(false)
     }
 
@@ -76,7 +76,7 @@ function Camion() {
         case "camion-10-toneladas-t5g-1167":
             nombreCamion = "Camion de 10 toneladas | T5G-1167"
             camionSerie = "T5G 1167 / 10.8 TON"
-            nombreSerie = "Serie T5G" 
+            nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB10TT5G1167"
             console.log('10 Toneladas')
             images = [
@@ -815,7 +815,7 @@ function Camion() {
         case "camion-8-toneladas-1147":
             imagen = "../images/8-toneladas/camion-de-8-toneladas-en-la-carretera-sinotruk.webp"
             break;
-            
+
         case "camion-de-9-toneladas":
             imagen = "../images/9-toneladas/camion-de-9-toneladas-en-la-carretera-sinotruk.webp"
             break;
@@ -854,7 +854,7 @@ function Camion() {
 
 
     useEffect(() => {
-        
+
         const motorPlayer = document.getElementById('audioMotor')
         motorPlayer.src = audio_motor
     })

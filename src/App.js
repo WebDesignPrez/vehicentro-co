@@ -32,7 +32,7 @@ function App() {
           <Route path="/tecnologia" element={<Tecnologia/>} />
           <Route path="/concesionarios" element={<Concesionarios/>} />
           <Route path="/volquetas/:id" element={<Volqueta/>} />
-          <Route path="/camion-en-uso" element={<Camion_en_uso/>} />
+          <Route path="/camion-en-uso/:id" element={<Camion_en_uso/>} />
           <Route path="/compania" element={<Compania/>} />
           <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros/>} />
 

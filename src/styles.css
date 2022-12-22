@@ -773,10 +773,17 @@ ul.nav-links-h>li>a:hover,
     width: 50%;
 }
 
+.boxLeftHeader.complete{
+    width: 100%;
+}
+
 .boxesIniHeader.main {
     background-color: #0d0d0d;
 }
-
+.boxesIniHeader.main.fondonegro.contacto{
+    
+    background-color: #ffffff;
+}
 .boxesIniHeader.main.compania {
     background-color: #fbfbfb;
 }
@@ -1221,4 +1228,14 @@ li.mouseA:hover {
     border-bottom-color: #f44331;
     border-bottom-width: 4px;
     border-bottom-style: solid;
+}
+
+.imagenContacto
+{
+    background-position:left top;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
