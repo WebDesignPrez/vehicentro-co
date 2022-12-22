@@ -197,7 +197,7 @@ function FormContact(props) {
               <h5 className="form-step"> ¿Necesitas información? </h5>
               <form action={url} method="post" onSubmit={(ev) => handleSumbit(ev)}>
                 <div className="field1">
-                  <label> Cotizador Sinutruck Modelo {listCamion} </label>
+                  <label> Cotizador Sinotruk Modelo {listCamion} </label>
 
                   <label className="input_title">*Nombre y Apellido</label>
                   <div className="input-group">

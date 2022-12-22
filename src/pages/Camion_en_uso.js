@@ -1,42 +1,85 @@
 import NavBarTop from "../NavBarTop"
 import FormContact from "../components/FormContact"
+import BannerContacto from '../components/BannerContacto'
+import Footer from '../components/Footer'
+import '../stylesIn.css';
+import { useParams } from "react-router"
+
+let bdc
+let imagen 
+let nombreCamion
+let nombreSerie
+let camionSerie
 
 function Camion_en_uso() {
-    return (
-        <>
-            <NavBarTop />
-            <PrimeraSeccion />
-            <FormContact />
-        
-        </>
-    )
+
+
+
+
+    switch ((useParams("id").id)) {
+
+        case "camion-de-48-toneladas":
+            imagen = ["../images/camion-en-uso/48-ton/uso-3-camion-48-ton.webp", "../images/camion-en-uso/48-ton/uso-4-camion-48-ton.webp", "../images/camion-en-uso/48-ton/uso-1-camion-48-ton.webp", "../images/camion-en-uso/48-ton/uso-2-camion-48-ton.webp", "../images/camion-en-uso/48-ton/uso-5-camion-48-ton.webp"]
+            nombreCamion = "Camion de 48 toneladas | C7H-540"
+            camionSerie = "C7H 540 / 48 TON"
+            nombreSerie = "Serie C7H"
+            break;
+
+        default:
+            break;
+    }
+
+
+
+    return <>
+        <NavBarTop />
+        <PrimeraSeccion />
+        <SegundaSeccion />
+        <BannerContacto />
+        <Footer />
+
+    </>
+
 
 }
 
 
+
+
+
 function PrimeraSeccion() {
     return (
+
         <div className="boxesIniHeader main fondonegro">
             <div className="boxLeftHeader">
-                <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp"/>
+                <img className="complete"  src={imagen[4]} />
             </div>
             <div className="boxRightHeader inside" >
-                <div className="boxRightHeader  half contenedorTextoSobrepuesto" >
-                    <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp"/>
-                </div>
-
-                <div className="boxRightHeader  half contenedorTextoSobrepuesto">
-                    <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp"/>
+                <div className="boxLeftHeader complete" >
+                    <img className="complete"  src={imagen[1]} />
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto" >
-                    <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp"/>
+                    <img className="complete"  src={imagen[2]} />
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto">
-                    <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp"/>
+                    <img className="complete"  src={imagen[3]} />
                 </div>
             </div>
 
 
+        </div>
+    )
+}
+
+function SegundaSeccion() {
+    return (
+        <div className="boxesIniHeader main fondonegro contacto">
+            <div className="boxLeftHeader">
+                <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+            </div>
+            <div className="boxRightHeader inside imagenContacto">
+                <img className="complete contact" src={imagen[0]} />
+            </div>
         </div>
     )
 }

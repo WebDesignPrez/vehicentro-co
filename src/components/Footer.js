@@ -47,7 +47,7 @@ export default function Footer(){
                     <li><p className="itemMenu">Talleres</p></li>
                     <li><p className="itemMenu">Repuestos</p></li>
                     <li><p className="itemMenu">Manteniento</p></li>
-                    <li><p className="itemMenu">Garantia</p></li>
+                    <li><p className="itemMenu">Garantía</p></li>
                 </ul>
             </div>
             <div className="col1 colTech">
