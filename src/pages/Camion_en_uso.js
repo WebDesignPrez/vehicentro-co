@@ -52,17 +52,17 @@ function PrimeraSeccion() {
 
         <div className="boxesIniHeader main fondonegro">
             <div className="boxLeftHeader">
-                <img src={imagen[4]} />
+                <img className="complete"  src={imagen[4]} />
             </div>
             <div className="boxRightHeader inside" >
                 <div className="boxLeftHeader complete" >
-                    <img src={imagen[1]} />
+                    <img className="complete"  src={imagen[1]} />
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto" >
-                    <img src={imagen[2]} />
+                    <img className="complete"  src={imagen[2]} />
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto">
-                    <img src={imagen[3]} />
+                    <img className="complete"  src={imagen[3]} />
                 </div>
             </div>
 
@@ -78,7 +78,7 @@ function SegundaSeccion() {
                 <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
             </div>
             <div className="boxRightHeader inside imagenContacto">
-                <img src={imagen[0]} />
+                <img className="complete contact" src={imagen[0]} />
             </div>
         </div>
     )

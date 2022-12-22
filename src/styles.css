@@ -1239,3 +1239,13 @@ li.mouseA:hover {
     -o-background-size:cover;
     background-size:cover;
 }
+
+.boxesIniHeader img.complete {
+    width: 100%;
+    height: 100%;
+}
+
+.boxesIniHeader img.complete.contact {
+    object-fit: cover;
+    overflow: hidden;
+}
