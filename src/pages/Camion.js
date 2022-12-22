@@ -925,9 +925,14 @@ function Camion() {
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
-                <Slide>
-                    {slide1}
-                </Slide>
+                {images.length>1 &&
+                    <Slide>
+                        {slide1}
+                    </Slide>
+                }
+                {images.length==1 &&
+                    <img src={images[0]} alt="" />
+                }
             </div>
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
