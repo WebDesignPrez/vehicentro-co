@@ -57,7 +57,7 @@ select:focus {
 
 .form-box select {
     height: 42px;
-    width: 33vw;
+    width: inherit;
 }
 
 .form-box textarea {
@@ -102,9 +102,10 @@ select:focus {
 
 .input-group {
     position: relative;
-    display: table;
+    display: flex;
     width: 100%;
     margin-bottom: 15px;
+    background-color: white;
 }
 
 .userIcon::before {
@@ -145,7 +146,7 @@ input[type=text] {
 
 @media only screen and (max-width: 768px) {
     .form-box select {
-        width: 82vw;
+        width: inherit;
     }
 }
 

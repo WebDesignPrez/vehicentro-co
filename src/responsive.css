@@ -219,27 +219,75 @@
   }
 
   .textoMotor1 {
-    font-size: 9vw;
+    font-size: 15vw;
+    bottom: 110px;
   }
 
   .textoMotor2 {
-    font-size: 4vw;
+    font-size: 6vw;
+    bottom: 95px;
+
   }
 
   .textoMotor3 {
-    font-size: 4vw;
+    font-size: 6vw;
+    bottom: 70px;
+  }
+
+  .textoMotorFlecha {
+    bottom: 69px;
+    left: 39vw;
   }
 
   .textoMotor4 {
-    font-size: 3vw;
+    font-size: 5vw;
+    left: 11px;
   }
 
   .precioExcavadora {
     font-size: 6vw;
   }
 
- 
+  .boxesIniHeader.main.compania .boxLeftHeader {
+    padding: 3% 2% 3% 2%;
+    display: inline-block;
+  }
 
+  .boxesIniHeader.main.compania .boxRightHeader {
+    padding: 3% 2% 3% 2%;
+    display: inline-block;
+  }
+
+  .boxesIni.posRelative.news.compania {
+    flex-direction: initial;
+    padding: 20% 2% 20% 2%;
+  }
+
+  .boxNews.companiaimg2.b {
+    width: 50% !important;
+  }
+
+  .boxNews.companiaimg2 {
+    width: 33.33% !important;
+  }
+
+  .boxNews.companiaimg2.fif img {
+    max-width: 100% !important;
+  }
+
+  .boxNews.companiaimg2.c {
+    width: 100% !important;
+  }
+
+  audio {
+    height: 30px !important;
+    width: 75vw !important;
+  }
+
+  .boxPlayerMotor {
+    left: 17px;
+    bottom: 40px;
+  }
 }
 
 

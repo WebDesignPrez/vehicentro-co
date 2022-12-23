@@ -46,14 +46,14 @@ function Content2() {
             <div className="boxNews companiatext2">
                 <p className="companiatexto2">DISTRIBUIMOS</p>
             </div>
-            <div className="boxNews companiaimg2">
+            <div className="boxNews companiaimg2 fif">
                 <img src="./images/compania/logo-sinotruk.webp" width="1000" height="760" className="slideMain" alt="Series100" />
             </div>
-            <div className="boxNews companiaimg2">
+            <div className="boxNews companiaimg2 fif">
                 <img src="./images/compania/logo-keyton.webp" width="1000" height="760" className="slideMain" alt="Mixer" />
 
             </div>
-            <div className="boxNews companiaimg2">
+            <div className="boxNews companiaimg2 fif">
                 <img src="./images/compania/logo-sunward.webp" width="1000" height="760" className="slideMain" alt="Excavadora" />
 
             </div>
@@ -119,17 +119,17 @@ function Content3() {
             </div>
 
 
-            <div className="boxNews companiaimg2 b">
+            <div className="boxNews companiaimg2 b"  style={{ 'order': `4` }}>
             </div>
-            <div className="boxNews companiaimg2 b">
+            <div className="boxNews companiaimg2 b"  style={{ 'order': `0` }}>
                 <img src="./images/compania/mann.png" />
             </div>
-            <div className="boxNews companiaimg2 b">
+            <div className="boxNews companiaimg2 b"  style={{ 'order': `2` }}>
             </div>
-            <div className="boxNews companiaimg2 b">
+            <div className="boxNews companiaimg2 b " style={{ 'order': `1` }}>
                 <img src="./images/compania/vdo.png" />
             </div>
-            <div className="boxNews companiaimg2 b">
+            <div className="boxNews companiaimg2 b " style={{ 'order': `3` }}>
             </div>
 
         </div>
