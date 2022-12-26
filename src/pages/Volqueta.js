@@ -4,11 +4,12 @@ import BannerContacto from "../components/BannerContacto";
 import Footer from "../components/Footer";
 import '../stylesIn.css';
 import { useParams } from "react-router";
-import { Slide } from 'react-slideshow-image';
+import { Slide, Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../slider.css';
-import { useEffect } from "react";
-import { nodeName } from "jquery";
+import { useEffect, useState } from "react";
+import '../modalContact.css';
+import FormContactFicha from "../components/FormContactFicha";
 
 let imagen
 let images
@@ -42,7 +43,33 @@ let nombreSerie
 
 
 function Camion() {
+    const [modalFormIsOpen, setFormIsOpen] = useState(false);
 
+    useEffect(() => {
+        const motorPlayer = document.getElementById('audioMotor')
+        motorPlayer.src = audio_motor
+
+        const keyDownHandler = event => {
+            if (event.key === 'Escape') {
+                event.preventDefault();
+                closeFormContact()
+            }
+        };
+  
+        document.addEventListener('keydown', keyDownHandler);
+        return () => {
+            document.removeEventListener('keydown', keyDownHandler);
+        };
+    }, []);
+  
+  
+    function openFormContact() {
+      setFormIsOpen(true)
+    }
+  
+    function closeFormContact() {
+      setFormIsOpen(false)
+    }
     //Comparacion paginas
     switch ((useParams("id").id)) {
 
@@ -175,12 +202,6 @@ function Camion() {
             break;
     }
 
-
-    useEffect(() => {
-        const motorPlayer = document.getElementById('audioMotor')
-        motorPlayer.src = audio_motor
-    })
-
     //loop primer slide
     let slide1 = images.map((image) =>
         <div className="each-slide-effect">
@@ -216,17 +237,22 @@ function Camion() {
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
-                <Slide>
-                    {slide1}
-                </Slide>
+                {images.length>1 &&
+                    <Slide>
+                        {slide1}
+                    </Slide>
+                }
+                {images.length==1 &&
+                    <img src={images[0]} alt="" />
+                }
             </div>
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
-                    <div className="flex-row  textoMotor1">{textoMotor1}</div>
-                    <div className="flex-row  textoMotor2">{textoMotor2}</div>
-                    <div className="flex-row  textoMotor3">{textoMotor3}</div>
-                    <div className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
+                    <div onClick={openFormContact} className="flex-row  textoMotor1">{textoMotor1}</div>
+                    <div onClick={openFormContact} className="flex-row  textoMotor2">{textoMotor2}</div>
+                    <div onClick={openFormContact} className="flex-row  textoMotor3">{textoMotor3}</div>
+                    <div onClick={openFormContact} className="flex-row textoMotorFlecha"><img src="../images/arrow-rojo.png" alt="arrow" /></div>
                     <div className="flex-row  textoMotor4">Escucha tu motor</div>
                 </div>
                 <div className="boxPlayerMotor ">
@@ -285,19 +311,34 @@ function Camion() {
 
                 <div className="marcasbg" style={{ display: `flex`, 'flexWrap': `wrap` }}>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <Slide >
-                            {slide2}
-                        </Slide>
+                        {internas1.length>1 &&
+                                <Fade>
+                                    {slide2}
+                                </Fade>
+                        }
+                        {internas1.length==1 &&
+                                <img src={internas1[0]} alt="" />
+                        }
                     </div>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }} >
-                        <Slide >
-                            {slide2b}
-                        </Slide>
+                        {internas2.length>1 &&
+                                <Fade>
+                                    {slide2b}
+                                </Fade>
+                        }
+                        {internas2.length==1 &&
+                                <img src={internas2[0]} alt="" />
+                        }
                     </div>
                     <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
-                        <Slide >
-                            {slide2c}
-                        </Slide>
+                        {internas.length>1 &&
+                                <Fade>
+                                    {slide2c}
+                                </Fade>
+                        }
+                        {internas.length==1 &&
+                                <img src={internas[0]} alt="" />
+                        }
                     </div>
                     {contenedorMarcas}
 
@@ -315,6 +356,10 @@ function Camion() {
         </div>
         <BannerContacto />
         <Footer />
+
+        {modalFormIsOpen &&
+            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+        }
     </>
 }
 

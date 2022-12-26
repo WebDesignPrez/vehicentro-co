@@ -164,6 +164,8 @@ function FormContactFicha(props) {
   const serieT7H = ['T7H 390 / 28 TON', 'T7H 390 / 42 TON', 'T7H 430 / 45 TON'];
   const serieC7H = ['C7H 1256 / 20 TON', 'C7H 540 / 48 TON', 'C7H 540 / 48 TON OFFROAD'];
   const especiales = ['VOLQUETA T5G 280-330 8-9M2', 'VOLQUETA T5G 430-330 10-14M2', 'A7 1257 / MIXER'];
+  const excavadora = ['SWE200', 'SWE365E'];
+  const furgoneta = ['M70L'];
 
   let type = null;
   let options = null;
@@ -178,7 +180,12 @@ function FormContactFicha(props) {
     type = serieC7H;
   } else if (serie === "Especiales"){
     type = especiales;
+  } else if (serie === "Excavadora"){
+    type = excavadora;
+  } else if (serie === "Furgoneta"){
+    type = furgoneta;
   }
+
 
   if (type) {
     options = type.map((el) => <option key={el}>{el}</option>);
@@ -252,6 +259,8 @@ function FormContactFicha(props) {
                       <option value="Serie T7H">Serie T7H</option>
                       <option value="Serie C7H">Serie C7H</option>
                       <option value="Especiales">Especiales</option>
+                      <option value="Excavadora">Excavadora</option>
+                      <option value="Furgoneta">Furgoneta</option>
                     </select>
                   </div>
 

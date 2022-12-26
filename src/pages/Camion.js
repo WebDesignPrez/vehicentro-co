@@ -8,7 +8,6 @@ import { Slide, Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../slider.css';
 import { useEffect, useState } from "react";
-import Modal from 'react-modal';
 import '../modalContact.css';
 import FormContactFicha from "../components/FormContactFicha";
 
