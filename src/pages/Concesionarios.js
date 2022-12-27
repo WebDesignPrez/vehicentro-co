@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import NavBarTop from '../NavBarTop';
 import BannerContacto from '../components/BannerContacto';
 import Footer from '../components/Footer';
@@ -10,6 +10,7 @@ const datosConcesionarios = [{
   datos : [{
     nombre: "AMBATO, MATRIZ",
     descripcion : "Punto de venta, talleres y repuestos",
+    telefono: "032-994740 | 0992048229",
     direccion: "Av. Indoamérica Km 3-1/2",
     url : "https://vehicentro.com/ambato-matriz/",
     img: "../images/vehicentro-ambato-matriz-indoamerica.webp",
@@ -17,6 +18,7 @@ const datosConcesionarios = [{
   }, {
     nombre: "AMBATO, FICOA",
     descripcion : "Punto de venta, talleres y repuestos",
+    telefono: "032-994740 | 0992048229",
     direccion: "Av. Los Guaytambos",
     url : "https://vehicentro.com/ambato-matriz/",
     img: "../images/vehicentro-ambato-ficoa.webp",
@@ -146,7 +148,7 @@ const datosConcesionarios = [{
           let auxTable = ""
           auxTable += "<table>"
           datosGrid.forEach((datos)=>{
-            auxTable+="<tr><td class='imgConcesionario'><img src='"+datos.img+"' alt='"+datos.alt+"'></td><td><p class='nombreConcesionario'>"+datos.nombre+"</p><p class='descConcesionario'>"+datos.descripcion+"</p></td><td><p class='direccionConcesionario'>"+datos.direccion+"</p><a class='linkConcesionario' href='"+datos.url+"' target='_blank'>UBICACIÓN</a></td></tr>"
+            auxTable+="<tr><td class='textConcesionario'><p class='nombreConcesionario'>"+datos.nombre+"</p><p class='descConcesionario'>"+datos.descripcion+"</p><span class='direccionConcesionario'>"+datos.direccion+"</span><p class='telefonoConcesionario'><span>Línea directa </span>"+datos.telefono+"</p><span class='linkConcesionario'><a href='"+datos.url+"' target='_blank'>UBICACIÓN</a></span></td><td class='imgConcesionario'><img src='"+datos.img+"' alt='"+datos.alt+"'></td></tr>"
           })
           auxTable += "</table>"
           container.innerHTML = auxTable
@@ -168,7 +170,7 @@ const datosConcesionarios = [{
                 <button type="button" option ="Manta">Manta</button>
             </div>
             <div className="boxConcesionarios">
-            <span>Datos</span>
+            <span>Selecciona el concesionario en la ciudad mas cercana</span>
             </div>
             <BannerContacto />
             <Footer />

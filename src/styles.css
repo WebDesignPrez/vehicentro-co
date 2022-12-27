@@ -1197,14 +1197,66 @@ ul.nav-links-h>li>a:hover,
 }
 
 .nombreConcesionario {
-    font-size: 22px;
-    margin: 20px 0px;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.descConcesionario {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .descConcesionario {}
 
 .imgConcesionario img {
     width: 300px;
+}
+
+
+.imgConcesionario {
+    text-align: right;
+}
+
+.textConcesionario{
+    text-align: center;
+}
+
+.direccionConcesionario::before{
+    content: url(../public/images/pointerRed.png);
+    position: absolute;
+    left: -30px;
+    top: -6px;
+}
+
+.direccionConcesionario{
+    position: relative;
+    font-size: 20px;
+}
+
+.telefonoConcesionario span{
+    color: red;
+}
+
+.telefonoConcesionario{
+    font-size: 19px;
+    margin: 5px 0px 10px 0px;
+}
+
+.linkConcesionario a::after{
+    content: url(../public/images/arrow-rojo.png);
+    position: absolute;
+    right: -35px;
+    top: -3px;
+    transform: scale(0.7);
+}
+
+.linkConcesionario{
+    position: relative;
+}
+
+.linkConcesionario a{
+    text-decoration: none;
+    color: grey;
 }
 
 .precioExcavadora {

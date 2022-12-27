@@ -288,6 +288,10 @@
     left: 17px;
     bottom: 40px;
   }
+
+  .imgConcesionario{
+    display: none;
+  }
 }
 
 
