@@ -78,7 +78,7 @@ function Camion() {
     case "swe210":
       console.log('24 ton')
       nombreCamion = "Excavadora SWE210"
-      camionSerie = "SWE200"
+      camionSerie = "SWE210"
       nombreSerie = "Excavadora"
       bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
       images = [

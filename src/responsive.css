@@ -292,6 +292,13 @@
   .imgConcesionario{
     display: none;
   }
+  .boxesIni.posRelative.news.repuesto{
+    flex-direction: initial;
+  }
+
+  .boxesIni.posRelative.news.repuesto img {
+    max-width: 100%;
+}
 }
 
 
