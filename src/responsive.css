@@ -288,6 +288,14 @@
     left: 17px;
     bottom: 40px;
   }
+
+  .boxesIni.posRelative.news.repuesto{
+    flex-direction: initial;
+  }
+
+  .boxesIni.posRelative.news.repuesto img {
+    max-width: 100%;
+}
 }
 
 
