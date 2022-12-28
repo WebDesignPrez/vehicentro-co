@@ -339,11 +339,11 @@ function Mixer() {
                 <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
             </div>
         </div>
-        <BannerContacto />
+        <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
         <Footer />
 
         {modalFormIsOpen &&
-            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} close={closeFormContact} />
         }
     </>
 }
