@@ -12,6 +12,7 @@ import Volqueta from "./pages/Volqueta"
 import Camion_en_uso from "./pages/Camion_en_uso"
 import Compania from "./pages/Compania"
 import Trabaja_con_nosotros from "./pages/Trabaja_con_nosotros"
+import Mixer from "./pages/Mixer"
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/camion-en-uso/:id" element={<Camion_en_uso/>} />
           <Route path="/compania" element={<Compania/>} />
           <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros/>} />
+          <Route path="/mixer/:id" element={<Mixer/>} />
 
         </Routes>
       </main>

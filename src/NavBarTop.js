@@ -305,7 +305,7 @@ export default function NavBarTop() {
 
                             <p className="colItem meniu"><NavLink to="/camiones/camion-20-toneladas-1256">C7H 1256 / 20 ton</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540">C7H 540 / 48 ton</NavLink></p>
-                            <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton offroad</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">C7H 540 / 48 ton con catalinas</NavLink></p>
 
                         </div>
                     </div>
