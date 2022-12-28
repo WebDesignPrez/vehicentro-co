@@ -10,7 +10,8 @@ function FormContactFicha(props) {
   let nomCamion = props.camion
   let listSerie = (props.serie=="")?'':props.serie
   let listCamion = (props.camionSerie=="")?'':props.camionSerie
-
+  let tituloForm = props.tituloForm
+  
   let [nombre_y_apellido, setName] = useState('');
   let [ciudad, setCity] = useState('');
   let [email, setEmail] = useState('');
@@ -196,7 +197,7 @@ function FormContactFicha(props) {
               <h5 className="form-step"> ¿Necesitas información? </h5>
               <form action={url} method="post" onSubmit={(ev) => handleSumbit(ev)}>
                 <div className="field1">
-                  <label> Cotizador Sinutruck Modelo {listCamion} </label>
+                  <label> {tituloForm} {listCamion} </label>
 
                   <label className="input_title">*Nombre y Apellido</label>
                   <div className="input-group">

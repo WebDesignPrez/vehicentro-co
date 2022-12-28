@@ -298,7 +298,11 @@
 
   .boxesIni.posRelative.news.repuesto img {
     max-width: 100%;
-}
+  }
+
+  .modalForm{
+    width: 100%;
+  }
 }
 
 
