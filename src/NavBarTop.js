@@ -312,7 +312,7 @@ export default function NavBarTop() {
                     <div className="rowMenu">
                         <div className="colMenu">
                             <p className="colTitle">Especiales</p>
-                            <p className="colItem meniu"><NavLink to="/">A7 1257 / Mixer</NavLink></p>
+                            <p className="colItem meniu"><NavLink to="/mixer/mixer-a7-1257">A7 1257 / Mixer</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t5g-280">Volqueta T5G 280-330 8-9m2</NavLink></p>
                             <p className="colItem meniu"><NavLink to="/volquetas/volqueta-t7h-430">Volqueta T5G 430-330 10-14m2</NavLink></p>
                             <div>
