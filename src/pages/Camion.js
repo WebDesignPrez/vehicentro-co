@@ -1038,7 +1038,7 @@ function Camion() {
         <Footer />
 
         {modalFormIsOpen &&
-            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} close={closeFormContact} />
         }
     </>
 }

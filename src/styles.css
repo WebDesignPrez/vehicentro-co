@@ -1306,3 +1306,20 @@ li.mouseA:hover {
     object-fit: cover;
     overflow: hidden;
 }
+
+.closeBtnForm{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 1000;
+}
+
+.closeBtnForm img{
+    width: 100%;
+}
+
+.modalFormContainer{
+    position: relative;
+}

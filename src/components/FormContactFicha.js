@@ -11,7 +11,8 @@ function FormContactFicha(props) {
   let listSerie = (props.serie=="")?'':props.serie
   let listCamion = (props.camionSerie=="")?'':props.camionSerie
   let tituloForm = props.tituloForm
-  
+  let closeBtn = props.close
+
   let [nombre_y_apellido, setName] = useState('');
   let [ciudad, setCity] = useState('');
   let [email, setEmail] = useState('');
@@ -193,11 +194,12 @@ function FormContactFicha(props) {
   }
 
   return <div className="modalForm">
+    <span className="closeBtnForm" onClick={closeBtn}><img src="https://desarollo.vehicentro.com/images/close-icon.png" alt="close" /></span>
             <div className="form-box">
               <h5 className="form-step"> ¿Necesitas información? </h5>
               <form action={url} method="post" onSubmit={(ev) => handleSumbit(ev)}>
                 <div className="field1">
-                  <label> {tituloForm} {listCamion} </label>
+                  <label> Déjanos tus datos y uno de nuestros asesores se contactará contigo</label>
 
                   <label className="input_title">*Nombre y Apellido</label>
                   <div className="input-group">

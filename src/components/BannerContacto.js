@@ -48,6 +48,10 @@ export default function BannerContacto(props){
       setContactIsOpen(false)
     }
 
+    const closeContactF = ()=>{
+      setContactIsOpen(false)
+    }
+
 
     function gotoWs(){
       closeContact()
@@ -76,7 +80,7 @@ export default function BannerContacto(props){
           }
         
         {modalFormIsOpen &&
-            <FormContactFicha url={url} camion={nomCamion} serie={listSerie} camionSerie={listCamion} />
+              <FormContactFicha url={url} camion={nomCamion} serie={listSerie} camionSerie={listCamion} close={closeFormContact}/>
         }
     </>
 
