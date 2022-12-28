@@ -88,7 +88,7 @@ function Mixer() {
             textoMotor1 = "87 HP"
             textoMotor2 = "Modelo 1047 - 3.5 Ton"
             textoMotor3 = "Ficha técnica"
-            precio = "$23.990"
+            precio = <div className="banner"><img src="../images/volqueta-280/logo-sinotruk.webp" /></div>
             cuotas = 'Cuotas desde: $447.00'
             motor = "../images/3.5-toneladas/motor-sinotruk-de-camion-de-3.5-toneladas-ecuador.webp"
             garantia = "../images/3.5-toneladas/5-anos-de-garantia.webp"
