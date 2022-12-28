@@ -36,8 +36,8 @@ export default function Footer(){
                 </ul>
                 <ul className="list">
                     <li><p className="subTitle">SUNWARD</p></li>
-                    <li><p  className="titleFooter"><a href="/excavadoras/swe210">Excabadora SWE210</a></p></li>
-                    <li><p  className="titleFooter"><a href="/excavadoras/swe365e">Excabadora SWE365E</a></p></li>
+                    <li><p  className="titleFooter"><a href="/excavadoras/swe210">Excavadora SWE210</a></p></li>
+                    <li><p  className="titleFooter"><a href="/excavadoras/swe365e">Excavadora SWE365E</a></p></li>
                 </ul>
                 
             </div>

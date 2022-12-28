@@ -447,6 +447,11 @@ ul.nav-links-h>li>a:hover,
 .titleFooter a {
     color: #fff;
     text-decoration: none;
+    padding: 0 0 10px 0;
+}
+
+p.titleFooter {
+    padding: 0 0 10px 0;
 }
 
 .titleFooter a:hover {
