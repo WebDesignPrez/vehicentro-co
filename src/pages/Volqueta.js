@@ -354,7 +354,7 @@ function Camion() {
                 <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
             </div>
         </div>
-        <BannerContacto />
+        <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
         <Footer />
 
         {modalFormIsOpen &&
