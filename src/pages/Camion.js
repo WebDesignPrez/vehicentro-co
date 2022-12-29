@@ -10,6 +10,7 @@ import '../slider.css';
 import { useEffect, useState } from "react";
 import '../modalContact.css';
 import FormContactFicha from "../components/FormContactFicha";
+import { Helmet } from "react-helmet";
 
 
 let imagen
@@ -508,29 +509,29 @@ function Camion() {
             );
 
             contenedorMarcas = <div style={{ display: `contents` }} >
-                {internas1b.length>1 &&
+                {internas1b.length > 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
                         <Fade >
                             {slide3}
                         </Fade>
                     </div>
                 }
-                {internas1b.length==1 &&
+                {internas1b.length == 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                       <img src={internas1b[0]} alt=""/>
+                        <img src={internas1b[0]} alt="" />
                     </div>
                 }
 
-                {internas2b.length>1 &&
+                {internas2b.length > 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
                         <Fade >
                             {slide3b}
                         </Fade>
                     </div>
                 }
-                {internas2b.length==1 &&
+                {internas2b.length == 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                       <img src={internas2b[0]} alt=""/>
+                        <img src={internas2b[0]} alt="" />
                     </div>
                 }
             </div>
@@ -605,35 +606,35 @@ function Camion() {
             );
 
             contenedorMarcas = <div style={{ display: `contents` }} >
-                {internas1b.length>1 &&
+                {internas1b.length > 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
                         <Fade >
                             {slide3}
                         </Fade>
                     </div>
                 }
-                {internas1b.length==1 &&
+                {internas1b.length == 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                       <img src={internas1b[0]} alt=""/>
+                        <img src={internas1b[0]} alt="" />
                     </div>
                 }
 
-                {internas2b.length>1 &&
+                {internas2b.length > 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
                         <Fade >
                             {slide3b}
                         </Fade>
                     </div>
                 }
-                {internas2b.length==1 &&
+                {internas2b.length == 1 &&
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                       <img src={internas2b[0]} alt=""/>
+                        <img src={internas2b[0]} alt="" />
                     </div>
                 }
             </div>
             contenedorVidaUtil = "Chasis corto\n Chasis largo"
 
-        
+
             break;
 
         //6 toneladas
@@ -921,15 +922,20 @@ function Camion() {
 
     // ---- PÁGINA ----
     return <>
+        <Helmet>
+            <title>{nombreCamion} - Vehicentro</title>
+            <meta name="description" content={nombreCamion} />
+
+        </Helmet>
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
-                {images.length>1 &&
+                {images.length > 1 &&
                     <Slide>
                         {slide1}
                     </Slide>
                 }
-                {images.length==1 &&
+                {images.length == 1 &&
                     <img src={images[0]} alt="" />
                 }
             </div>
@@ -1010,7 +1016,7 @@ function Camion() {
                             {slide2b}
                         </Fade>
                     </div>
-{/*                     <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
+                    {/*                     <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
                         <Fade >
                             {slide2c}
                         </Fade>

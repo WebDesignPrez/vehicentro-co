@@ -9,6 +9,7 @@ import 'react-slideshow-image/dist/styles.css';
 import '../slider.css';
 import { useEffect } from "react";
 import { nodeName } from "jquery";
+import { Helmet } from "react-helmet";
 
 let imagen
 let images
@@ -450,6 +451,10 @@ function Camion() {
 
     // ---- PÁGINA ----
     return <>
+        <Helmet>
+            <title>{nombreCamion} - Vehicentro</title>
+            <meta name="description" content={nombreCamion} />
+        </Helmet>
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
@@ -555,7 +560,7 @@ function Camion() {
                 <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
             </div>
         </div>
-        <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie}/>
+        <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
         <Footer />
     </>
 }

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import BannerContacto from "../components/BannerContacto"
 import Footer from "../components/Footer"
 import NavBarTop from "../NavBarTop"
@@ -5,6 +6,10 @@ import NavBarTop from "../NavBarTop"
 function Repuestos() {
   return (
     <>
+      <Helmet>
+        <title>Repuestos | Vehicentro</title>
+        <meta name="description" content="Repuestos" />
+      </Helmet>
       <NavBarTop />
       <Content1 />
       <Content2 />

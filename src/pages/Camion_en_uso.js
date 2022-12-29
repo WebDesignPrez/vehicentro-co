@@ -4,6 +4,7 @@ import BannerContacto from '../components/BannerContacto'
 import Footer from '../components/Footer'
 import '../stylesIn.css';
 import { useParams } from "react-router"
+import { Helmet } from "react-helmet";
 
 let bdc
 let imagen 
@@ -32,6 +33,10 @@ function Camion_en_uso() {
 
 
     return <>
+        <Helmet>
+            <title>Camión en uso: {camionSerie} | Vehicentro</title>
+            <meta name="description" content={nombreCamion} />
+        </Helmet>
         <NavBarTop />
         <PrimeraSeccion />
         <SegundaSeccion />

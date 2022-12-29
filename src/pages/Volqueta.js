@@ -10,6 +10,7 @@ import '../slider.css';
 import { useEffect, useState } from "react";
 import '../modalContact.css';
 import FormContactFicha from "../components/FormContactFicha";
+import { Helmet } from "react-helmet";
 
 let imagen
 let images
@@ -55,20 +56,20 @@ function Camion() {
                 closeFormContact()
             }
         };
-  
+
         document.addEventListener('keydown', keyDownHandler);
         return () => {
             document.removeEventListener('keydown', keyDownHandler);
         };
     }, []);
-  
-  
+
+
     function openFormContact() {
-      setFormIsOpen(true)
+        setFormIsOpen(true)
     }
-  
+
     function closeFormContact() {
-      setFormIsOpen(false)
+        setFormIsOpen(false)
     }
     //Comparacion paginas
     switch ((useParams("id").id)) {
@@ -234,15 +235,19 @@ function Camion() {
 
     // ---- PÁGINA ----
     return <>
+        <Helmet>
+            <title>{nombreCamion} - Vehicentro</title>
+            <meta name="description" content={nombreCamion} />
+        </Helmet>
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
-                {images.length>1 &&
+                {images.length > 1 &&
                     <Slide>
                         {slide1}
                     </Slide>
                 }
-                {images.length==1 &&
+                {images.length == 1 &&
                     <img src={images[0]} alt="" />
                 }
             </div>
@@ -311,33 +316,33 @@ function Camion() {
 
                 <div className="marcasbg" style={{ display: `flex`, 'flexWrap': `wrap` }}>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        {internas1.length>1 &&
-                                <Fade>
-                                    {slide2}
-                                </Fade>
+                        {internas1.length > 1 &&
+                            <Fade>
+                                {slide2}
+                            </Fade>
                         }
-                        {internas1.length==1 &&
-                                <img src={internas1[0]} alt="" />
+                        {internas1.length == 1 &&
+                            <img src={internas1[0]} alt="" />
                         }
                     </div>
                     <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }} >
-                        {internas2.length>1 &&
-                                <Fade>
-                                    {slide2b}
-                                </Fade>
+                        {internas2.length > 1 &&
+                            <Fade>
+                                {slide2b}
+                            </Fade>
                         }
-                        {internas2.length==1 &&
-                                <img src={internas2[0]} alt="" />
+                        {internas2.length == 1 &&
+                            <img src={internas2[0]} alt="" />
                         }
                     </div>
                     <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
-                        {internas.length>1 &&
-                                <Fade>
-                                    {slide2c}
-                                </Fade>
+                        {internas.length > 1 &&
+                            <Fade>
+                                {slide2c}
+                            </Fade>
                         }
-                        {internas.length==1 &&
-                                <img src={internas[0]} alt="" />
+                        {internas.length == 1 &&
+                            <img src={internas[0]} alt="" />
                         }
                     </div>
                     {contenedorMarcas}

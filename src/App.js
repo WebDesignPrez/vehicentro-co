@@ -1,7 +1,6 @@
 import Inicio from "./pages/Inicio"
 import Repuestos from "./pages/Repuestos"
-import Producto from "./pages/Producto"
-import {Route, Routes, BrowserRouter} from "react-router-dom"
+import { Route, Routes, BrowserRouter } from "react-router-dom"
 import Tecnologia from "./pages/Tecnologia"
 import { useParams } from "react-router";
 import Camion from "./pages/Camion"
@@ -13,30 +12,34 @@ import Camion_en_uso from "./pages/Camion_en_uso"
 import Compania from "./pages/Compania"
 import Trabaja_con_nosotros from "./pages/Trabaja_con_nosotros"
 import Mixer from "./pages/Mixer"
+import { Helmet } from "react-helmet"
 
 
 function App() {
-/*   
-  <BrowserRouter basename="/reactjs/">
-  */
+  /*   
+    <BrowserRouter basename="/reactjs/">
+    */
   return (
-    
+
     <BrowserRouter >
+      <Helmet>
+        <title>Vehi</title>
+        <meta name="description" content="Vehicentro" />
+      </Helmet>
       <main>
         <Routes>
-          <Route path="/" element={<Inicio/>} />
-          <Route path="/repuestos" element={<Repuestos/>} />
-          <Route path="/producto" element={<Producto name="Camion_10_toneladas"/>}  />
-          <Route path="/camiones/:id" element={<Camion/>} />
-          <Route path="/cabezales/:id" element={<Cabezal/>} />
-          <Route path="/excavadoras/:id" element={<Excavadora/>} />
-          <Route path="/tecnologia" element={<Tecnologia/>} />
-          <Route path="/concesionarios" element={<Concesionarios/>} />
-          <Route path="/volquetas/:id" element={<Volqueta/>} />
-          <Route path="/camion-en-uso/:id" element={<Camion_en_uso/>} />
-          <Route path="/compania" element={<Compania/>} />
-          <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros/>} />
-          <Route path="/mixer/:id" element={<Mixer/>} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/repuestos" element={<Repuestos />} />
+          <Route path="/camiones/:id" element={<Camion />} />
+          <Route path="/cabezales/:id" element={<Cabezal />} />
+          <Route path="/excavadoras/:id" element={<Excavadora />} />
+          <Route path="/tecnologia" element={<Tecnologia />} />
+          <Route path="/concesionarios" element={<Concesionarios />} />
+          <Route path="/volquetas/:id" element={<Volqueta />} />
+          <Route path="/camion-en-uso/:id" element={<Camion_en_uso />} />
+          <Route path="/compania" element={<Compania />} />
+          <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros />} />
+          <Route path="/mixer/:id" element={<Mixer />} />
 
         </Routes>
       </main>

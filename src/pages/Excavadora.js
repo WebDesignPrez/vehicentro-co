@@ -10,6 +10,7 @@ import '../slider.css';
 import { useEffect, useState } from "react";
 import '../modalContact.css';
 import FormContactFicha from "../components/FormContactFicha";
+import { Helmet } from "react-helmet";
 
 let imagen
 let images
@@ -49,17 +50,17 @@ function Camion() {
   const [modalFormIsOpen, setFormIsOpen] = useState(false);
 
   useEffect(() => {
-      const keyDownHandler = event => {
-          if (event.key === 'Escape') {
-              event.preventDefault();
-              closeFormContact()
-          }
-      };
+    const keyDownHandler = event => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeFormContact()
+      }
+    };
 
-      document.addEventListener('keydown', keyDownHandler);
-      return () => {
-          document.removeEventListener('keydown', keyDownHandler);
-      };
+    document.addEventListener('keydown', keyDownHandler);
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
   }, []);
 
 
@@ -142,23 +143,23 @@ function Camion() {
 
       contenedorMarcas = <div style={{ display: `contents` }} >
         <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-          {internas1b.length>1 &&
-              <Fade>
-                  {slide3}
-              </Fade>
+          {internas1b.length > 1 &&
+            <Fade>
+              {slide3}
+            </Fade>
           }
-          {internas1b.length==1 &&
-              <img src={internas1b[0]} alt="" />
+          {internas1b.length == 1 &&
+            <img src={internas1b[0]} alt="" />
           }
         </div>
         <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-          {internas2b.length>1 &&
-              <Fade>
-                  {slide3b}
-              </Fade>
+          {internas2b.length > 1 &&
+            <Fade>
+              {slide3b}
+            </Fade>
           }
-          {internas2b.length==1 &&
-              <img src={internas2b[0]} alt="" />
+          {internas2b.length == 1 &&
+            <img src={internas2b[0]} alt="" />
           }
         </div>
       </div>
@@ -232,24 +233,24 @@ function Camion() {
 
       contenedorMarcas = <div style={{ display: `contents` }} >
         <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-        {internas1b.length>1 &&
-          <Fade>
+          {internas1b.length > 1 &&
+            <Fade>
               {slide3}
-          </Fade>
-        }
-        {internas1b.length==1 &&
+            </Fade>
+          }
+          {internas1b.length == 1 &&
             <img src={internas1b[0]} alt="" />
-        } 
+          }
         </div>
         <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-        {internas2b.length>1 &&
+          {internas2b.length > 1 &&
             <Fade>
-                {slide3b}
+              {slide3b}
             </Fade>
-        }
-        {internas2b.length==1 &&
+          }
+          {internas2b.length == 1 &&
             <img src={internas2b[0]} alt="" />
-        }          
+          }
         </div>
       </div>
 
@@ -309,16 +310,20 @@ function Camion() {
 
   // ---- PÁGINA ----
   return <>
+    <Helmet>
+      <title>{nombreCamion} - Vehicentro</title>
+      <meta name="description" content={nombreCamion} />
+    </Helmet>
     <NavBarTop />
     <div className="boxesIni posRelative content2">
       <div className="boxRight tecnologia">
-        {images.length>1 &&
-                    <Slide>
-                        {slide1}
-                    </Slide>
+        {images.length > 1 &&
+          <Slide>
+            {slide1}
+          </Slide>
         }
-        {images.length==1 &&
-            <img src={images[0]} alt="" />
+        {images.length == 1 &&
+          <img src={images[0]} alt="" />
         }
       </div>
       <div className="boxLeft playMotor contenedorTextoSobrepuesto">
@@ -339,7 +344,7 @@ function Camion() {
         <div className="boxRightHeader  half text_icon_left" >
           <p className='vidaUtil'>DESDE</p>
           <p className='precioExcavadora' >{precio}</p>
-                    <p className='cuotas'>{cuotas}</p>
+          <p className='cuotas'>{cuotas}</p>
         </div>
 
         <div className="boxRightHeader  half icon_center" >
@@ -365,35 +370,35 @@ function Camion() {
 
         <div className="marcasbg" style={{ display: `flex`, 'flexWrap': `wrap` }}>
           <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-            {internas1.length>1 &&
-                    <Fade>
-                        {slide2}
-                    </Fade>
+            {internas1.length > 1 &&
+              <Fade>
+                {slide2}
+              </Fade>
             }
-            {internas1.length==1 &&
-                    <img src={internas1[0]} alt="" />
+            {internas1.length == 1 &&
+              <img src={internas1[0]} alt="" />
             }
           </div>
           <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }} >
-            {internas2.length>1 &&
-                    <Fade>
-                        {slide2b}
-                    </Fade>
+            {internas2.length > 1 &&
+              <Fade>
+                {slide2b}
+              </Fade>
             }
-            {internas2.length==1 &&
-                    <img src={internas2[0]} alt="" />
+            {internas2.length == 1 &&
+              <img src={internas2[0]} alt="" />
             }
           </div>
           <div className="boxRightHeader  half responsive" style={{ width: `100%` }} >
-            {internas.length>1 &&
-                    <Fade>
-                        {slide2c}
-                    </Fade>
+            {internas.length > 1 &&
+              <Fade>
+                {slide2c}
+              </Fade>
             }
-            {internas.length==1 &&
-                    <img src={internas[0]} alt="" />
+            {internas.length == 1 &&
+              <img src={internas[0]} alt="" />
             }
-            
+
           </div>
           {contenedorMarcas}
 
@@ -407,19 +412,19 @@ function Camion() {
       <div className="bannerMedidas responsive"><img src={medidasMovilDos} /></div>
     </div>
     <div className="boxesIni posRelative">
-            <div >
-                <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
-            </div>
-            <div>
-                <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
-            </div>
-        </div>
+      <div >
+        <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+      </div>
+      <div>
+        <FormContact url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+      </div>
+    </div>
     <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
     <Footer />
 
     {modalFormIsOpen &&
-            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
-        }
+      <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
+    }
   </>
 }
 

@@ -2,10 +2,15 @@ import BannerContacto from "../components/BannerContacto"
 import Footer from "../components/Footer"
 import NavBarTop from "../NavBarTop"
 import { NavLink } from 'react-router-dom'
+import { Helmet } from "react-helmet"
 
 function Compania() {
     return (
         <>
+            <Helmet>
+                <title>Compañia | Vehicentro</title>
+                <meta name="description" content="Compañia" />
+            </Helmet>
             <NavBarTop />
             <Content1 />
             <Content2 />
@@ -119,12 +124,12 @@ function Content3() {
             </div>
 
 
-            <div className="boxNews companiaimg2 b"  style={{ 'order': `4` }}>
+            <div className="boxNews companiaimg2 b" style={{ 'order': `4` }}>
             </div>
-            <div className="boxNews companiaimg2 b"  style={{ 'order': `0` }}>
+            <div className="boxNews companiaimg2 b" style={{ 'order': `0` }}>
                 <img src="./images/compania/mann.png" />
             </div>
-            <div className="boxNews companiaimg2 b"  style={{ 'order': `2` }}>
+            <div className="boxNews companiaimg2 b" style={{ 'order': `2` }}>
             </div>
             <div className="boxNews companiaimg2 b " style={{ 'order': `1` }}>
                 <img src="./images/compania/vdo.png" />
@@ -142,7 +147,7 @@ function Content4() {
         <div className="boxesIni posRelative news compania c">
             <div className="boxNews companiaimg2 c">
                 <img src="./images/compania/vehicentro.webp" />
-                <p className="companiatexto2 c">CERTIFICADO ISO 9001:2015<br/>
+                <p className="companiatexto2 c">CERTIFICADO ISO 9001:2015<br />
                     DE CALIDAD</p>
             </div>
             <div className="boxNews companiaimg2 c d">
