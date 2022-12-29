@@ -23,7 +23,7 @@ function App() {
 
     <BrowserRouter >
       <Helmet>
-        <title>Vehi</title>
+        <title>Vehicentro</title>
         <meta name="description" content="Vehicentro" />
       </Helmet>
       <main>
