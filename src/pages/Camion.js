@@ -85,7 +85,7 @@ function Camion() {
             console.log('10 Toneladas')
             images = [
                 "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador.webp",
-                "../images/10-toneladas/camion-gris-sinotruk-de-10-toneladas-ecuadorn-slide.webp"
+                "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "240 HP"
             textoMotor2 = "Freno a las válvulas"
@@ -191,7 +191,7 @@ function Camion() {
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
                 "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
-                "../images/12-toneladas/camion-gris-sinotruk-de-12-toneladas-ecuador-slide.webp"
+                "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "240 HP"
             textoMotor2 = "Modelo T5G-1167"
@@ -244,7 +244,7 @@ function Camion() {
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB13T1167"
             images = [
                 "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
-                "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-de-frente-ecuador.webp"
+                "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "280 HP"
             textoMotor2 = "Modelo T5G-1167"
@@ -1032,7 +1032,7 @@ function Camion() {
         </div>
 
 
-        <div className="boxesIni posRelative">
+        <div className="boxesIni posRelative centrado">
             <div className="centrado">
                 <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
             </div>
