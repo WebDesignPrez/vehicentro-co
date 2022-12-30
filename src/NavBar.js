@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -366,6 +366,41 @@ export default function NavBar() {
 
     });
 
+    const [message, setMessage] = useState('');
+    const [menuBusqueda, setMenu] = useState([]);
+
+    var  obj
+    const handleChange = (event) => {
+        setMenu([])
+        let s
+        if(event.target.value.length>0){
+            indexData.forEach(a=>{
+                s = a.buscar
+                if(s.includes(event.target.value)){
+                    a.resultados.forEach(res=>{
+                        //console.log(res.url)
+                        setMenu($menuBusqueda=>[...menuBusqueda, {url: res.url, desc:res.descripcion}])
+                    })
+                    
+                }
+            })
+        }
+    };
+    
+    let indexData = [{
+        buscar: "8 toneladas",
+        resultados:[{
+            url : "camiones/camion-8-toneladas-1147",
+            descripcion : "Camion de 8 toneladas"
+        }]
+    }, {
+        buscar: "5 toneladas",
+        resultados:[{
+            url : "camiones/camion-5-toneladas-1147",
+            descripcion : "Camion de 5 toneladas"
+        }]
+    }]
+
     return <nav className="menu1 internal">
         <div className="burger">
             <div className="line1"></div>
@@ -376,8 +411,18 @@ export default function NavBar() {
             <img src="./images/vehicentro-logo-blanco.png" width="230" height="80" />
         </div>
         <div className="navSearch">
-            <input className="search-nav-input" data-testid="search-input" type="search" title="Search" placeholder="Buscar..." id="global-search-input" aria-controls="searchNavSuggestions" aria-autocomplete="list" aria-expanded="false" aria-activedescendant="search-suggestion-null" role="combobox" aria-describedby="searchBoxHelpText" autoComplete="off" />
-
+            <input className="search-nav-input" data-testid="search-input" type="search" title="Search" placeholder="Buscar..." id="global-search-input" onChange={handleChange} />
+            {menuBusqueda.length>0&&    
+                <div className="result">
+                    {menuBusqueda.map((item, index) => (
+                        <li>
+                        <NavLink to={item.url}>
+                        {item.desc}
+                        </NavLink>
+                        </li>
+                    ))}
+                </div>
+            }
         </div>
         <ul className="nav-links">
             <li>
