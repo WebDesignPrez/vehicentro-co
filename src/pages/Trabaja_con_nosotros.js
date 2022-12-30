@@ -26,7 +26,7 @@ function Trabaja_con_nosotros() {
 function Content1() {
     return (<>
         <div className="boxesIni posRelative trabajanosotros">
-            <div className="centrado" >
+            <div className="centrado">
                 <img src="./images/trabaja-con-nosotros/trabaja-con-nosotros.webp"  />
             </div>
             <div className="" >

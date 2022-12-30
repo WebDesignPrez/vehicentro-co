@@ -1329,9 +1329,13 @@ li.mouseA:hover {
     padding: 3%;
 }
 
-.trabajanosotros .centrado {
+ .centrado {
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
+}
+
+.espaciomenu{
+    margin: 25px 0 0 0;
 }

@@ -122,10 +122,11 @@ function Camion() {
             audio_motor = "../images/10-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+
 
             break;
 
@@ -160,8 +161,7 @@ function Camion() {
                 "../images/9-toneladas/volante-deportivo-de-camion-de-9-toneladas.webp",
                 "../images/9-toneladas/palanca-de-cambios-de-camion-de-9-toneladas.webp",
                 "../images/9-toneladas/asiento-neumatico.webp",
-                "../images/9-toneladas/eleva-vidrios-electricos.webp",
-                "../images/9-toneladas/radio-touch-mp5.webp"
+                "../images/9-toneladas/eleva-vidrios-electricos.webp"
             ];
             internas2 = [
                 "../images/9-toneladas/climatizador.webp",
@@ -175,7 +175,7 @@ function Camion() {
             audio_motor = "../images/9-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -228,7 +228,7 @@ function Camion() {
             audio_motor = "../images/12-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -281,7 +281,7 @@ function Camion() {
             audio_motor = "../images/13-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -333,7 +333,7 @@ function Camion() {
             audio_motor = "../images/13-toneladas-330/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -384,7 +384,7 @@ function Camion() {
             audio_motor = "../images/18-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -436,7 +436,7 @@ function Camion() {
             audio_motor = "../images/19-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -455,7 +455,7 @@ function Camion() {
                 "../images/3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "87 HP"
-            textoMotor2 = "Modelo 1047 - 3.5 Ton"
+            textoMotor2 = "Modelo 1057 - 3.5 Ton"
             textoMotor3 = "Ficha técnica"
             precio = "$23.990"
             cuotas = 'Cuotas desde: $447.00'
@@ -769,7 +769,7 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             break;
 
         //20 toneladas
@@ -818,7 +818,7 @@ function Camion() {
             audio_motor = "../images/20-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
-
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -1033,7 +1033,7 @@ function Camion() {
 
 
         <div className="boxesIni posRelative">
-            <div >
+            <div className="centrado">
                 <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
             </div>
             <div>
