@@ -778,17 +778,19 @@ p.titleFooter {
     width: 50%;
 }
 
-.boxLeftHeader.complete{
+.boxLeftHeader.complete {
     width: 100%;
 }
 
 .boxesIniHeader.main {
     background-color: #0d0d0d;
 }
-.boxesIniHeader.main.fondonegro.contacto{
-    
+
+.boxesIniHeader.main.fondonegro.contacto {
+
     background-color: #ffffff;
 }
+
 .boxesIniHeader.main.compania {
     background-color: #fbfbfb;
 }
@@ -1222,32 +1224,32 @@ p.titleFooter {
     text-align: right;
 }
 
-.textConcesionario{
+.textConcesionario {
     text-align: center;
 }
 
-.direccionConcesionario::before{
+.direccionConcesionario::before {
     content: url(../public/images/pointerRed.png);
     position: absolute;
     left: -30px;
     top: -6px;
 }
 
-.direccionConcesionario{
+.direccionConcesionario {
     position: relative;
     font-size: 20px;
 }
 
-.telefonoConcesionario span{
+.telefonoConcesionario span {
     color: red;
 }
 
-.telefonoConcesionario{
+.telefonoConcesionario {
     font-size: 19px;
     margin: 5px 0px 10px 0px;
 }
 
-.linkConcesionario a::after{
+.linkConcesionario a::after {
     content: url(../public/images/arrow-rojo.png);
     position: absolute;
     right: -35px;
@@ -1255,11 +1257,11 @@ p.titleFooter {
     transform: scale(0.7);
 }
 
-.linkConcesionario{
+.linkConcesionario {
     position: relative;
 }
 
-.linkConcesionario a{
+.linkConcesionario a {
     text-decoration: none;
     color: grey;
 }
@@ -1287,14 +1289,13 @@ li.mouseA:hover {
     border-bottom-style: solid;
 }
 
-.imagenContacto
-{
-    background-position:left top;
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
+.imagenContacto {
+    background-position: left top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .boxesIniHeader img.complete {
@@ -1307,7 +1308,7 @@ li.mouseA:hover {
     overflow: hidden;
 }
 
-.closeBtnForm{
+.closeBtnForm {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1316,10 +1317,21 @@ li.mouseA:hover {
     z-index: 1000;
 }
 
-.closeBtnForm img{
+.closeBtnForm img {
     width: 100%;
 }
 
-.modalFormContainer{
+.modalFormContainer {
     position: relative;
+}
+
+.trabajanosotros {
+    padding: 3%;
+}
+
+.trabajanosotros .centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 }

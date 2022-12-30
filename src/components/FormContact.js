@@ -217,19 +217,19 @@ function FormContact(props) {
                     <input placeholder="" name="email" type="text" onBlur={(e) => { handleFocusEmail(e) }} onChange={(e) => { handleChangeEmail(e) }} value={email} />
                   </div>
 
-                  <label className="input_title">*Telefono</label>
+                  <label className="input_title">*Teléfono</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/phone-solid.png" /></span>
                     <input placeholder="" name="celular" type="text" onBlur={(e) => { handleFocusTel(e) }} onChange={(e) => { handleChangeTel(e) }} value={celular} />
                   </div>
 
-                  <label className="input_title">*Cedula</label>
+                  <label className="input_title">*Cédula</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/portrait-solid.png" /></span>
                     <input placeholder="" name="cedula" type="text" onBlur={(e) => { handleFocusCed(e) }} onChange={(e) => { handleChangeCed(e) }} value={cedula} />
                   </div>
 
-                  <label className="input_title">*Escoge tu concesionario mas cercano</label>
+                  <label className="input_title">*Escoge tu concesionario más cercano</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
                     <select name="escoge_tu_concesionario_mas_cercano" onBlur={(e) => { handleFocus(e) }} onChange={(e) => { handleChangeCon(e) }} value={escoge_tu_concesionario_mas_cercano}>
@@ -266,7 +266,7 @@ function FormContact(props) {
                     </select>
                   </div>
 
-                  <label className="input_title">*Camion</label>
+                  <label className="input_title">*Camión</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
                     <select name="serie" value={camionSerie}>
