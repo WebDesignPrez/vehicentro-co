@@ -51,7 +51,7 @@ function Camion() {
         case "cabezal-t5g-4187":
             console.log('24 ton')
             nombreCamion = "Camion de 24 toneladas | T5G-4187"
-            camionSerie = "T5G 1167 / 24 TON"
+            camionSerie = "T5G 4187 / 24 TON"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
@@ -553,7 +553,7 @@ function Camion() {
             <div className="bannerMedidas responsive"><img src={medidasMovil} /></div>
         </div>
         <div className="boxesIni posRelative">
-            <div >
+            <div className="centrado">
                 <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
             </div>
             <div>

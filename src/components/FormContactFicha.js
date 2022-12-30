@@ -162,7 +162,7 @@ function FormContactFicha(props) {
   }
 
   const serie100 = ['1057 / 3.5 TON', '1067 / 5 TON', '1067 / 6 TON', '1147 / 8 TON'];
-  const serieT5G = ['T5G 1167 / 9 TON', 'T5G 1167 / 10.8 TON', 'T5G 1167 / 12 TON', 'T5G 1167 / 13 TON (280HP)', 'T5G 1167 / 13 TON (330HP)', 'T5G 1167 / 18 TON', 'T5G 1167 / 19.5 TON', 'T5G 1167 / 24 TON'];
+  const serieT5G = ['T5G 1167 / 9 TON', 'T5G 1167 / 10.8 TON', 'T5G 1167 / 12 TON', 'T5G 1167 / 13 TON (280HP)', 'T5G 1167 / 13 TON (330HP)', 'T5G 1167 / 18 TON', 'T5G 1167 / 19.5 TON', 'T5G 4187 / 24 TON'];
   const serieT7H = ['T7H 390 / 28 TON', 'T7H 390 / 42 TON', 'T7H 430 / 45 TON'];
   const serieC7H = ['C7H 1256 / 20 TON', 'C7H 540 / 48 TON', 'C7H 540 / 48 TON OFFROAD'];
   const especiales = ['VOLQUETA T5G 280-330 8-9M2', 'VOLQUETA T5G 430-330 10-14M2', 'A7 1257 / MIXER'];
@@ -219,19 +219,19 @@ function FormContactFicha(props) {
                     <input placeholder="" name="email" type="text" onBlur={(e) => { handleFocusEmail(e) }} onChange={(e) => { handleChangeEmail(e) }} value={email} />
                   </div>
 
-                  <label className="input_title">*Telefono</label>
+                  <label className="input_title">*Teléfono</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/phone-solid.png" /></span>
                     <input placeholder="" name="celular" type="text" onBlur={(e) => { handleFocusTel(e) }} onChange={(e) => { handleChangeTel(e) }} value={celular} />
                   </div>
 
-                  <label className="input_title">*Cedula</label>
+                  <label className="input_title">*Cédula</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/portrait-solid.png" /></span>
                     <input placeholder="" name="cedula" type="text" onBlur={(e) => { handleFocusCed(e) }} onChange={(e) => { handleChangeCed(e) }} value={cedula} />
                   </div>
 
-                  <label className="input_title">*Escoge tu concesionario mas cercano</label>
+                  <label className="input_title">*Escoge tu concesionario más cercano</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
                     <select name="escoge_tu_concesionario_mas_cercano" onBlur={(e) => { handleFocus(e) }} onChange={(e) => { handleChangeCon(e) }} value={escoge_tu_concesionario_mas_cercano}>
@@ -267,7 +267,7 @@ function FormContactFicha(props) {
                     </select>
                   </div>
 
-                  <label className="input_title">*Camion</label>
+                  <label className="input_title">*Camión</label>
                   <div className="input-group">
                     <span className="userIcon"><img src="../images/map-marker-solid.png" /></span>
                     <select name="serie" value={camionSerie}>
