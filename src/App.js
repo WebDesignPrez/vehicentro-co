@@ -13,6 +13,7 @@ import Camion_en_uso from "./pages/Camion_en_uso"
 import Compania from "./pages/Compania"
 import Trabaja_con_nosotros from "./pages/Trabaja_con_nosotros"
 import Mixer from "./pages/Mixer"
+import Serie from "./pages/Serie"
 import { Helmet } from "react-helmet"
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros />} />
           <Route path="/mixer/:id" element={<Mixer />} />
           <Route path="/inicio" element={<Inicio2 />} />
+          <Route path="/serie/:id" element={<Serie />} />
 
         </Routes>
       </main>

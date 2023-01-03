@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom"
 export default function Footer(){
     return (
     <div className="footer posRelative">
@@ -28,9 +28,9 @@ export default function Footer(){
                 <ul className="list">
                     <li><p className="subTitle">SINOTRUK</p></li>
                     <li><p className="itemMenu">Serie 100</p></li>
-                    <li><p className="itemMenu">Serie T5G</p></li>
-                    <li><p className="itemMenu">Serie T7H</p></li>
-                    <li><p className="itemMenu">Serie C7H</p></li>
+                    <li><p className="itemMenu"><NavLink to="/serie/t5g">Serie T5G</NavLink></p></li>
+                    <li><p className="itemMenu"><NavLink to="/serie/t7h">Serie T7H</NavLink></p></li>
+                    <li><p className="itemMenu"><NavLink to="/serie/c7h">Serie C7H</NavLink></p></li>
                     <li><p className="itemMenu">Especiales</p></li>
                 </ul>
                 <ul className="list">
