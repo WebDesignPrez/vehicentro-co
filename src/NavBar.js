@@ -109,8 +109,8 @@ export default function NavBar() {
         const navSlide = () => {
             const burger = document.querySelector(".burger");
             const sinotruk = document.querySelector(".sinotruk");
-           /*  const sunward = document.querySelector(".sunward");
-            const keyton = document.querySelector(".keyton"); */
+            const sunward = document.querySelector(".sunward");
+            /*const keyton = document.querySelector(".keyton"); */
             const concesionarios = document.querySelector(".concesionarios");
 
             const nav = document.querySelector(".nav-links");
@@ -147,6 +147,34 @@ export default function NavBar() {
                 }
             });
             sinotruk.addEventListener("click", () => {
+                nav.classList.toggle("nav-active");
+                navSearch[0].classList.toggle("nav-search-active");
+
+                document.querySelector('nav > .logo').classList.toggle("logoNav");
+                navh.classList.toggle("nav-inactive");
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = "";
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+                    }
+                });
+
+                document.querySelector(".menu1").classList.add("logob")
+
+                if (auxMovil == 0)
+                    resetMenu();
+
+                burger.classList.toggle("toggle");
+                if (burger.classList.contains('toggle')) {
+
+                } else {
+                    document.querySelector(".menu1").classList.remove("logob")
+                }
+            });
+            
+            sunward.addEventListener("click", () => {
                 nav.classList.toggle("nav-active");
                 navSearch[0].classList.toggle("nav-search-active");
 
@@ -594,6 +622,6 @@ export default function NavBar() {
                 <a href="#">QUIERO COMUNICARME CON UN ASESOR</a>
             </li>
         </ul>
-        <img className="sinoIcon" src="./images/sinot.png" width="275" height="69" />
+        <img className="sinoIcon" src="./images/home/logo-sinotruk-leon.webp" width="275" height="69" />
     </nav>
 } 

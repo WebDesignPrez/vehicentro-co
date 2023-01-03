@@ -1325,7 +1325,7 @@ li.mouseA:hover {
     position: relative;
 }
 
-.result{
+.result {
     z-index: 100000;
     position: absolute;
     top: 10%;
@@ -1338,14 +1338,14 @@ li.mouseA:hover {
     padding: 3%;
 }
 
- .centrado {
+.centrado {
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
 }
 
-.espaciomenu{
+.espaciomenu {
     margin: 25px 0 0 0;
 }
 
@@ -1363,24 +1363,24 @@ li.mouseA:hover {
     position: relative;
 }
 
-.boxBlock>div img{
+.boxBlock>div img {
     width: 100%;
     height: auto;
 }
 
-.block1 .overlayBox{
+.block1 .overlayBox {
     position: absolute;
     bottom: 0px;
     width: 100%;
     height: 15vw;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #13131385;
     text-align: center;
 }
 
 .block1 .titleBox {
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: #fff;
-    padding: 4vw 1.5vw 0vw 2vw;
+    padding: 6.5vw 1.5vw 0vw 2vw;
     display: inline-block;
 }
 
@@ -1394,7 +1394,7 @@ li.mouseA:hover {
     flex-direction: row;
     position: absolute;
     bottom: 0px;
-    padding: 0vw 2.5vw 1vw 2vw;
+    padding: 0vw 2.5vw 1.5vw 2vw;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -1403,30 +1403,30 @@ li.mouseA:hover {
 .block1 .linksBox>a {
     display: inline-block;
     color: #fff;
-    font-size: 1.3vw;
+    font-size: 1vw;
     text-decoration: none;
     margin-right: 10px;
 }
 
-.block1 .linksBox>a:hover{
+.block1 .linksBox>a:hover {
     color: red;
     cursor: pointer;
 }
 
-.block1 .linksBox>a::after{
+.block1 .linksBox>a::after {
     content: url(../public/images/arrow2.png);
     padding-left: 5px;
 }
 
-.block1 .linksBox>a.line2{
-    line-height: 40px;
+.block1 .linksBox>a.line2 {
+    line-height: 17px;
 }
 
-.block2 img{
+.block2 img {
     width: 100%;
 }
 
-.block2{
+.block2 {
     background-color: #191512;
 }
 
@@ -1443,13 +1443,14 @@ li.mouseA:hover {
     padding-bottom: 3vw;
 }
 
-.block3 .bottomContainer{
-    
+.block3 .bottomContainer {
+
     color: #fff;
     padding: 1vw 2vw;
 }
 
-.block3 .bottomContainer .titleBox, .block3 .bottomContainer .titleBox2{
+.block3 .bottomContainer .titleBox,
+.block3 .bottomContainer .titleBox2 {
     font-size: 1.5vw;
     margin: 0 0.5vw;
 }
@@ -1461,23 +1462,24 @@ li.mouseA:hover {
     flex-wrap: wrap;
     width: 75%;
 }
+
 .block3 .bottomContainer .linksBox a {
     margin: 0 0.5vw;
 }
 
 .block3 .bottomContainer .linksBox a:hover {
-    color:red;
+    color: red;
     cursor: pointer;
 }
 
 
 
-.block3 .bottomContainer .titleBox2::after{
+.block3 .bottomContainer .titleBox2::after {
     content: url(../public/images/arrow2.png);
     margin-left: 10px;
 }
 
-.block3.row2{
+.block3.row2 {
     padding-top: 0vw;
 }
 
@@ -1485,7 +1487,7 @@ li.mouseA:hover {
     width: 50%;
 }
 
-.block4>div img{
+.block4>div img {
     width: 100%;
 }
 
@@ -1494,19 +1496,29 @@ li.mouseA:hover {
     right: 30px;
 }
 
-.telefonoInicio{
+.telefonoInicio {
     color: red;
     font-size: 1.8vw;
     position: relative;
 }
 
-.telefonoInicio::before{
-    content : url(../public/images/phoneHome.png);
+.telefonoInicio::before {
+    content: url(../public/images/phoneHome.png);
     position: absolute;
     left: -45px;
     top: -10px;
 }
 
-.home2 ul.nav-links-h{
+.home2 ul.nav-links-h {
     width: 70% !important;
+}
+
+.rojo {
+    color: #f44331;
+}
+
+.boldserie {
+
+    font-weight: 700;
+    font-size: 1.1vw;
 }
