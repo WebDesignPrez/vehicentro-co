@@ -15,11 +15,10 @@ export default function Footer(){
                 <p className="title titleContacto">CONTACTO DIRECTO</p>
                 <div className="social row">
                   <div className="flex-row imgMain">
-                    <span><img src="../images/facebook.png" alt="facebook" /></span>
-                    <span><img src="../images/instagram.png" alt="instagram" /></span>
-                    <span><img src="../images/youtube.png" alt="youtube" /></span>
-                    <span><img src="../images/linkdin.png" alt="linkdin" /></span>
-                    
+                    <span><img src="../images/facebook.png" alt="facebook" width="32" height="32" /></span>
+                    <span><img src="../images/instagram.png" alt="instagram" width="32" height="32" /></span>
+                    <span><img src="../images/youtube.png" alt="youtube" width="32" height="32" /></span>
+                    <span><img src="../images/linkdin.png" alt="linkdin" width="32" height="32" /></span>          
                   </div>
                   
                 </div>

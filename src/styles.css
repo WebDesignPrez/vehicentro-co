@@ -1348,3 +1348,165 @@ li.mouseA:hover {
 .espaciomenu{
     margin: 25px 0 0 0;
 }
+
+
+/*INICIO 2*/
+
+.boxBlock {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.boxBlock>div {
+    width: 33.33%;
+    position: relative;
+}
+
+.boxBlock>div img{
+    width: 100%;
+    height: auto;
+}
+
+.block1 .overlayBox{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 15vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.block1 .titleBox {
+    font-size: 2.5vw;
+    color: #fff;
+    padding: 4vw 1.5vw 0vw 2vw;
+    display: inline-block;
+}
+
+.block1 .titleBox::after {
+    content: url(../public/images/arrowRotate.png);
+    padding-left: 1vw;
+}
+
+.block1 .linksBox {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0px;
+    padding: 0vw 2.5vw 1vw 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.block1 .linksBox>a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.3vw;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.block1 .linksBox>a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.block1 .linksBox>a::after{
+    content: url(../public/images/arrow2.png);
+    padding-left: 5px;
+}
+
+.block1 .linksBox>a.line2{
+    line-height: 40px;
+}
+
+.block2 img{
+    width: 100%;
+}
+
+.block2{
+    background-color: #191512;
+}
+
+.block3.boxBlock>div {
+    width: 30%;
+    background-color: #2d2d2d;
+}
+
+.block3.boxBlock {
+    background-color: #191512;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.block3 .bottomContainer{
+    
+    color: #fff;
+    padding: 1vw 2vw;
+}
+
+.block3 .bottomContainer .titleBox, .block3 .bottomContainer .titleBox2{
+    font-size: 1.5vw;
+    margin: 0 0.5vw;
+}
+
+.block3 .bottomContainer .linksBox {
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+.block3 .bottomContainer .linksBox a {
+    margin: 0 0.5vw;
+}
+
+.block3 .bottomContainer .linksBox a:hover {
+    color:red;
+    cursor: pointer;
+}
+
+
+
+.block3 .bottomContainer .titleBox2::after{
+    content: url(../public/images/arrow2.png);
+    margin-left: 10px;
+}
+
+.block3.row2{
+    padding-top: 0vw;
+}
+
+.block4>div {
+    width: 50%;
+}
+
+.block4>div img{
+    width: 100%;
+}
+
+.sinoIcon {
+    position: absolute;
+    right: 30px;
+}
+
+.telefonoInicio{
+    color: red;
+    font-size: 1.8vw;
+    position: relative;
+}
+
+.telefonoInicio::before{
+    content : url(../public/images/phoneHome.png);
+    position: absolute;
+    left: -45px;
+    top: -10px;
+}
+
+.home2 ul.nav-links-h{
+    width: 70% !important;
+}

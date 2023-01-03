@@ -109,8 +109,8 @@ export default function NavBar() {
         const navSlide = () => {
             const burger = document.querySelector(".burger");
             const sinotruk = document.querySelector(".sinotruk");
-            const sunward = document.querySelector(".sunward");
-            const keyton = document.querySelector(".keyton");
+           /*  const sunward = document.querySelector(".sunward");
+            const keyton = document.querySelector(".keyton"); */
             const concesionarios = document.querySelector(".concesionarios");
 
             const nav = document.querySelector(".nav-links");
@@ -173,7 +173,7 @@ export default function NavBar() {
                     document.querySelector(".menu1").classList.remove("logob")
                 }
             });
-            sunward.addEventListener("click", () => {
+            /*sunward.addEventListener("click", () => {
                 nav.classList.toggle("nav-active");
                 navSearch[0].classList.toggle("nav-search-active");
 
@@ -227,6 +227,7 @@ export default function NavBar() {
                     document.querySelector(".menu1").classList.remove("logob")
                 }
             });
+            */
             concesionarios.addEventListener("click", () => {
                 nav.classList.toggle("nav-active");
                 navSearch[0].classList.toggle("nav-search-active");
@@ -257,10 +258,10 @@ export default function NavBar() {
             //INI PARAMS
 
 
-            const searchBtn = document.querySelector(".searchIcon");
+/*             const searchBtn = document.querySelector(".searchIcon");
             searchBtn.addEventListener("click", () => {
                 burger.click()
-            })
+            }) */
 
             const closeBtnMovil = document.querySelectorAll(".closeMovil");
             for (var i = 0; i < closeBtnMovil.length; ++i) {
@@ -271,8 +272,8 @@ export default function NavBar() {
                 })
             }
 
-            const motorPlayer = document.getElementById('audioMotor')
-            motorPlayer.src = './motor.mp3'
+          /*   const motorPlayer = document.getElementById('audioMotor')
+            motorPlayer.src = './motor.mp3' */
         }
 
         const resetMenuMovil = (opt) => {
@@ -431,7 +432,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
                         <p>CAMIONES</p>
-                        <img className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" />
+                        <img className="imgnMenu" src="../images/logoSinotruck.png" alt="Sinotruck" width="100" height="32" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -490,7 +491,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="1"></div>
                         <p>EXCAVADORAS</p>
-                        <img className="imgnMenu" src="../images/logo-sunward.webp" alt="sunward" />
+                        <img className="imgnMenu" src="../images/logo-sunward.webp" alt="sunward" width="100" height="32" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -508,7 +509,7 @@ export default function NavBar() {
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="2"></div>
                         <p>KEYTON</p>
-                        <img src="../images/logo-keyton.webp" alt="Keyotn" />
+                        <img src="../images/logo-keyton.webp" alt="Keyotn"  width="100" height="32" />
                     </div>
                     <div className="rowMenu">
                         <div className="colMenu">
@@ -593,8 +594,6 @@ export default function NavBar() {
                 <a href="#">QUIERO COMUNICARME CON UN ASESOR</a>
             </li>
         </ul>
-
-
-        <img className="searchIcon" src="./images/search.png" />
+        <img className="sinoIcon" src="./images/sinot.png" width="275" height="69" />
     </nav>
 } 

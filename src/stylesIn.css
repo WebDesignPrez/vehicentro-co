@@ -261,7 +261,7 @@ color:red;
 }
 
 .internal .nav-search-active{
-    display: flex !important;
+    display: flex;
 }
 
 

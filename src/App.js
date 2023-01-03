@@ -1,4 +1,5 @@
 import Inicio from "./pages/Inicio"
+import Inicio2 from "./pages/Inicio2"
 import Repuestos from "./pages/Repuestos"
 import { Route, Routes, BrowserRouter } from "react-router-dom"
 import Tecnologia from "./pages/Tecnologia"
@@ -28,7 +29,7 @@ function App() {
       </Helmet>
       <main>
         <Routes>
-          <Route path="/" element={<Inicio />} />
+          <Route path="/" element={<Inicio2 />} />
           <Route path="/repuestos" element={<Repuestos />} />
           <Route path="/camiones/:id" element={<Camion />} />
           <Route path="/cabezales/:id" element={<Cabezal />} />
@@ -40,6 +41,7 @@ function App() {
           <Route path="/compania" element={<Compania />} />
           <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros />} />
           <Route path="/mixer/:id" element={<Mixer />} />
+          <Route path="/inicio" element={<Inicio2 />} />
 
         </Routes>
       </main>
