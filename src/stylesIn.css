@@ -22,7 +22,7 @@ nav.internal{
  /*  flex-wrap: wrap; */
   align-items: center;
   color: #fff;
-  max-height: 80px;
+  min-height: 100px;
 
 }
 
