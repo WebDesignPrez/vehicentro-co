@@ -132,7 +132,7 @@ function Block3() {
                 </div>
             </div>
             <div>
-                <img src="../images/block3.jpg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/motor.webp" width="360" height="464" alt="Vehicentro" />
                 <div className="bottomContainer">
                     <p className="titleBox">SERIE</p>
                     <p className="titleBox2">100</p>
@@ -146,7 +146,7 @@ function Block3() {
                 </div>
             </div>
             <div>
-                <img src="../images/block3.jpg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/serie-volquetas.webp" width="360" height="464" alt="Vehicentro" />
                 <div className="bottomContainer">
                     <p className="titleBox">SERIE</p>
                     <p className="titleBox2">100</p>
@@ -177,7 +177,7 @@ function Block3() {
                 </div>
             </div>
             <div>
-                <img src="../images/block3.jpg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/sector-ganadero.webp" width="360" height="464" alt="Vehicentro" />
                 <div className="bottomContainer">
                     <p className="titleBox">SERIE</p>
                     <p className="titleBox2">100</p>
@@ -191,7 +191,7 @@ function Block3() {
                 </div>
             </div>
             <div>
-                <img src="../images/block3.jpg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/sector-publico.webp" width="360" height="464" alt="Vehicentro" />
                 <div className="bottomContainer">
                     <p className="titleBox">SERIE</p>
                     <p className="titleBox2">100</p>
@@ -213,10 +213,10 @@ function Block4() {
     return (
         <div className="block4 boxBlock">
             <div>
-                <img src="../images/block4.jpeg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/sunward-banner.webp" width="360" height="464" alt="Vehicentro" />
             </div>
             <div>
-                <img src="../images/block4.jpeg" width="360" height="464" alt="Vehicentro" />
+                <img src="../images/home/sunward-banner.webp" width="360" height="464" alt="Vehicentro" />
             </div>
         </div>
     )

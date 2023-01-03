@@ -41,7 +41,7 @@ function App() {
           <Route path="/compania" element={<Compania />} />
           <Route path="/trabaja-con-nosotros" element={<Trabaja_con_nosotros />} />
           <Route path="/mixer/:id" element={<Mixer />} />
-          <Route path="/inicio" element={<Inicio2 />} />
+          <Route path="/inicio" element={<Inicio/>} />
 
         </Routes>
       </main>
