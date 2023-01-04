@@ -36,13 +36,13 @@ function Content2() {
 
     <div className="boxesIni posRelative news repuesto">
       <div className="boxNews companiaimg2">
-        <img src="./images/compania/logo-sinotruk.webp" width="1000" height="760" className="slideMain" alt="Series100" />
+        <img src="./images/repuestos/logo-sinotruk.webp" width="1000" height="760" className="slideMain" alt="Series100" />
       </div>
       <div className="boxNews companiaimg2">
-        <img src="./images/compania/logo-keyton.webp" width="1000" height="760" className="slideMain" alt="Mixer" />
+        <img src="./images/repuestos/logo-keyton.webp" width="1000" height="760" className="slideMain" alt="Mixer" />
       </div>
       <div className="boxNews companiaimg2">
-        <img src="./images/compania/logo-sunward.webp" width="1000" height="760" className="slideMain" alt="Excavadora" />
+        <img src="./images/repuestos/logo-sunward.webp" width="1000" height="760" className="slideMain" alt="Excavadora" />
       </div>
       <div className="boxNews companiatext2">
         <p className="repuestotexto">Contamos con una red de 14 concesionarios a nivel nacional, 5 talleres de mantenimiento vehicular y el stock de repuestos más amplio y completo del pais.</p>

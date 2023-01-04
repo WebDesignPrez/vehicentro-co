@@ -171,7 +171,7 @@ function Block3() {
                     </div>
                 </div>
                 <div>
-                    <img src="../images/home/motor.webp" width="360" height="464" alt="Vehicentro" />
+                    <img src="../images/home/veinstein.webp" width="360" height="464" alt="Vehicentro" />
                     <div className="bottomContainer"><div className="bannerTec"><img src="../images/home/tecnologia-alemana.webp" /></div>
                         <div className="boxPlayerMotor audiohome">
                             <audio id="audioMotorHome" controls type="audio/mpeg"></audio>
@@ -256,9 +256,9 @@ function Menu2() {
                 <li ><a className="sunward mouseA" option="sinotruk">SINOTRUK</a></li>
                 <li ><a className="sinotruk mouseA" option="sunward">SUNWARD</a></li>
                 <li ><a className="concesionarios mouseA" option="concesionarios">CONCESIONARIOS</a></li>
-                <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
+                <li className="camionesCss"><NavLink to="/camion-en-uso/camion-de-48-toneladas">CAMIONES EN USO</NavLink></li>
                 <li className="companiaCss"><NavLink to="/compania">COMPAÑIA</NavLink></li>
-                <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
+                <li className="tecnologiaCss"><a>TECNOLOGÍA</a></li>
             </ul>
             <span className="telefonoInicio">032994740 - 0992048229</span>
         </nav>
@@ -271,7 +271,6 @@ function Banner() {
             <img src="./images/home/vehicentro-en-ecuador-venta-de-camiones-cabezales-y-volquetas-sinotruk.webp" width="1790" height="590" className="slideMain" alt="Punto de Venta" />
             <div className="boxText flex-table row">
                 <a href="/concesionarios"><div className="flex-row textMain textMain2">Puntos Vehicentro a nivel Nacional</div></a>
-                <div className="flex-row imgMain"><img src="./images/arrow-rojo.png" alt="arrow" width="30" height="35" /></div>
             </div>
         </div>
     )

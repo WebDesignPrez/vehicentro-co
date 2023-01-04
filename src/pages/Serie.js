@@ -128,28 +128,20 @@ function Serie() {
             internas1 = [
                 "../images/10-toneladas/volante-deportivo-de-camion-de-10-toneladas.webp",
                 "../images/10-toneladas/palanca-de-cambios-de-camion-de-10-toneladas.webp",
-                "../images/10-toneladas/asiento-neumatico-dos.webp",
-                "../images/10-toneladas/eleva-vidrios-electricos.webp",
-                "../images/10-toneladas/radio-touch-mp5.webp"
+                "../images/10-toneladas/asiento-neumatico-dos.webp"
             ];
             internas2 = [
                 "../images/10-toneladas/climatizador.webp",
-                "../images/10-toneladas/radio-touch-mp5.webp",
-                "../images/10-toneladas/cabina.webp",
-                "../images/10-toneladas/portavasos.webp"
+                "../images/10-toneladas/radio-touch-mp5.webp"
             ];
             internas3 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
+                "../images/10-toneladas/eleva-vidrios-electricos.webp",
+                "../images/10-toneladas/radio-touch-mp5.webp"
             ];
 
             internas4 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
+                "../images/10-toneladas/cabina.webp",
+                "../images/10-toneladas/portavasos.webp"
             ];
 
             audio_motor = "../images/10-toneladas/motor.mp3"
@@ -195,28 +187,20 @@ function Serie() {
             marcas = "../images/9-toneladas/marcas-vehicentro.webp"
             internas1 = [
                 "../images/9-toneladas/volante-deportivo-de-camion-de-9-toneladas.webp",
-                "../images/9-toneladas/palanca-de-cambios-de-camion-de-9-toneladas.webp",
-                "../images/9-toneladas/asiento-neumatico.webp",
-                "../images/9-toneladas/eleva-vidrios-electricos.webp"
+                "../images/9-toneladas/palanca-de-cambios-de-camion-de-9-toneladas.webp"
             ];
             internas2 = [
                 "../images/9-toneladas/climatizador.webp",
-                "../images/9-toneladas/radio-touch-mp5.webp",
+                "../images/9-toneladas/radio-touch-mp5.webp"
+            ];
+            internas3 = [
                 "../images/9-toneladas/cabina.webp",
                 "../images/9-toneladas/portavasos.webp"
             ];
-            internas3 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
-            ];
 
             internas4 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
+                "../images/9-toneladas/asiento-neumatico.webp",
+                "../images/9-toneladas/eleva-vidrios-electricos.webp"
             ];
 
             audio_motor = "../images/9-toneladas/motor.mp3"

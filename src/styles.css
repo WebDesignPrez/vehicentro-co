@@ -1418,7 +1418,7 @@ li.mouseA:hover {
 .block1 .linksBox>a {
     display: inline-block;
     color: #fff;
-    font-size: 1vw;
+    font-size: 1.3vw;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -1577,6 +1577,7 @@ li.mouseA:hover {
 
 .marcasSeries img {
     width: 100%;
+    height: auto;
 }
 
 .footer .itemMenu a {
@@ -1622,4 +1623,8 @@ a .flex-row{
 
 .videoWidthRepuesto{
     width: 200%;
+}
+
+.boxText.flex-table.row a{
+    text-decoration: none;
 }
