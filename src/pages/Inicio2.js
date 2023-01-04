@@ -5,7 +5,10 @@ import BannerContacto from '../components/BannerContacto'
 import { useEffect, useState } from "react";
 
 
-
+let bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBSINOHOME"
+let nombreCamion = ""
+let nombreSerie = ""
+let camionSerie =""
 let audio_motor = "../images/10-toneladas/motor.mp3"
 function Inicio2() {
 
@@ -49,7 +52,7 @@ function Inicio2() {
             <Block3 />
             <Block4 />
             <Banner />
-            <BannerContacto />
+            <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
             <Footer />
             <Modal />
         </>
