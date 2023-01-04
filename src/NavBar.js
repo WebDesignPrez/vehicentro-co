@@ -534,21 +534,6 @@ export default function NavBar() {
                 </div>
             </li>
             <li>
-                <a className="" href="#" option="keyton">KEYTON</a>
-                <div className="item-level-2 nav-header nav-header-h" >
-                    <div className="headerSubMenu">
-                        <div className="closeMovil" data-id="2"></div>
-                        <p>KEYTON</p>
-                        <img src="../images/logo-keyton.webp" alt="Keyotn"  width="100" height="32" />
-                    </div>
-                    <div className="rowMenu">
-                        <div className="colMenu">
-                            <p className="colItem">Furgoneta M70L</p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
                 <a href="/concesionarios" option="concesionarios">CONCESIONARIOS</a>
                 <div className="item-level-3 nav-header nav-header-h" >
                     <div className="headerSubMenu">
@@ -608,13 +593,13 @@ export default function NavBar() {
                 </div>
             </li>
             <li className="item-level-6">
-                <a href="/compania">COMPAÑIA</a>
+                <a href="/compania">COMPAÑÍA</a>
                 <div className="item-level-6 nav-header nav-header-h" >
 
                 </div>
             </li>
             <li className="item-level-7">
-                <a href="#">TECNOLOGIA</a>
+                <a href="#">TECNOLOGÍA</a>
                 <div className="item-level-7 nav-header nav-header-h" >
 
                 </div>
