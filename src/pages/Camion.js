@@ -346,7 +346,7 @@ function Camion() {
             nombreCamion = "Camion de 18 toneladas | T5G-1257"
             camionSerie = "T5G 1257 / 18 TON"
             nombreSerie = "Serie T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB18T1257"
             images = [
                 "../images/18-toneladas/camion-blanco-sinotruk-de-18-toneladas-ecuador.webp"
             ];
