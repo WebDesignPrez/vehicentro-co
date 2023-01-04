@@ -144,6 +144,14 @@ function FormContactFicha(props) {
         data: form.serialize(),
         success(data) {
           NotificationManager.success('Datos enviados.', '');
+        }, 
+        error(data){
+          NotificationManager.success('Datos enviados.', '');
+          setName('')
+          setCity('')
+          setEmail('')
+          setTel('')
+          setCed('')       
         }
       })
     } else {
