@@ -653,6 +653,7 @@ p.titleFooter {
 .boxesIni .boxRight {
     position: relative;
     cursor: pointer;
+    overflow : hidden;
 }
 
 .boxesIni .boxRightText {
@@ -952,6 +953,7 @@ p.titleFooter {
     display: flex;
     flex-direction: row;
     column-gap: 25px;
+    flex-wrap: wrap;
 }
 
 .social {
