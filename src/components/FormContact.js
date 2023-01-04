@@ -135,7 +135,7 @@ function FormContact(props) {
 
     if (!validateName(e.target[0].value) && !validateName(e.target[1].value) && !validateEmail(e.target[2].value) && !validateTel(e.target[3].value) && !validateCed(e.target[4].value)) {
       const form = $(e.target);
-      alert(form.attr("action"));
+     // alert(form.attr("action"));
       $.ajax({
         type: "POST",
         url: form.attr("action"),
