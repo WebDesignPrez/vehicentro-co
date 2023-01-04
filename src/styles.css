@@ -1628,3 +1628,7 @@ a .flex-row{
 .boxText.flex-table.row a{
     text-decoration: none;
 }
+
+.item-level-8.linkContact{
+padding: 0 0 160px 0;
+}
