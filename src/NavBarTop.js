@@ -263,6 +263,7 @@ export default function NavBarTop() {
             <img src="../images/vehicentro-logo-blanco.png" width="230" height="80" />
         </div>
         <ul className="nav-links">
+            <li><a className="" href="https://vehicentro.com">INICIO</a></li>
             <li>
                 <a className="" href="#" option="sinotruk">SINOTRUK</a>
                 <div className="item-level-0 nav-header nav-header-h" >

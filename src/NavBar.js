@@ -454,6 +454,8 @@ export default function NavBar() {
             }
         </div>
         <ul className="nav-links">
+            
+            <li><a className="" href="https://vehicentro.com">INICIO</a></li>
             <li>
                 <a className="" href="#" option="sinotruk">SINOTRUK</a>
                 <div className="item-level-0 nav-header nav-header-h" >
