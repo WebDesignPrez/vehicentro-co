@@ -454,6 +454,8 @@ export default function NavBar() {
             }
         </div>
         <ul className="nav-links">
+            
+            <li><a className="" href="https://vehicentro.com">INICIO</a></li>
             <li>
                 <a className="" href="#" option="sinotruk">SINOTRUK</a>
                 <div className="item-level-0 nav-header nav-header-h" >
@@ -619,7 +621,6 @@ export default function NavBar() {
             </li>
 
             <li className="item-level-8 linkContact">
-                <a href="#">QUIERO COMUNICARME CON UN ASESOR</a>
             </li>
         </ul>
         <img className="sinoIcon" src="./images/home/logo-sinotruk-leon.webp" width="275" height="69" />
