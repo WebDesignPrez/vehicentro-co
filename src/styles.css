@@ -1618,3 +1618,8 @@ a .flex-row{
     color: #000;
     text-decoration: none;
 }
+
+
+.videoWidthRepuesto{
+    width: 200%;
+}

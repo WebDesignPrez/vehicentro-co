@@ -54,7 +54,9 @@ function Content2() {
 function Content3() {
   return (
     <div className="boxesIni posRelative news repuesto grad">
-      <img src="./images/repuestos/talleres-y-repuestros-sinotruk.webp" width="1000" height="760" className="slideMain" alt="Excavadora" />
+      <div className="boxLeft c7h">
+        <video  controls autoPlay={true} muted loop src="./images/repuestos/repuestos.webm" className="videoWidthRepuesto" />
+      </div>
     </div>
   )
 }
