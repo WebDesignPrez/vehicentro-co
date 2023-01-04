@@ -111,7 +111,7 @@ function Camion() {
             nombreCamion = "Camion de 28 toneladas | T7H-390"
             camionSerie = "T7H 390 / 28 TON"
             nombreSerie = "Serie T7H"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB28TONA7380"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web28TT7H390"
             images = [
                 "../images/28-toneladas/camion-blanco-sinotruk-de-28-toneladas-ecuador.webp",
                 "../images/28-toneladas/camion-blanco-sinotruk-de-28-toneladas-de-frente-ecuador.webp"
