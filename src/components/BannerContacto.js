@@ -54,10 +54,12 @@ export default function BannerContacto(props){
 
 
     function gotoWs(){
+      window.open('https://api.whatsapp.com/send/?phone=593988593279', '_blank')
       closeContact()
     }
 
     function gotoCall(){
+      window.open("tel:+0992048229")
       closeContact()
     }
 
