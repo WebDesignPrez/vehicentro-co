@@ -15,10 +15,10 @@ export default function Footer(){
                 <p className="title titleContacto">CONTACTO DIRECTO</p>
                 <div className="social row">
                   <div className="flex-row imgMain">
-                    <span><img src="../images/facebook.png" alt="facebook" width="32" height="32" /></span>
-                    <span><img src="../images/instagram.png" alt="instagram" width="32" height="32" /></span>
-                    <span><img src="../images/youtube.png" alt="youtube" width="32" height="32" /></span>
-                    <span><img src="../images/linkdin.png" alt="linkdin" width="32" height="32" /></span>          
+                    <a href="https://www.facebook.com/Vehicentro"><img src="../images/facebook.png"  alt="facebook" width="32" height="32" /></a>
+                    <a href="https://www.instagram.com/vehicentroec"><img src="../images/instagram.png"  alt="instagram" width="32" height="32" /></a>
+                    <a href="https://www.youtube.com/channel/UCW8gGawovE35cXcJ3P2kryQ"><img src="../images/youtube.png"  alt="youtube" width="32" height="32" /></a>
+                    <a href="#"><img src="../images/linkdin.png"  alt="linkdin" width="32" height="32" /></a>          
                   </div>
                   
                 </div>
@@ -43,8 +43,8 @@ export default function Footer(){
             <div className="col1 colSell">
                 <p className="title">POST VENTA</p>
                 <ul className="list listNonTitle">
-                    <li><p className="itemMenu">Talleres</p></li>
-                    <li><p className="itemMenu">Repuestos</p></li>
+                    <li><p className="itemMenu"><NavLink to="/concesionarios">Concesionarios</NavLink></p></li>
+                    <li><p className="itemMenu"><NavLink to="/repuestos">Repuestos</NavLink></p></li>
                     <li><p className="itemMenu">Manteniento</p></li>
                     <li><p className="itemMenu">Garantía</p></li>
                 </ul>

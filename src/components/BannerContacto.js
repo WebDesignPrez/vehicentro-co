@@ -64,8 +64,8 @@ export default function BannerContacto(props){
   return (
     <>
           <div className="boxesContact posRelative fix">
-              <p className="buttonContact f" onClick={openContact}>QUIERO SER CONTACTADO AHORA</p>
-              <p className="textContact">Déjanos tus datos y uno de nuestros asesores se contactará contigo</p>
+              <p className="buttonContact f" onClick={openContact}>PROFORMA TU CAMIÓN</p>
+              <p className="textContact">Déjanos tus datos y uno de nuestros asesores se contactará de inmediato.</p>
           </div>
 
           {modalContactIsOpen &&

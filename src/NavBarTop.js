@@ -436,9 +436,9 @@ export default function NavBarTop() {
             <li ><a className="sunward mouseA" option="sunward">SUNWARD</a></li>
             <li ><a className="keyton mouseA" option="keyton">KEYTON</a></li>
             <li ><a className="concesionarios mouseA" option="concesionarios">CONCESIONARIOS</a></li>
-            <li className="camionesCss"><NavLink to="/sinotruk">CAMIONES EN USO</NavLink></li>
+            <li className="camionesCss"><NavLink to="/camion-en-uso/camion-de-48-toneladas">CAMIONES EN USO</NavLink></li>
             <li className="companiaCss"><NavLink to="/compania">COMPAÑIA</NavLink></li>
-            <li className="tecnologiaCss"><NavLink to="/sinotruk">TECNOLOGIA</NavLink></li>
+            <li className="tecnologiaCss">TECNOLOGIA</li>
         </ul>
         <div className="navSearch">
             <input className="search-nav-input" data-testid="search-input" type="search" title="Search" placeholder="Buscar..." id="global-search-input" aria-controls="searchNavSuggestions" aria-autocomplete="list" aria-expanded="false" aria-activedescendant="search-suggestion-null" role="combobox" aria-describedby="searchBoxHelpText" />

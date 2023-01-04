@@ -19,6 +19,7 @@ let images
 let series
 let nombreSerieInd
 let motor
+let video
 
 let cabina
 let marcas
@@ -72,43 +73,45 @@ function Serie() {
 
         //10 toneladas
         case "t5g":
-            imagen = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
-            imagen2 = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
+            video = "../images/t5g/video.webm"
+            imagen = "../images/t5g/contacto.webp"
+            imagen2 = "../images/t5g/camion.webp"
+            motor = "../images/t5g/motor.webp"
             nombreSerie = "Serie T5G"
             nombreSerieInd = "T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB10TT5G1167"
             series = [{
                 serie: "T5G 1167",
-                modelo : "9 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "9 TON",
+                url: "/camiones/camion-de-9-toneladas"
             }, {
                 serie: "T5G 1167",
-                modelo : "10.8 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "10.8 TON",
+                url: "/camiones/camion-10-toneladas-t5g-1167"
             }, {
                 serie: "T5G 1167",
-                modelo : "12 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "12 TON",
+                url: "/camiones/camion-12-toneladas-t5g-1167"
             }, {
                 serie: "T5G 1167",
-                modelo : "13 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "13 TON",
+                url: "/camiones/camion-13-toneladas-t5g-1167"
             }, {
                 serie: "T5G 1167",
-                modelo : "13 TON 330HP",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "13 TON 330HP",
+                url: "/camiones/camion-13-toneladas-t5g-1167-330hp"
             }, {
                 serie: "T5G 1167",
-                modelo : "18 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "18 TON",
+                url: "/camiones/camion-de-18-toneladas-t5g-1257"
             }, {
                 serie: "T5G 1167",
-                modelo : "19.5 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "19.5 TON",
+                url: "/camiones/camion-de-19-toneladas-t5g-1257"
             }, {
                 serie: "T5G 4187",
-                modelo : "19.5 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "24 TON",
+                url: "/cabezales/cabezal-t5g-4187"
             }]
 
             console.log('10 Toneladas')
@@ -116,8 +119,7 @@ function Serie() {
                 "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador.webp",
                 "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador-de-frente.webp"
             ];
-          
-            motor = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
+
             garantia = "../images/10-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/10-toneladas/tecnologia-alemana.webp"
 
@@ -158,22 +160,24 @@ function Serie() {
 
         //9 toneladas
         case "t7h":
-            imagen = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
-            imagen2 = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
+            video = "../images/t7h/video.webm"
+            imagen = "../images/t7h/contacto.webp"
+            imagen2 = "../images/t7h/camion.webp"
+            motor = "../images/t7h/motor.webp"
             nombreSerie = "Serie T7H"
             nombreSerieInd = "T7H"
             series = [{
                 serie: "T7H 390",
-                modelo : "28 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "28 TON",
+                url: "/cabezales/cabezal-t7h-390-28-toneladas"
             }, {
                 serie: "T7H 390",
-                modelo : "42 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "42 TON",
+                url: "/cabezales/cabezal-t7h-390-42-toneladas"
             }, {
                 serie: "T7H 430",
-                modelo : "45 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "45 TON",
+                url: "/cabezales/cabezal-t7h-430-45-toneladas"
             }]
 
 
@@ -183,11 +187,10 @@ function Serie() {
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador.webp",
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador-de-frente.webp"
             ];
-     
-            motor = "../images/9-toneladas/motor-sinotruk-de-camion-de-9-toneladas-ecuador.webp"
+
             garantia = "../images/9-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/9-toneladas/tecnologia-alemana.webp"
-     
+
             cabina = "../images/9-toneladas/cabina-de-camion-de-9-toneladas-sinotruk.webp"
             marcas = "../images/9-toneladas/marcas-vehicentro.webp"
             internas1 = [
@@ -223,63 +226,53 @@ function Serie() {
         //12 toneladas
         case "c7h":
             console.log('12 toneladas')
-            imagen = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
-            imagen2 = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
+            video = "../images/t7h/video.webm"
+            imagen = "../images/t7h/contacto.webp"
+            imagen2 = "../images/t7h/camion.webp"
+            motor = "../images/t7h/motor.webp"
             nombreSerie = "Serie C7H"
             nombreSerieInd = "C7H"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB20TC7H1256"
 
             series = [{
                 serie: "C7H 1256",
-                modelo : "20 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "20 TON",
+                url: "/camiones/camion-20-toneladas-1256"
             }, {
                 serie: "C7H 540",
-                modelo : "48 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "48 TON",
+                url: "/cabezales/cabezal-c7h-540"
             }, {
                 serie: "C7H 540 CATALINAS",
-                modelo : "48 TON",
-                url : "/camiones/camion-de-3-5-toneladas-1057"
+                modelo: "48 TON",
+                url: "/cabezales/cabezal-c7h-540-catalinas-48-toneladas"
             }]
 
-            images = [
-                "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
-                "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador-de-frente.webp"
-            ];
 
-            motor = "../images/12-toneladas/motor-sinotruk-de-camion-de-12-toneladas-ecuador.webp"
             garantia = "../images/12-toneladas/5-anos-de-garantia.webp"
             tecnologia = "../images/12-toneladas/tecnologia-alemana.webp"
-            
-            cabina = "../images/12-toneladas/cabina-de-camion-de-12-toneladas-sinotruk.webp"
-            marcas = "../images/12-toneladas/marcas-vehicentro.webp"
+
+            cabina = "../images/20-toneladas/cabina-de-camion-de-20-toneladas-sinotruk.webp"
+            marcas = "../images/20-toneladas/marcas-vehicentro.webp"
             internas1 = [
-                "../images/12-toneladas/volante-deportivo-de-camion-de-12-toneladas.webp",
-                "../images/12-toneladas/palanca-de-cambios-de-camion-de-12-toneladas.webp",
-                "../images/12-toneladas/asiento-neumatico-dos.webp",
-                "../images/12-toneladas/eleva-vidrios-electricos.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp"
+                "../images/20-toneladas/palanca-de-cambios.webp",
+                "../images/20-toneladas/litera-de-descanso.webp",
+                "../images/20-toneladas/asiento-neumatico.webp"
             ];
             internas2 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
-            ];
+                "../images/20-toneladas/volante-deportivo.webp",
+                "../images/20-toneladas/radio-touch-mp5.webp",
+                "../images/20-toneladas/componentes-wabco.webp"
 
+            ];
             internas3 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
+                "../images/20-toneladas/comportamiento-en-el-panel.webp",
+                "../images/20-toneladas/climatizador-y-mandos.webp"
             ];
 
             internas4 = [
-                "../images/12-toneladas/climatizador.webp",
-                "../images/12-toneladas/radio-touch-mp5.webp",
-                "../images/12-toneladas/cabina.webp",
-                "../images/12-toneladas/portavasos.webp"
+                "../images/20-toneladas/retardador.webp",
+                "../images/20-toneladas/bodega.webp"
             ];
 
             audio_motor = "../images/12-toneladas/motor.mp3"
@@ -329,7 +322,9 @@ function Serie() {
         <NavBarTop />
         <div className="boxesIni posRelative content2">
             <div className="boxRight tecnologia">
-                <img src={imagen} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
+            <div className="boxLeft c7h">
+                    <video width="320" height="240" controls autoPlay={true} muted loop src={video} className="videoWidth" />
+                </div>
             </div>
             <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
@@ -339,20 +334,20 @@ function Serie() {
             </div>
         </div>
         <div className="boxesIni posRelative content2">
-            
+
             <div className="boxRight nomSeries">
                 <div className="serieTitle serieBox">
                     <p className="serieTitle1">SERIE</p>
                     <p>{nombreSerieInd}</p>
-                </div> 
+                </div>
                 <div className="serieList serieBox">
                     {series.map((item, index) => (
                         <NavLink className="serieContainer" to={item.url}>
                             <p className="nombreSerie">
-                            {item.serie}
+                                {item.serie}
                             </p>
                             <span className="modeloSerie">
-                            {item.modelo}    
+                                {item.modelo}
                             </span>
                         </NavLink>
                     ))}
@@ -378,9 +373,9 @@ function Serie() {
 
         </div>
         <div className="marcasSeries">
-            <img src="../images/marcasSeries.png" alt="Marcas Series" width="1532"  height="355" />
+            <img src="../images/marcasSeries.png" alt="Marcas Series" width="1532" height="355" />
         </div>
-        
+
         <div className="boxesIni posRelative">
             <div className="marcasbg">
                 <img src={cabina} width="1500" height="1500" className="slideMain" alt="Punto de Venta" />

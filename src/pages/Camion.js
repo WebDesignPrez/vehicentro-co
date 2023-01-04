@@ -88,8 +88,8 @@ function Camion() {
                 "../images/10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "240 HP"
-            textoMotor2 = "Freno a las válvulas"
-            textoMotor3 = "Ficha técnica"
+            textoMotor2 = "Modelo T5G-1167 - 10.8 Ton"
+            textoMotor3 = "Ficha Técnica"
             precio = "$53.890"
             cuotas = 'Cuotas desde: $973.00'
             motor = "../images/10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
@@ -142,7 +142,7 @@ function Camion() {
                 "../images/9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "210 HP"
-            textoMotor2 = "Modelo T5G-1167"
+            textoMotor2 = "Modelo T5G-1167 - 9 Ton"
             textoMotor3 = "Ficha técnica"
             precio = "$49.990"
             cuotas = 'Cuotas desde: $905.00'
@@ -194,7 +194,7 @@ function Camion() {
                 "../images/12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "240 HP"
-            textoMotor2 = "Modelo T5G-1167"
+            textoMotor2 = "Modelo T5G-1167 - 12 Ton"
             textoMotor3 = "Ficha técnica"
             precio = "$57.990"
             cuotas = 'Cuotas desde: $1,046.00'
@@ -247,8 +247,8 @@ function Camion() {
                 "../images/13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador-de-frente.webp"
             ];
             textoMotor1 = "280 HP"
-            textoMotor2 = "Modelo T5G-1167"
-            textoMotor3 = "13 Ton"
+            textoMotor2 = "Modelo T5G-1167 - 13 Ton"
+            textoMotor3 = "Ficha Técnica"
             precio = "$62.990"
             cuotas = 'Cuotas desde: $1,134.00'
             motor = "../images/13-toneladas/motor-sinotruk-de-camion-de-13-toneladas-ecuador.webp"
@@ -300,8 +300,8 @@ function Camion() {
                 "../images/13-toneladas-330/camion-blanco-sinotruk-de-13-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "330 HP"
-            textoMotor2 = "Modelo T5G-1067"
-            textoMotor3 = "13 Ton"
+            textoMotor2 = "Modelo T5G-1167 - 13 Ton"
+            textoMotor3 = "Ficha Técnica"
             precio = "$67.990"
             cuotas = 'Cuotas desde: $1,222.00'
             motor = "../images/13-toneladas-330/motor-sinotruk-de-camion-de-13-toneladas-ecuador.webp"
@@ -344,16 +344,16 @@ function Camion() {
         case "camion-de-18-toneladas-t5g-1257":
             console.log('18 toneladas')
             nombreCamion = "Camion de 18 toneladas | T5G-1257"
-            camionSerie = "T5G 1167 / 18 TON"
+            camionSerie = "T5G 1257 / 18 TON"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
                 "../images/18-toneladas/camion-blanco-sinotruk-de-18-toneladas-ecuador.webp"
             ];
             textoMotor1 = "340 HP"
-            textoMotor2 = "Modelo T5G-1257"
-            textoMotor3 = "18 Ton"
-            precio = "$80.990"
+            textoMotor2 = "Modelo T5G-1257 - 18 Ton"
+            textoMotor3 = "Ficha técnica"
+            precio = "$74.990"
             cuotas = 'Cuotas desde: $1,346.00'
             motor = "../images/18-toneladas/motor-sinotruk-de-camion-de-18-toneladas-ecuador.webp"
             garantia = "../images/18-toneladas/5-anos-de-garantia.webp"
@@ -374,6 +374,7 @@ function Camion() {
                 "../images/18-toneladas/radio-touch-mp5.webp"
             ];
             internas2 = [
+                "../images/18-toneladas/eje.webp",
                 "../images/18-toneladas/climatizador.webp",
                 "../images/18-toneladas/radio-touch-mp5.webp",
                 "../images/18-toneladas/cabina.webp",
@@ -395,7 +396,7 @@ function Camion() {
         case "camion-de-19-toneladas-t5g-1257":
             console.log('19 toneladas')
             nombreCamion = "Camion de 19 toneladas | T5G-1257"
-            camionSerie = "T5G 1167 / 19.5 TON"
+            camionSerie = "T5G 1257 / 19.5 TON"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
@@ -718,7 +719,7 @@ function Camion() {
                 </div>
             </div>
 
-            contenedorVidaUtil = <div className="banner"><img src="../images/6-toneladas/eaton.webp" /></div>
+            contenedorVidaUtil = <div className="banner"><img src="../images/6-toneladas/cummins.webp" /></div>
 
             break;
 

@@ -20,6 +20,11 @@ audio {
     width: 32vw !important;
 }
 
+audio#audioMotorHome {
+    height: 25px !important;
+    width: 25vw !important;
+}
+
 div {
     box-sizing: border-box;
 }
@@ -724,6 +729,10 @@ p.titleFooter {
     padding: 3px;
 }
 
+.boxesIni .boxText .textModel {
+    font-size: 25px;
+}
+
 .boxesIni .boxText .textModel:hover,
 .news .boxNews .textMain2:hover {
     color: #e30c13;
@@ -1098,6 +1107,12 @@ p.titleFooter {
     position: absolute;
 }
 
+.boxPlayerMotor.audiohome {
+    left: 40px;
+    bottom: 42px;
+    position: absolute;
+}
+
 .textoImagenesProducto {
 
     display: flex !important;
@@ -1460,7 +1475,7 @@ li.mouseA:hover {
     margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 100%;
 }
 
 .block3 .bottomContainer .linksBox a {
@@ -1503,7 +1518,7 @@ li.mouseA:hover {
 }
 
 .telefonoInicio::before {
-    content: url(../public/images/phoneHome.png);
+    content: url(../public/images/home/icono-telefono.webp);
     position: absolute;
     left: -45px;
     top: -10px;
@@ -1513,30 +1528,30 @@ li.mouseA:hover {
     width: 70% !important;
 }
 
-.serieTitle{
+.serieTitle {
     text-align: left;
     font-size: 5vw;
     padding: 9vh 20vw;
     line-height: 3vw;
 }
 
-.serieTitle1{
+.serieTitle1 {
     font-size: 2.2vw;
 }
 
-.serieList{
+.serieList {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 2vw;
 }
 
-.nomSeries{
+.nomSeries {
     background-color: #000;
-    color:#fff;
+    color: #fff;
 }
 
-.serieContainer{
+.serieContainer {
     font-size: 1.3vw;
     width: 9vw;
     margin: 1.2vw 1vw;
@@ -1545,26 +1560,26 @@ li.mouseA:hover {
     text-decoration: none;
 }
 
-.serieContainer:hover{
+.serieContainer:hover {
     color: red;
 }
 
-.serieContainer span::after{
+.serieContainer span::after {
     content: url(../public/images/arrow2.png);
     position: absolute;
     margin-left: 7px;
     margin-top: 2px;
 }
 
-.serieMarcas{
+.serieMarcas {
     justify-content: center;
 }
 
-.marcasSeries img{
+.marcasSeries img {
     width: 100%;
 }
 
-.footer .itemMenu a{
+.footer .itemMenu a {
     text-decoration: none;
     color: #fff;
 }
@@ -1577,4 +1592,29 @@ li.mouseA:hover {
 
     font-weight: 700;
     font-size: 1.1vw;
+}
+
+.linksBox a.line2 {
+    color: white;
+    text-decoration: none;
+}
+
+.ajustetextovidautil {
+    font-size: 1.6vw;
+    margin: 30px 0 30px 0;
+}
+
+.bannerTec img {
+    max-width: 50%;
+
+    margin-bottom: 10px;
+}
+
+.bannerTec {
+    text-align-last: center;
+}
+
+a .flex-row{
+    color: #000;
+    text-decoration: none;
 }

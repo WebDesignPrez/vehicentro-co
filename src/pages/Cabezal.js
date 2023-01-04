@@ -55,12 +55,11 @@ function Camion() {
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
-                "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-ecuador.webp",
-                "../images/24-toneladas/camion-gris-sinotruk-de-24-toneladas-de-frente-ecuador.webp",
+                "../images/24-toneladas/camion-blanco-sinotruk-de-24-toneladas-ecuador.webp",
                 "../images/24-toneladas/camion-blanco-sinotruk-de-24-toneladas-ecuador.webp"
             ];
             textoMotor1 = "340 HP"
-            textoMotor2 = "Modelo T5G-4287"
+            textoMotor2 = "Modelo T5G-4187 - 24 Ton"
             textoMotor3 = "Ficha técnica"
             precio = "$61.990"
             cuotas = 'Cuotas desde: $1.117,00'
@@ -101,6 +100,8 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+
+            contenedorVidaUtil = <div className="ajustetextovidautil"><p>Disponible en AMT</p></div>
 
             break;
 
@@ -155,6 +156,7 @@ function Camion() {
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
 
+            contenedorVidaUtil = "Disponible con retardador"
             break;
 
         //42 toneladas
@@ -207,6 +209,7 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 
             break;
 
@@ -260,6 +263,7 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 
             break;
 
@@ -274,7 +278,7 @@ function Camion() {
                 "../images/48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-ecuador.webp",
                 "../images/48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
-            textoMotor1 = "430 HP"
+            textoMotor1 = "540 HP"
             textoMotor2 = "Modelo C7H-540"
             textoMotor3 = "Ficha técnica"
             precio = "102.990"
@@ -315,6 +319,7 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+            contenedorVidaUtil = <div className="ajustetextovidautil"><p>Disponible en AMT</p></div>
 
             break;
 
@@ -329,7 +334,7 @@ function Camion() {
                 "../images/48-toneladas-catalinas/camion-blanco-sinotruk-de-48-toneladas-ecuador.webp",
                 "../images/48-toneladas-catalinas/camion-blanco-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
-            textoMotor1 = "430 HP"
+            textoMotor1 = "540 HP"
             textoMotor2 = "Modelo C7H-540"
             textoMotor3 = "Ficha técnica"
             precio = "106.990"
@@ -370,6 +375,7 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 
             break;
 
