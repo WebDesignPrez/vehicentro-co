@@ -45,7 +45,7 @@ export default function Footer(){
                 <ul className="list listNonTitle">
                     <li><p className="itemMenu"><NavLink to="/concesionarios">Concesionarios</NavLink></p></li>
                     <li><p className="itemMenu"><NavLink to="/repuestos">Repuestos</NavLink></p></li>
-                    <li><p className="itemMenu">Manteniento</p></li>
+                    <li><p className="itemMenu">Mantenimiento</p></li>
                     <li><p className="itemMenu">Garantía</p></li>
                 </ul>
             </div>
