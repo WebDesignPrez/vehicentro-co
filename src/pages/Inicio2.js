@@ -13,6 +13,7 @@ let nombreSerie = "Serie 100"
 let camionSerie = ""
 let audio_motor = "../images/10-toneladas/motor.mp3"
 let urlMedia = env.url
+let prueba
 
 function Inicio2() {
 
