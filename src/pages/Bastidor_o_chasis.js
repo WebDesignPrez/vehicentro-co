@@ -17,7 +17,7 @@ function Content1() {
     return (
         <div className="requisitos">
             <div className="requisitosUno">
-                <h1>Bastidor o chasis MAN</h1>
+                <h1>Bastidor o chasisMAN</h1>
             </div>
             <div className="requisitosDos textoTec">
                 <p>Generalmente el bastidor MAN aplica la forma trapezoidal angosto trasero y ancho delantero. El bastidor de ancho extendido en la parte delantera es adecuado a una variedad de motores y mejora la estabilidad de todo el vehículo, y es adecuado para los modelos de tracción 4×2, 6×2, 6×4. El bastidor de la serie TGA &nbsp;tiene las siguientes características:</p>
