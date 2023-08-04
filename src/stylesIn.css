@@ -112,6 +112,7 @@ color:red;
 
 .internal .nav-active{
   transform: translateX(0);
+  background-color: #101113;
 }
 
 @keyframes navLinkFade{

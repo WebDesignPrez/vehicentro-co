@@ -17,7 +17,7 @@ function Compania() {
             <Content1 />
             <Content2 />
             <Content3 />
-            <Content4 />
+            {/* <Content4 /> */}
             <BannerContacto />
             <Footer />
 
@@ -31,13 +31,12 @@ function Content1() {
             <div className="boxLeftHeader">
                 <img src={urlMedia+"compania/conpania-vehicentro.webp"} />
                 <p className="companiatexto">Empresa Ecuatoriana con 14 años de experiencia en el
-                    mercado. Contamos con una red de 14 concesionarios a
-                    nivel nacional, 5 talleres de mantenimiento vehicular y el
+                    mercado. En Bogotá contamos con 2 sedes, con puntos de venta, talleres y el
                     stock de repuestos más amplio y completo de Sinotruk</p>
             </div>
             <div className="boxRightHeader inside" >
                 <img className="companiavehicentro" src={urlMedia+"compania/vehicentro.webp"} width="400" />
-                <p className="companiatexto">Distribuidores #1 a Nivel Nacional de SINOTRUK, contamos
+                <p className="companiatexto">Distribuidores #1 a Nivel Nacional de SINOTRUK en Ecuador, ahora en Colombia, contamos
                     con Talleres especializados y amplio stock de repuestos,
                     siempre pensando en nuestros clientes</p>
                 <img src={urlMedia+"compania/conpania-vehicentro-2.webp"} />
@@ -53,16 +52,8 @@ function Content2() {
             <div className="boxNews companiatext2">
                 <p className="companiatexto2">DISTRIBUIMOS</p>
             </div>
-            <div className="boxNews companiaimg2 fif">
+            <div className="boxNews companiaimg2 new">
                 <img src={urlMedia+"compania/logo-sinotruk.webp"} width="1000" height="760" className="slideMain" alt="Series100" />
-            </div>
-            <div className="boxNews companiaimg2 fif">
-                <img src={urlMedia+"compania/logo-keyton.webp"} width="1000" height="760" className="slideMain" alt="Mixer" />
-
-            </div>
-            <div className="boxNews companiaimg2 fif">
-                <img src={urlMedia+"compania/logo-sunward.webp"} width="1000" height="760" className="slideMain" alt="Excavadora" />
-
             </div>
         </div>
     )

@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 import { Slide } from 'react-slideshow-image';
 import env from '../config';
 import { Helmet } from "react-helmet";
+import FormContactFicha from "../components/FormContactFicha";
 
-let bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHBOTONCOT"
+let bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOBOTONCOT"
 let nombreCamion = ""
 let nombreSerie = "Serie 100"
 let camionSerie = ""
@@ -83,7 +84,7 @@ function Inicio2() {
         <>
             <Helmet>
                 <title>Vehicentro | Importadores de la marca SINOTRUK. Venta de camiones</title>
-                <meta name="description" content="Camiones de venta en Ecuador · Puntos vehicentro a nivel nacional · VISÍTANOS EN AMBATO, QUITO, GUAYAQUIL, RIOBAMBA, CUENCA Y MACHALA." />
+                <meta name="description" content="Camiones de venta en Colombia · Puntos vehicentro a nivel nacional · VISÍTANOS EN BOGOTA" />
                 <meta name="keywords" content="camion, camiones, venta de camiones, camiones en ecuador"></meta>
                 <meta name="robots" content="index, follow"></meta>
             </Helmet>
@@ -132,7 +133,7 @@ function Block1() {
             <div id="videoContainer" className="responsive">
                 <div className="boxRight tecnologia" height="1080">
                     <div className="boxLeft c7h">
-                        <video preload="none" autoPlay={true} width="930" height="1080" preload="none" playsInline={true} controls loop muted id="myVideo" src={urlMedia + "home/testimonio-movil.mp4"} className="videoWidth produ" />
+                        <video preload="none" autoPlay={true} width="930" height="1080" playsInline={true} controls loop muted id="myVideo" src={urlMedia + "home/testimonio-movil.mp4"} className="videoWidth produ" />
                     </div>
                 </div>
                 <div className="overlayBox" height="200">
@@ -166,6 +167,110 @@ function Block2() {
 
 
 function Block3() {
+
+    const [modalFormIsOpen, setFormIsOpen] = useState(false);
+
+    function openFormContact(cam) {
+        console.log(cam)
+
+        switch (cam) {
+
+            //NQS
+            case "camion-NQS-156HP-9900":
+                nombreCamion = "CAMION NQS 156HP 9900"
+                camionSerie = "NQS 156HP 9900"
+                nombreSerie = "Serie 100"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCONQS"
+
+                break;
+
+            //CAMION FRS
+            case "camion-FRS-170HP-10500":
+                nombreCamion = "CAMION FRS 170HP 10500"
+                camionSerie = "FRS 170HP 10500"
+                nombreSerie = "Serie 100"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOFRS"
+
+
+                break;
+
+            //CAMION T5G 250HP 17000 
+            case "camion-T5G-250HP-17000":
+                nombreCamion = "CAMION T5G 250HP 17000"
+                camionSerie = "T5G 250HP 17000"
+                nombreSerie = "Serie T5G"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G17000"
+
+                break;
+
+            //CAMION T5G 250HP 17000 AMT
+            case "camion-T5G-250HP-17000-AMT":
+                nombreCamion = "CAMION T5G 250HP 17000 AMT"
+                camionSerie = "T5G 250HP 17000 AMT"
+                nombreSerie = "Serie T5G"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G17000AMT"
+
+                break;
+
+            //MINIMULA T5G 350HP 40500
+            case "MINIMULA-T5G-350HP-40500":
+                nombreCamion = "MINIMULA T5G 350HP 40500"
+                camionSerie = "T5G 350HP 40500"
+                nombreSerie = "Serie T5G"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G40500"
+
+                break;
+
+            //MINIMULA T5G 350HP 40500 AMT
+            case "MINIMULA-T5G-350HP-40500-AMT":
+                nombreCamion = "MINIMULA T5G 350HP 40500 AMT"
+                camionSerie = "T5G 350HP 40500 AMT"
+                nombreSerie = "Serie T5G"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G40500AMT"
+
+                break;
+
+                
+                //SUPER MINIMULA T7H 400HP 40500
+                case "SUPER-MINIMULA-T7H-400HP-40500":
+                    nombreCamion = "SUPER MINIMULA T7H 400HP 40500"
+                    camionSerie = "T7H 400HP 40500"
+                    nombreSerie = "Serie T7H"
+                    bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT7H40500"
+                    
+                    break;
+
+                    //SUPER MINIMULA T7H 400HP 40500 AMT
+                    case "SUPER-MINIMULA-T7H-400HP-40500-AMT":
+                        nombreCamion = "SUPER MINIMULA T7H 400HP 40500 AMT"
+                        camionSerie = "T7H 400HP 40500 AMT"
+                        nombreSerie = "Serie T7H"
+                        bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT7H40500AMT"
+        
+                        break;
+                    
+            
+             //TRACTO MULA C7H 540HP 52000 AMT
+             case "TRACTO-MULA-C7H-540HP-52000-AMT":
+                nombreCamion = "TRACTO MULA C7H 540HP 52000 AMT"
+                camionSerie = "C7H 540HP 52000 AMT"
+                nombreSerie = "Serie C7H"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOC7H52000AMT"
+
+                break;
+
+            default:
+            break;
+        }
+
+
+        setFormIsOpen(true)
+    }
+
+    function closeFormContact() {
+        setFormIsOpen(false)
+    }
+
     return (
         <>
             <div className="block3 boxBlock">
@@ -175,56 +280,10 @@ function Block3() {
                         <p className="titleBox">SERIE</p>
                         <NavLink className="titleBox2" to="/serie/100">100</NavLink>
                         <div className="linksBox">
-                            <NavLink className="line2" to="/camiones/camion-de-3-5-toneladas-1057" >3.5 TON</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-de-3-6-toneladas" >3.6 TON</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-de-5-toneladas-1067">5 TON</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-de-6-toneladas-1067">6 TON</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-8-toneladas-1147">8 TON</NavLink>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a href="/serie/t5g"><img src={urlMedia + "home/serie-t5g.webp"} width="900" height="700" alt="Camiones de carga pesada en Ecuador" /></a>
-                    <div className="bottomContainer">
-                        <p className="titleBox">SERIE</p>
-                        <NavLink className="titleBox2" to="/serie/t5g">T5G</NavLink>
-                        <div className="linksBox">
-                            <NavLink className="line2" to="/camiones/camion-de-9-toneladas">9 TON</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-10-toneladas-t5g-1167">10 TON</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-12-toneladas-t5g-1167">12 TON</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-13-toneladas-t5g-1167">13 TON 280HP</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-13-toneladas-t5g-1167-330hp">13 TON 330HP</NavLink>
-                            <NavLink className="line2" to="/camiones/camion-de-18-toneladas-t5g-1257">18 TON</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-de-19-toneladas-t5g-1257">19.5 TON</NavLink><br></br>
-                            <NavLink className="line2" to="/cabezales/cabezal-t5g-4187">24 TON</NavLink>
-
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <a href="/serie/t7h"> <img src={urlMedia + "home/serie-t7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /></a>
-                    <div className="bottomContainer">
-                        <p className="titleBox">SERIE</p>
-                        <NavLink className="titleBox2" to="/serie/t7h">T7H</NavLink>
-                        <div className="linksBox">
-                            <NavLink className="line2" to="/cabezales/cabezal-t7h-390-28-toneladas">28 TON</NavLink>
-                            <NavLink className="line2" to="/cabezales/cabezal-t7h-390-42-toneladas">42 TON</NavLink>
-                            <NavLink className="line2" to="/cabezales/cabezal-t7h-430-45-toneladas">45 TON</NavLink>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="block3 boxBlock row2">
-                <div>
-                    <a href="/serie/c7h"> <img src={urlMedia + "home/serie-c7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /> </a>
-                    <div className="bottomContainer">
-                        <p className="titleBox">SERIE</p>
-                        <NavLink className="titleBox2" to="/serie/c7h">C7H</NavLink>
-                        <div className="linksBox">
-                            <NavLink className="line2" to="/camiones/camion-20-toneladas-1256">20 TON</NavLink>
-                            <NavLink className="line2" to="/cabezales/cabezal-c7h-540">48 TON</NavLink>
-                            <NavLink className="line2" to="/cabezales/cabezal-c7h-540-catalinas-48-toneladas">48 TON - CATALINAS</NavLink>
+                            <a className="line2" to="/camiones/NQS" onClick={() => { openFormContact("camion-NQS-156HP-9900") }}>NQS</a>
+                            <a className="line2" to="/camiones/FRS" onClick={() => { openFormContact("camion-FRS-170HP-10500") }}>FRS</a>
+                            {/* <NavLink className="line2" to="/camiones/FRS" >FRS</NavLink>
+                            <NavLink className="line2" to="/camiones/NQS" >NQS</NavLink> */}
                         </div>
                     </div>
                 </div>
@@ -257,58 +316,51 @@ function Block3() {
                     </div>
                 </div>
                 <div>
-                    <a href="/serie/volquetas"><img src={urlMedia + "home/serie-volquetas.webp"} width="900" height="700" alt="Volquetas de venta en Ecuador" /></a>
+                    <a href="/serie/t5g"><img src={urlMedia + "home/serie-t5g.webp"} width="900" height="700" alt="Camiones de carga pesada en Ecuador" /></a>
                     <div className="bottomContainer">
-                        <p className="titleBox"></p>
-                        <NavLink className="titleBox2" to="/serie/volquetas">VOLQUETAS</NavLink>
+                        <p className="titleBox">SERIE</p>
+                        <NavLink className="titleBox2" to="/serie/t5g">T5G</NavLink>
                         <div className="linksBox">
-                            <NavLink className="line2" src="" to="/volquetas/volqueta-t5g-280">8-9 m3</NavLink>
-                            <NavLink className="line2" src="" to="/volquetas/volqueta-t7h-430">10-14 m3</NavLink>
-                            <NavLink className="line2" src="" to="/volquetas/volqueta-c7h-540">20 m3</NavLink>
+                            <a className="line2" to="/camiones/camion-17000" onClick={() => { openFormContact("camion-T5G-250HP-17000") }}>17.000</a>
+                            <a className="line2" to="/camiones/camion-17000-AMT" onClick={() => { openFormContact("camion-T5G-250HP-17000-AMT") }}>17.000 AMT</a>
+                            <a className="line2" to="/camiones/camion-40500" onClick={() => { openFormContact("MINIMULA-T5G-350HP-40500") }}>40.500</a>
+                            <a className="line2" to="/camiones/camion-40500-AMT" onClick={() => { openFormContact("MINIMULA-T5G-350HP-40500-AMT") }}>40.500 AMT</a>
+                            {/* <NavLink className="line2" to="/camiones/camion-40500">40.500</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-40500-AMT">40.500 AMT</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-17000">17.000</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-17000-AMT">17.000 AMT</NavLink><br></br> */}
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="/serie/t7h"> <img src={urlMedia + "home/serie-t7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /></a>
+                    <div className="bottomContainer">
+                        <p className="titleBox">SERIE</p>
+                        <NavLink className="titleBox2" to="/serie/t7h">T7H</NavLink>
+                        <div className="linksBox">
+                            {/* <NavLink className="line2" to="/cabezales/cabezal-40500">40.500</NavLink>
+                            <NavLink className="line2" to="/cabezales/cabezal-40500-AMT">40.500 AMT</NavLink> */}
+                            <a className="line2" to="/cabezales/cabezal-40500" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500") }}>40.500</a>
+                            <a className="line2" to="/cabezales/cabezal-40500-AMT" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500-AMT") }}>40.500 AMT</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="/serie/c7h"> <img src={urlMedia + "home/serie-c7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /> </a>
+                    <div className="bottomContainer">
+                        <p className="titleBox">SERIE</p>
+                        <NavLink className="titleBox2" to="/serie/c7h">C7H</NavLink>
+                        <div className="linksBox">
+                            {/* <NavLink className="line2" to="/cabezales/cabezal-52000-AMT">52.000 AMT</NavLink> */}
+                            <a className="line2" to="/cabezales/cabezal-52000-AMT" onClick={() => { openFormContact("TRACTO-MULA-C7H-540HP-52000-AMT") }}>52.000 AMT</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="block3 boxBlock row2">
-{/*                <div>
-                    <img src={urlMedia + "home/sector-ganadero.webp"} width="900" height="700" alt="Maquinaria para el sector ganadero" />
-                    <div className="bottomContainer">
-                        <p className="titleBox"></p>
-                        <NavLink className="titleBox2" to="/proximamente-hidromek">HIDROMEK</NavLink>
-                        <div className="linksBox">
-                            <NavLink className="line2" src="" to="/proximamente-hidromek">EXCAVADORA</NavLink>
-                            <NavLink className="line2" src="" to="/proximamente-hidromek">RETROEXCAVADORA</NavLink>
-                            <NavLink className="line2" src="" to="/proximamente-hidromek">MINI EXCAVADORA</NavLink>
-                            <NavLink className="line2" src="" to="/proximamente-hidromek">RODILLO</NavLink>
-                        </div>
-                    </div>
-    </div>*/}
-                <div>
-                    <img src={urlMedia + "home/mixer.webp"} width="900" height="700" alt="Mixer o mezcladoras de venta en Ecuador" />
-                    <div className="bottomContainer">
-                        <p className="titleBox"></p>
-                        <p className="titleBox2">MIXER</p>
-                        <div className="linksBox">
-                            <NavLink className="line2" src="" to="/mixer/mixer-a7-1257">A7 8-9 m3</NavLink>
-                            <NavLink className="line2" src="" to="/proximamente">C7H 12 m3</NavLink>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <img src={urlMedia + "home/sunward.webp"} width="900" height="700" alt="Excavadoras de venta en Ecuador" />
-                    <div className="bottomContainer">
-                        <p className="titleBox"></p>
-                        <p className="titleBox2">SUNWARD</p>
-                        <div className="linksBox">
-                            <NavLink className="line2" src="" to="/excavadoras/swe210">SWE210</NavLink>
-                            <NavLink className="line2" src="" to="/excavadoras/swe365e">SWE365E</NavLink>
-                        </div>
-                        <div className="linksBox">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {modalFormIsOpen &&
+                <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} close={closeFormContact} />
+            }
         </>
     )
 }
@@ -349,9 +401,7 @@ function Menu2() {
     return (
         <nav className="menu2 home2">
             <ul className="nav-links-h">
-                <li><a className="sunward mouseA" option="sinotruk">CAMIONES</a></li>
-                <li><a className="sinotruk mouseA" option="sunward">MAQUINARIA</a></li>
-                <li><a className="mouseA" href="/proximamente">VEHÍCULOS</a></li>
+                <li><a className="sunward mouseA" option="sinotruk">CAMIONES</a></li>             
                 <li><a className="tecnologia mouseA" option="tecnologia">TECNOLOGÍA</a></li>
                 <li><NavLink to="/camion-en-uso/camion-de-48-toneladas" className="camionesCss">CAMIONES EN USO</NavLink></li>
                 <li><NavLink to="/concesionarios" className="concesionarios mouseA">CONCESIONARIOS</NavLink></li>
@@ -364,8 +414,8 @@ function Menu2() {
 function Banner() {
     return (
         <div className="posRelative banner">
-            <a href="/concesionarios"><img className="desktopImg slideMain" src={urlMedia + "home/vehicentro-en-ecuador-venta-de-camiones-cabezales-y-volquetas-sinotruk.webp"} width="1790" height="590" alt="Puntos de Venta de Camiones Sinotruk en Ecuador" /></a>
-            <img className="movilImg slideMain" src={urlMedia + "home/vehicentro-concesionarios-mobil.webp"} width="2432" height="1675" alt="Punto de Venta" />
+            <a href="/concesionarios"><img className="desktopImg slideMain" src={urlMedia + "home/webMapaColombia2.jpg"} width="1790" height="590" alt="Puntos de Venta de Camiones Sinotruk en Ecuador" /></a>
+            <img className="movilImg slideMain" src={urlMedia + "home/movilColombiaMapa.jpg"} width="2432" height="1675" alt="Punto de Venta" />
             <div className="boxText flex-table row">
                 <a href="/concesionarios"><div className="flex-row textMain textMain2 noResponsive">Puntos Vehicentro a nivel Nacional</div></a>
             </div>

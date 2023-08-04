@@ -82,10 +82,10 @@ function Camion() {
     switch ((useParams("id").id)) {
 
         //24 toneladas
-        case "cabezal-t5g-4187":
-            console.log('24 ton')
-            nombreCamion = "Cabezal de 24 toneladas | T5G-4187"
-            camionSerie = "T5G 4187 / 24 TON"
+        case "cabezal-40500":
+            console.log('Cabezal 40500')
+            nombreCamion = "Cabezal 40500"
+            camionSerie = "Cabezal 40500"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
             images = [
@@ -140,10 +140,10 @@ function Camion() {
             break;
 
         //28 toneladas
-        case "cabezal-t7h-390-28-toneladas":
-            console.log('28 ton')
-            nombreCamion = "Cabezal de 28 toneladas | T7H-390"
-            camionSerie = "T7H 390 / 28 TON"
+        case "cabezal-40500-AMT":
+            console.log('cabezal-40500-AMT')
+            nombreCamion = "Cabezal 40500-AMT"
+            camionSerie = "Cabezal 40500-AMT"
             nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web28TT7H390"
             images = [
@@ -194,10 +194,10 @@ function Camion() {
             break;
 
         //28 toneladas retardador
-        case "cabezal-28-toneladas-retardador":
-            console.log('28 ton retardador')
-            nombreCamion = "Cabezal de 28 toneladas | T7H-390"
-            camionSerie = "T7H 390 / 28 TON con retardador"
+        case "cabezal-52000":
+            console.log('Cabezal 52000')
+            nombreCamion = "Cabezal 52000"
+            camionSerie = "Cabezal 52000"
             nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web28TT7H390"
             images = [
@@ -248,10 +248,10 @@ function Camion() {
             break;
 
         //42 toneladas
-        case "cabezal-t7h-390-42-toneladas":
-            console.log('42 ton')
-            nombreCamion = "Cabezal de 42 toneladas | T7H-390"
-            camionSerie = "T7H 390 / 42 TON"
+        case "cabezal-52000-AMT":
+            console.log('Cabezal 52000-AMT')
+            nombreCamion = "Cabezal 52000-AMT"
+            camionSerie = "Cabezal 52000-AMT"
             nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB42TT7H390"
             images = [

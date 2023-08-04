@@ -6,12 +6,16 @@ import { NavLink } from "react-router-dom";
 import FormContact from "../components/FormContact";
 import env from '../config';
 import { useEffect, useState } from "react";
+import FormContactFicha from "../components/FormContactFicha";
 
 let series
 let nombreCamion
 let camionSerie
 let urlMedia = env.url
 let audio_motor = "../images/10-toneladas/motor.mp3"
+let bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOBOTONCOT"
+let nombreSerie = "Serie 100"
+
 
 function Serie_100() {
 
@@ -64,27 +68,53 @@ function Content1() {
 function Content2() {
 
     series = [{
-        serie: "1057",
-        modelo: "3.5 TON",
+        serie: "CAMION NQS",
+        modelo: "156HP 9900",
         url: "/camiones/camion-de-3-5-toneladas-1057"
+
     }, {
-        serie: "1047",
-        modelo: "3.6 TON",
+        serie: "CAMION FRS",
+        modelo: "170HP 10500",
         url: "/camiones/camion-de-3-6-toneladas"
-    }, {
-        serie: "1067",
-        modelo: "5 TON",
-        url: "/camiones/camion-de-5-toneladas-1067"
-    }, {
-        serie: "1067",
-        modelo: "6 TON",
-        url: "/camiones/camion-de-6-toneladas-1067"
-    }, {
-        serie: "1067",
-        modelo: "8 TON",
-        url: "/camiones/camion-8-toneladas-1147"
     }
     ]
+
+    const [modalFormIsOpen, setFormIsOpen] = useState(false);
+
+    function openFormContact(cam) {
+        console.log(cam)
+
+        switch (cam) {
+
+            //NQS
+            case "camion-NQS-156HP-9900":
+                nombreCamion = "CAMION NQS 156HP 9900"
+                camionSerie = "NQS 156HP 9900"
+                nombreSerie = "Serie 100"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCONQS"
+
+                break;
+
+            //CAMION FRS
+            case "camion-FRS-170HP-10500":
+                nombreCamion = "CAMION FRS 170HP 10500"
+                camionSerie = "FRS 170HP 10500"
+                nombreSerie = "Serie 100"
+                bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOFRS"
+
+
+                break;
+            default:
+            break;
+        }
+
+
+        setFormIsOpen(true)
+    }
+
+    function closeFormContact() {
+        setFormIsOpen(false)
+    }
 
     return (
         <>
@@ -98,23 +128,44 @@ function Content2() {
                     </div>
 
                     <div className="serieList serieBox">
-                        {series.map((item, index) => (
-                            <NavLink className="serieContainer" to={item.url}>
-                                <p className="nombreSerie">
-                                    {item.serie}
+                        {/* {series.map((item, index) => (
+                             <NavLink className="serieContainer" to={item.url}>
+                                 <p className="nombreSerie">
+                                     {item.serie}
+                             </p>
+                                 <span className="modeloSerie">
+                                     {item.modelo}
+                                 </span>
+                            </NavLink>
+                        ))} */}
+
+                        <a className="serieContainer" onClick={() => { openFormContact("camion-NQS-156HP-9900") }}>
+                              <p className="nombreSerie">
+                                CAMION NQS
                                 </p>
                                 <span className="modeloSerie">
-                                    {item.modelo}
-                                </span>
-                            </NavLink>
-                        ))}
-                    </div>
+                                156HP 9900
+                               </span>
+                         </a>
 
+                         <a className="serieContainer" onClick={() => { openFormContact("camion-FRS-170HP-10500") }}>
+                              <p className="nombreSerie">
+                              CAMION FRS
+                                </p>
+                                <span className="modeloSerie">
+                                170HP 10500
+                               </span>
+                         </a>
+                    </div>
                 </div>
                 <div className="boxLeft playMotor contenedorTextoSobrepuesto">
                     <img src={urlMedia + "serie-100/serie-100-lateral.webp"} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 </div>
             </div>
+
+            {modalFormIsOpen &&
+                <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} close={closeFormContact} />
+            }
         </>
     )
 }

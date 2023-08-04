@@ -81,7 +81,7 @@ function Camion() {
     switch ((useParams("id").id)) {
 
         //10 toneladas
-        case "camion-10-toneladas-t5g-1167":
+        case "camion-40500-AMT":
             nombreCamion = "Camión de 10 toneladas | T5G-1167"
             camionSerie = "T5G 1167 / 10 TON"
             nombreSerie = "Serie T5G"
@@ -135,9 +135,9 @@ function Camion() {
             break;
 
         //9 toneladas
-        case "camion-de-9-toneladas":
-            nombreCamion = "Camión de 9 toneladas | T5G-1167"
-            camionSerie = "T5G 1167 / 9 TON"
+        case "camion-40500":
+            nombreCamion = "Camión 40500"
+            camionSerie = "40500"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHCR9T1167"
             console.log('9 toneladas')
@@ -187,10 +187,10 @@ function Camion() {
             break;
 
         //12 toneladas
-        case "camion-12-toneladas-t5g-1167":
-            console.log('12 toneladas')
-            nombreCamion = "Camión de 12 toneladas | T5G-1167"
-            camionSerie = "T5G 1167 / 12 TON"
+        case "camion-17000":
+            console.log('camion-17000')
+            nombreCamion = "Camión 17000"
+            camionSerie = "Camión 17000"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
@@ -240,10 +240,10 @@ function Camion() {
             break;
 
         //13 toneladas
-        case "camion-13-toneladas-t5g-1167":
-            console.log('13 toneladas')
-            nombreCamion = "Camión de 13 toneladas | T5G-1167"
-            camionSerie = "T5G 1167 / 13 TON (280HP)"
+        case "camion-17000-AMT":
+            console.log('camion-17000-AMT')
+            nombreCamion = "Camión 17000-AMT"
+            camionSerie = "Camión 17000-AMT"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB13T1167"
             images = [
@@ -449,12 +449,12 @@ function Camion() {
             break;
 
         //3.5 toneladas
-        case "camion-de-3-5-toneladas-1057":
-            console.log('3.5 toneladas')
-            nombreCamion = "Camión de 3.5 toneladas | 1057"
-            camionSerie = "1057 / 3.5 TON"
+        case "FRS":
+            console.log('FRS')
+            nombreCamion = "FRS"
+            camionSerie = "FRS"
             nombreSerie = "Serie 100"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB3T1157"
+            bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/PRUEBA"
             images = [
                 urlMedia + "3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-ecuador.webp",
                 urlMedia + "3.5-toneladas/camion-blanco-sinotruk-de-3.5-toneladas-de-frente-ecuador.webp"
@@ -546,10 +546,10 @@ function Camion() {
 
 
         //3.6 toneladas
-        case "camion-de-3-6-toneladas":
-            console.log('3.6 toneladas')
-            nombreCamion = "Camión de 3.6 toneladas | 1047"
-            camionSerie = "1047 / 3.6 TON"
+        case "NQS":
+            console.log('NQS')
+            nombreCamion = "NQS"
+            camionSerie = "NQS"
             nombreSerie = "Serie 100"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVH3.6T"
             images = [

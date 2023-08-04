@@ -41,11 +41,11 @@ export default function Footer() {
                     <li><p className="itemMenu"><a href="/serie/c7h">Serie C7H</a></p></li>
                     <li><p className="itemMenu"><a href="/serie/volquetas">Volquetas</a></p></li>
                 </ul>
-                <ul className="list">
+                {/* <ul className="list">
                     <li><p className="subTitle">SUNWARD</p></li>
                     <li><p className="titleFooter"><a href="/excavadoras/swe210">Excavadora SWE210</a></p></li>
                     <li><p className="titleFooter"><a href="/excavadoras/swe365e">Excavadora SWE365E</a></p></li>
-                </ul>
+                </ul> */}
 
             </div>
             <div className="col1 colSell">

@@ -884,6 +884,17 @@ p.titleFooter {
     display: flex;
 }
 
+.boxNews.companiaimg2.new {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.boxNews.companiaimg2.new img{
+    width: 30%;
+}
+
 .boxNews.companiaimg2.b {
     width: 20%;
 }
@@ -991,8 +1002,10 @@ p.titleFooter {
 
 
 .news .boxNews {
-    position: relative;
+    position: flex;
 }
+
+
 
 .footer h4 {
     margin-top: 3px !important;
@@ -1017,6 +1030,8 @@ p.titleFooter {
 
 .internal .nav-links {
     z-index: 100;
+    height: 100vh;
+    
 }
 
 .react-slideshow-container .default-nav:first-of-type,
@@ -1843,7 +1858,7 @@ a.titleBox2:hover {
 }
 
 .imgHeader1 {
-    background-image: url(../public/images/home/repuestos.webp);
+    background-image: url(https://vehicentro.com/co/images/home/veinsteinRepuestos.jpg);
     background-size: cover;
 }
 

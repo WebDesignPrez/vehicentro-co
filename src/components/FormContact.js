@@ -197,13 +197,17 @@ function FormContact(props) {
     setCam(nomCamion)
   }
 
-  const serie100 = ['1057 / 3.5 TON', '1047 / 3.6 TON', '1047 / 3.6 TON', '1067 / 5 TON', '1067 / 6 TON', '1147 / 8 TON'];
-  const serieT5G = ['T5G 1167 / 9 TON', 'T5G 1167 / 10 TON', 'T5G 1167 / 12 TON', 'T5G 1167 / 13 TON (280HP)', 'T5G 1167 / 13 TON (330HP)', 'T5G 1257 / 18 TON', 'T5G 1257 / 19.5 TON', 'T5G 4187 / 24 TON'];
-  const serieT7H = ['T7H 390 / 28 TON', 'T7H 390 / 28 TON con retardador', 'T7H 390 / 42 TON', 'T7H 430 / 45 TON'];
-  const serieC7H = ['C7H 1256 / 20 TON', 'C7H 540 / 48 TON', 'C7H 540 / 48 TON con Catalinas'];
-  const especiales = ['VOLQUETA T5G-330 8-9M2', 'VOLQUETA 20M3', 'VOLQUETA T5G 430-330 10-14M2', 'C7H 12M3 / MIXER', 'A7 1257 / MIXER'];
-  const excavadora = ['SWE210', 'SWE365E', 'EXCAVADORA', 'RETROEXCAVADORA', 'MINI EXCAVADORA', 'RODILLO'];
-  const furgoneta = ['M70L'];
+   /* const serie100 = ['1057 / 3.5 TON', '1047 / 3.6 TON', '1047 / 3.6 TON', '1067 / 5 TON', '1067 / 6 TON', '1147 / 8 TON', 'FRS']; */
+ const serie100 = ['NQS 156HP 9900', 'FRS 170HP 10500'];
+ /* const serieT5G = ['T5G 1167 / 9 TON', 'T5G 1167 / 10 TON', 'T5G 1167 / 12 TON', 'T5G 1167 / 13 TON (280HP)', 'T5G 1167 / 13 TON (330HP)', 'T5G 1257 / 18 TON', 'T5G 1257 / 19.5 TON', 'T5G 4187 / 24 TON']; */
+ const serieT5G = ['T5G 250HP 17000', 'T5G 250HP 17000 AMT', 'T5G 350HP 40500', 'T5G 350HP 40500 AMT'];
+ /* const serieT7H = ['T7H 390 / 28 TON', 'T7H 390 / 28 TON con retardador', 'T7H 390 / 42 TON', 'T7H 430 / 45 TON']; */
+ const serieT7H = ['T7H 400HP 40500', 'T7H 400HP 40500 AMT'];
+/*   const serieC7H = ['C7H 1256 / 20 TON', 'C7H 540 / 48 TON', 'C7H 540 / 48 TON con Catalinas']; */
+ const serieC7H = ['C7H 540HP 52000 AMT'];
+ /* const especiales = ['VOLQUETA T5G-330 8-9M2', 'VOLQUETA 20M3', 'VOLQUETA T5G 430-330 10-14M2', 'C7H 12M3 / MIXER', 'A7 1257 / MIXER'];
+ const excavadora = ['SWE210', 'SWE365E', 'EXCAVADORA', 'RETROEXCAVADORA', 'MINI EXCAVADORA', 'RODILLO'];
+ const furgoneta = ['M70L']; */
 
   let type = null;
   let options = null;
@@ -216,13 +220,13 @@ function FormContact(props) {
     type = serieT7H;
   } else if (serie === "Serie C7H") {
     type = serieC7H;
-  } else if (serie === "Especiales") {
+  } /* else if (serie === "Especiales") {
     type = especiales;
   } else if (serie === "Excavadora") {
     type = excavadora;
   } else if (serie === "Furgoneta") {
     type = furgoneta;
-  }
+  } */
 
   
   if (type) {
@@ -273,20 +277,8 @@ function FormContact(props) {
             <span className="userIcon"><img src={urlMedia + "map-marker-solid.png"} /></span>
             <select name="escoge_tu_concesionario_mas_cercano" onBlur={(e) => { handleFocusCon(e) }} onChange={(e) => { handleChangeCon(e) }} value={escoge_tu_concesionario_mas_cercano}>
               <option value="Concesionario">Concesionario</option>
-              <option value="Ambato - Av. Indoamérica Sector Izamba">Ambato - Av. Indoamérica Sector Izamba</option>
-              <option value="Ambato - Av. Guaytambos Sector Ficoa">Ambato - Av. Guaytambos Sector Ficoa</option>
-              <option value="Riobamba">Riobamba</option>
-              <option value="Quito - Carapungo">Quito - Carapungo</option>
-              <option value="Quito - Sur">Quito - Sur</option>
-              <option value="Quito - Los Chillos">Quito - Los Chillos</option>
-              <option value="Quito - Galo Plaza">Quito - Galo Plaza</option>
-              <option value="Quito - El Colibrí ">Quito - El Colibrí </option>
-              <option value="Guayaquil - Samborondón">Guayaquil - Samborondón</option>
-              <option value="Guayaquil - Norte">Guayaquil - Norte</option>
-              <option value="Cuenca">Cuenca</option>
-              <option value="Machala">Machala</option>
-              <option value="Ibarra">Ibarra</option>
-              <option value="Manta">Manta</option>
+              <option value="Bogotá - Fontibón">Bogotá - Fontibón</option>
+              <option value="Bogotá - Calle 80">Bogotá - Calle 80</option>
             </select>
           </div>
 
@@ -298,9 +290,9 @@ function FormContact(props) {
               <option value="Serie T5G">Serie T5G</option>
               <option value="Serie T7H">Serie T7H</option>
               <option value="Serie C7H">Serie C7H</option>
-              <option value="Especiales">Especiales</option>
+              {/* <option value="Especiales">Especiales</option>
               <option value="Excavadora">Excavadora</option>
-              <option value="Furgoneta">Furgoneta</option>
+              <option value="Furgoneta">Furgoneta</option> */}
             </select>
           </div>
 

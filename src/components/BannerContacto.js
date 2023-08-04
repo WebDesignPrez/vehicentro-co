@@ -46,7 +46,7 @@ export default function BannerContacto(props){
     }
 
     function openContactDos(){
-      url = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHBOTONCOT"
+      url = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOBOTONCOT"
       setContactIsOpen(true)
     }
 

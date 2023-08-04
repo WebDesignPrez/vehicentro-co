@@ -83,37 +83,25 @@ function Serie() {
             nombreSerieInd = "T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHSERIET5G"
             series = [{
-                serie: "T5G 1167",
-                modelo: "9 TON",
+                serie: "CAMION T5G",
+                modelo: "250HP 17000",
                 url: "/camiones/camion-de-9-toneladas"
             }, {
-                serie: "T5G 1167",
-                modelo: "10.8 TON",
+                serie: "CAMION T5G",
+                modelo: "250HP 17000 AMT",
                 url: "/camiones/camion-10-toneladas-t5g-1167"
             }, {
-                serie: "T5G 1167",
-                modelo: "12 TON",
+                serie: "MINIMULA T5G",
+                modelo: "350HP 40500",
                 url: "/camiones/camion-12-toneladas-t5g-1167"
             }, {
-                serie: "T5G 1167",
-                modelo: "13 TON",
-                url: "/camiones/camion-13-toneladas-t5g-1167"
-            }, {
-                serie: "T5G 1167",
-                modelo: "13 TON 330HP",
-                url: "/camiones/camion-13-toneladas-t5g-1167-330hp"
-            }, {
-                serie: "T5G 1167",
-                modelo: "18 TON",
-                url: "/camiones/camion-de-18-toneladas-t5g-1257"
-            }, {
-                serie: "T5G 1167",
-                modelo: "19.5 TON",
-                url: "/camiones/camion-de-19-toneladas-t5g-1257"
-            }, {
-                serie: "T5G 4187",
-                modelo: "24 TON",
-                url: "/cabezales/cabezal-t5g-4187"
+                serie: "MINIMULA T5G",
+                modelo: "350HP 40500 AMT",
+                url: "/camiones/camion-13-toneladas-t5g-1167", 
+                nombreCamion: "CAMION NQS 156HP 9900",
+                camionSerie: "NQS 156HP 9900",
+                nombreSerie: "Serie 100",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCONQS",
             }]
 
             console.log('10 Toneladas')
@@ -338,7 +326,7 @@ function Serie() {
                 </div>
                 <div className="serieList serieBox">
                     {series.map((item, index) => (
-                        <NavLink className="serieContainer" to={item.url}>
+                        <NavLink className="serieContainer" onClick={() => { openFormContact() }}>
                             <p className="nombreSerie">
                                 {item.serie}
                             </p>

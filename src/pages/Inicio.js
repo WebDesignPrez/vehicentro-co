@@ -50,6 +50,7 @@ function Slide() {
                 </div>
                 <div className="boxRightHeader  half contenedorTextoSobrepuesto">
                     <img src="./images/home/repuestos-para-camiones-vehicentro-ecuador-sinotruk.webp" className="slideMain" alt="Header 2" />
+{/*                     <img src="./images/home/prueba.webp" className="slideMain" alt="Header 2" /> */}
                     <div className="boxText flex-table row textoSobrepuesto">
                         <div className="flex-row textMain ">Repuestos a <br />nivel nacional</div>
                     </div>
