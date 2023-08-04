@@ -42,6 +42,7 @@ let camionSerie
 let desx
 function Serie() {
     const [modalFormIsOpen, setFormIsOpen] = useState(false);
+    const [selectedSeries, setSelectedSeries] = useState(null);
 
 
     useEffect(() => {
@@ -62,9 +63,10 @@ function Serie() {
     }, []);
 
 
-    function openFormContact() {
-        setFormIsOpen(true)
-    }
+    function openFormContact(selectedSeries) {
+        setSelectedSeries(selectedSeries); // Set the selected series data
+        setFormIsOpen(true); // Open the form popup
+      }
 
     function closeFormContact() {
         setFormIsOpen(false)
@@ -85,26 +87,39 @@ function Serie() {
             series = [{
                 serie: "CAMION T5G",
                 modelo: "250HP 17000",
-                url: "/camiones/camion-de-9-toneladas"
+                url: "/camiones/camion-de-9-toneladas",
+                nombreCamion: "CAMION T5G 250HP 17000",
+                camionSerie: "T5G 250HP 17000",
+                nombreSerie: "Serie T5G",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G17000"
+
             }, {
                 serie: "CAMION T5G",
                 modelo: "250HP 17000 AMT",
-                url: "/camiones/camion-10-toneladas-t5g-1167"
+                url: "/camiones/camion-10-toneladas-t5g-1167",
+                nombreCamion: "CAMION T5G 250HP 17000 AMT",
+                camionSerie: "T5G 250HP 17000 AMT",
+                nombreSerie: "Serie T5G",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G17000AMT"
             }, {
                 serie: "MINIMULA T5G",
                 modelo: "350HP 40500",
-                url: "/camiones/camion-12-toneladas-t5g-1167"
+                url: "/camiones/camion-12-toneladas-t5g-1167",
+                nombreCamion: "MINIMULA T5G 350HP 40500",
+                camionSerie: "T5G 350HP 40500",
+                nombreSerie: "Serie T5G",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G40500"
+    
             }, {
                 serie: "MINIMULA T5G",
                 modelo: "350HP 40500 AMT",
-                url: "/camiones/camion-13-toneladas-t5g-1167", 
-                nombreCamion: "CAMION NQS 156HP 9900",
-                camionSerie: "NQS 156HP 9900",
-                nombreSerie: "Serie 100",
-                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCONQS",
+                url: "/camiones/camion-13-toneladas-t5g-1167",
+                nombreCamion: "MINIMULA T5G 350HP 40500 AMT",
+                camionSerie: "T5G 350HP 40500 AMT",
+                nombreSerie: "Serie T5G",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT5G40500AMT"
             }]
 
-            console.log('10 Toneladas')
             images = [
                 urlMedia + "10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador.webp",
                 urlMedia + "10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador-de-frente.webp"
@@ -149,17 +164,22 @@ function Serie() {
             nombreSerie = "Serie T7H"
             nombreSerieInd = "T7H"
             series = [{
-                serie: "T7H 390",
-                modelo: "28 TON",
-                url: "/cabezales/cabezal-t7h-390-28-toneladas"
+                serie: "SUPER MINIMULA",
+                modelo: "T7H 400HP 40500",
+                url: "/cabezales/cabezal-t7h-390-28-toneladas",
+                nombreCamion: "SUPER MINIMULA T7H 400HP 40500",
+                camionSerie: "T7H 400HP 40500",
+                nombreSerie: "Serie T7H",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT7H40500"
+
             }, {
-                serie: "T7H 390",
-                modelo: "42 TON",
-                url: "/cabezales/cabezal-t7h-390-42-toneladas"
-            }, {
-                serie: "T7H 430",
-                modelo: "45 TON",
-                url: "/cabezales/cabezal-t7h-430-45-toneladas"
+                serie: "SUPER MINIMULA",
+                modelo: "T7H 400HP 40500 AMT",
+                url: "/cabezales/cabezal-t7h-390-42-toneladas",
+                nombreCamion: "SUPER MINIMULA T7H 400HP 40500 AMT",
+                camionSerie: "T7H 400HP 40500 AMT",
+                nombreSerie: "Serie T7H",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOT7H40500AMT"
             }]
 
 
@@ -212,17 +232,13 @@ function Serie() {
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHSERIEC7H"
 
             series = [{
-                serie: "C7H 1256",
-                modelo: "20 TON",
-                url: "/camiones/camion-20-toneladas-1256"
-            }, {
-                serie: "C7H 540",
-                modelo: "48 TON",
-                url: "/cabezales/cabezal-c7h-540"
-            }, {
-                serie: "C7H 540 CATALINAS",
-                modelo: "48 TON",
-                url: "/cabezales/cabezal-c7h-540-catalinas-48-toneladas"
+                serie: "TRACTO MULA",
+                modelo: "C7H 540HP 52000 AMT",
+                url: "/camiones/camion-20-toneladas-1256",
+                nombreCamion: "TRACTO MULA C7H 540HP 52000 AMT",
+                camionSerie: "C7H 540HP 52000 AMT",
+                nombreSerie: "Serie C7H",
+                bdc: "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOC7H52000AMT"
             }]
 
 
@@ -326,14 +342,15 @@ function Serie() {
                 </div>
                 <div className="serieList serieBox">
                     {series.map((item, index) => (
-                        <NavLink className="serieContainer" onClick={() => { openFormContact() }}>
-                            <p className="nombreSerie">
-                                {item.serie}
-                            </p>
-                            <span className="modeloSerie">
-                                {item.modelo}
-                            </span>
-                        </NavLink>
+                        <a
+                        className="serieContainer"
+                        onClick={() => {
+                          openFormContact(item); // Pass the item (selected series) to the function
+                        }}
+                      >
+                        <p className="nombreSerie">{item.serie}</p>
+                        <span className="modeloSerie">{item.modelo}</span>
+                      </a>
                     ))}
                 </div>
             </div>
@@ -359,7 +376,7 @@ function Serie() {
             <img src={urlMedia + "marcasSeries.webp"} alt="Marcas Series" width="1532" height="355" />
         </div>
 
-        <div className="boxesIni posRelative fondonegro">
+        {/* <div className="boxesIni posRelative fondonegro">
             <div className="marcasbg">
                 <img src={cabina} width="1500" height="1500" className="slideMain" alt="Punto de Venta" />
             </div>
@@ -386,7 +403,7 @@ function Serie() {
                     </Fade>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="boxesIni posRelative centrado">
             <div className="centrado">
@@ -399,9 +416,15 @@ function Serie() {
         <BannerContacto url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} />
         <Footer />
 
-        {modalFormIsOpen &&
-            <FormContactFicha url={bdc} camion={nombreCamion} serie={nombreSerie} camionSerie={camionSerie} close={closeFormContact} />
-        }
+        {modalFormIsOpen && selectedSeries && (
+        <FormContactFicha
+          url={selectedSeries.bdc}
+          camion={selectedSeries.nombreCamion}
+          serie={selectedSeries.nombreSerie}
+          camionSerie={selectedSeries.camionSerie}
+          close={closeFormContact}
+        />
+      )}
     </>
 }
 

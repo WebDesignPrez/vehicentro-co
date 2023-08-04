@@ -22,7 +22,7 @@ function Camion_en_uso() {
     switch ((useParams("id").id)) {
 
         case "camion-de-48-toneladas":
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHUSO"
+            bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOBOTONCOT"
             imagen = [urlMedia + "camion-en-uso/48-ton/uso-3-camion-48-ton.webp", urlMedia + "camion-en-uso/48-ton/uso-4-camion-48-ton.webp", urlMedia + "camion-en-uso/48-ton/uso-1-camion-48-ton.webp", urlMedia + "camion-en-uso/48-ton/uso-2-camion-48-ton.webp", urlMedia + "camion-en-uso/48-ton/uso-5-camion-48-ton.webp"]
             nombreCamion = "Camion de 48 toneladas | C7H-540"
             camionSerie = ""

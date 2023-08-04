@@ -16,11 +16,11 @@ function FormContactFicha(props) {
   let tituloForm = props.tituloForm
   let closeBtn = props.close
 
-  let [nombre_y_apellido, setName] = useState('');
+  let [nombres, setName] = useState('');
   let [ciudad, setCity] = useState('');
   let [email, setEmail] = useState('');
   let [celular, setTel] = useState('');
-  let [cedula, setCed] = useState('');
+  let [identificacion, setCed] = useState('');
   let [serie, setSerie] = useState(listSerie);
   let [camionSerie, setSerieCamion] = useState(listCamion);
   let [camion, setCam] = useState(nomCamion);
@@ -184,6 +184,9 @@ function FormContactFicha(props) {
       })
     } else {
       NotificationManager.error('No se puede enviar datos, completar los datos correctamente.', '');
+      let form = $(e.target);
+      console.log(form.serializeArray())
+      NotificationManager.error('No se puede enviar datos, completar los datos correctamente.', '');
     }
   }
   useEffect(() => {
@@ -246,7 +249,7 @@ function FormContactFicha(props) {
           <label className="input_title">*Nombre y Apellido</label>
           <div className="input-group">
             <span className="userIcon"><img src={urlMedia + "user-solid.png"} /></span>
-            <input placeholder="" name="nombre_y_apellido" type="text" onBlur={(e) => { handleFocus(e) }} onChange={(e) => { handleChange(e) }} value={nombre_y_apellido} />
+            <input placeholder="" name="nombres" type="text" onBlur={(e) => { handleFocus(e) }} onChange={(e) => { handleChange(e) }} value={nombres} />
           </div>
 
           <label className="input_title">*Ciudad</label>
@@ -270,7 +273,7 @@ function FormContactFicha(props) {
           <label className="input_title">*Cédula</label>
           <div className="input-group">
             <span className="userIcon"><img src={urlMedia + "portrait-solid.png"} /></span>
-            <input placeholder="" name="cedula" type="text" onBlur={(e) => { handleFocusCed(e) }} onChange={(e) => { handleChangeCed(e) }} value={cedula} />
+            <input placeholder="" name="identificacion" type="text" onBlur={(e) => { handleFocusCed(e) }} onChange={(e) => { handleChangeCed(e) }} value={identificacion} />
           </div>
 
           <label className="input_title">*Escoge tu concesionario más cercano</label>
