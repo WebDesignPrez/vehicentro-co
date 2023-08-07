@@ -83,7 +83,7 @@ function Serie() {
             motor = urlMedia + "t5g/motor.webp"
             nombreSerie = "Serie T5G"
             nombreSerieInd = "T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHSERIET5G"
+            bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIET5G"
             series = [{
                 serie: "CAMION T5G",
                 modelo: "250HP 17000",
@@ -163,6 +163,7 @@ function Serie() {
             motor = urlMedia + "t7h/motor.webp"
             nombreSerie = "Serie T7H"
             nombreSerieInd = "T7H"
+            bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIET7H"
             series = [{
                 serie: "SUPER MINIMULA",
                 modelo: "T7H 400HP 40500",
@@ -229,8 +230,7 @@ function Serie() {
             motor = urlMedia + "c7h/motor.webp"
             nombreSerie = "Serie C7H"
             nombreSerieInd = "C7H"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHSERIEC7H"
-
+            bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIEC7H"
             series = [{
                 serie: "TRACTO MULA",
                 modelo: "C7H 540HP 52000 AMT",

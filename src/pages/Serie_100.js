@@ -13,7 +13,7 @@ let nombreCamion
 let camionSerie
 let urlMedia = env.url
 let audio_motor = "../images/10-toneladas/motor.mp3"
-let bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOBOTONCOT"
+let bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIE100"
 let nombreSerie = "Serie 100"
 
 
