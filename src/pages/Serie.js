@@ -158,8 +158,8 @@ function Serie() {
         //t7h
         case "t7h":
             video = urlMedia + "t7h/video.mp4"
-            imagen = urlMedia + "t7h/contacto.webp"
-            imagen2 = urlMedia + "t7h/camion.webp"
+            imagen = urlMedia + "t7h/t7hFormu.jpg"
+            imagen2 = urlMedia + "t7h/t7hArr.jpg"
             motor = urlMedia + "t7h/motor.webp"
             nombreSerie = "Serie T7H"
             nombreSerieInd = "T7H"
