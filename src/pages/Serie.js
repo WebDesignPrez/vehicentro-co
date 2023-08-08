@@ -77,10 +77,10 @@ function Serie() {
 
         //t5g
         case "t5g":
-            video = urlMedia + "t5g/video.mp4"
+            video = urlMedia + "t5g/T5G.mp4"
             imagen = urlMedia + "t5g/contacto.webp"
             imagen2 = urlMedia + "t5g/camion.webp"
-            motor = urlMedia + "t5g/motor.webp"
+            motor = urlMedia + "t5g/motorNew.webp"
             nombreSerie = "Serie T5G"
             nombreSerieInd = "T5G"
             bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIET5G"
@@ -157,10 +157,10 @@ function Serie() {
 
         //t7h
         case "t7h":
-            video = urlMedia + "t7h/video.mp4"
+            video = urlMedia + "t7h/T7H.mp4"
             imagen = urlMedia + "t7h/t7hFormu.jpg"
             imagen2 = urlMedia + "t7h/t7hArr.jpg"
-            motor = urlMedia + "t7h/motor.webp"
+            motor = urlMedia + "t7h/motorNewt7h.webp"
             nombreSerie = "Serie T7H"
             nombreSerieInd = "T7H"
             bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIET7H"
@@ -224,10 +224,10 @@ function Serie() {
         //c7h
         case "c7h":
             console.log('12 toneladas')
-            video = urlMedia + "c7h/video.mp4"
+            video = urlMedia + "c7h/C7H.mp4"
             imagen = urlMedia + "c7h/contacto.webp"
             imagen2 = urlMedia + "c7h/camion.webp"
-            motor = urlMedia + "c7h/motor.webp"
+            motor = urlMedia + "t7h/motorNewt7h.webp"
             nombreSerie = "Serie C7H"
             nombreSerieInd = "C7H"
             bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/WEBVHCOSERIEC7H"
