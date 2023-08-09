@@ -345,6 +345,29 @@ function Block3() {
                         </div>
                     </div>
                 </div>
+
+                {/* <div>
+
+
+                    <Slide duration={2000}>
+
+                        <div className="each-slide-effect">
+                            <div style={{ 'backgroundImage': `url(../images/home/motor.webp)`, height: `23.2vw` }}>
+                            </div>
+                        </div>
+                        <div className="each-slide-effect">
+                            <div style={{ 'backgroundImage': `url(../images/home/veinstein.webp)`, height: `23.2vw` }}>
+                            </div>
+                        </div>
+                    </Slide>
+
+
+                    <div className="bottomContainer">
+                        <div className="linksBox iniciocentrado">
+                            <a className="line2" src="">Camiones Euro 6</a>
+                        </div>
+                    </div>
+                </div> */}
                 <div>
                     <a href="/serie/c7h"> <img src={urlMedia + "home/serie-c7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /> </a>
                     <div className="bottomContainer">

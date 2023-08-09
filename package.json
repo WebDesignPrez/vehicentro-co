@@ -2,7 +2,7 @@
   "name": "vehicentro_web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
+  "homepage": "/co",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,8 +20,7 @@
   },
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",
-    "homepage": "/co",
-    "build": "react-scripts build && mkdir build/co && mv build/static build/co/static",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
