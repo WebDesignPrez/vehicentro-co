@@ -29,8 +29,10 @@ let medidas
 let medidasMovil
 let audio_motor
 let garantia
+
 let textoMotor1
 let textoMotor2
+
 let textoMotor3
 let precio
 let contenedorMarcas

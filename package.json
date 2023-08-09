@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",
-    "build": "react-scripts build",
+    "homepage": "/co",
+    "build": "react-scripts build && mkdir build/co && mv build/static build/co/static",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
