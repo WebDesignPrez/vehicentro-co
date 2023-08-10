@@ -83,51 +83,47 @@ function Camion() {
 
         //24 toneladas
         case "cabezal-40500":
-            console.log('Cabezal 40500')
-            nombreCamion = "Cabezal 40500"
-            camionSerie = "Cabezal 40500"
-            nombreSerie = "Serie T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB24TT5G4187"
+            nombreCamion = "Cabezal 400HP 40500 | T7H"
+            camionSerie = "T7H 400HP 40500"
+            nombreSerie = "Serie T7H"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web28TT7H390"
             images = [
-                urlMedia + "24-toneladas/camion-blanco-sinotruk-de-24-toneladas-ecuador.webp",
-                urlMedia + "24-toneladas/camion-sinotruk-de-24-toneladas-de-frente-ecuador.webp"
+                urlMedia + "28-toneladas/camion-blanco-sinotruk-de-28-toneladas-ecuador.webp",
+                urlMedia + "28-toneladas/camion-blanco-sinotruk-de-28-toneladas-de-frente-ecuador.webp"
             ];
-            textoMotor1 = "340 HP"
-            textoMotor2 = "Modelo T5G-4187 - 24 Ton"
+            textoMotor1 = "400 HP"
+            textoMotor2 = "SUPER MINIMULA 40500"
             textoMotor3 = "Ficha técnica"
-            precio = precios.v_cuatro
-            cuotas = `Cuotas desde: ${precios.v_cuatro_cuota}`
-            motor = urlMedia + "24-toneladas/motor-sinotruk-de-camion-de-24-toneladas-ecuador.webp"
-            garantia = urlMedia + "24-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "24-toneladas/tecnologia-alemana.webp"
+            precio = precios.v_ocho
+            cuotas = `Cuotas desde: ${precios.v_ocho_cuota}`
+            motor = urlMedia + "28-toneladas/motor-sinotruk-de-camion-de-28-toneladas-ecuador.webp"
+            garantia = urlMedia + "28-toneladas/5-anos-de-garantia.webp"
+            tecnologia = urlMedia + "28-toneladas/tecnologia-alemana.webp"
             caracteristicas = [
-                urlMedia + "24-toneladas/camion-de-24-toneladas-potencia-340hp.webp",
-                urlMedia + "24-toneladas/camion-de-24-toneladas-cilindraje.webp",
-                urlMedia + "24-toneladas/camion-de-24-toneladas-freno-a-las-valvulas.webp",
-                urlMedia + "24-toneladas/inyeccion.webp"
+                urlMedia + "28-toneladas/camion-de-28-toneladas-potencia-390hp.webp",
+                urlMedia + "28-toneladas/camion-de-28-toneladas-cilindraje.webp",
+                urlMedia + "28-toneladas/camion-de-28-toneladas-freno-a-las-valvulas.webp",
+                urlMedia + "28-toneladas/inyeccion.webp"
             ]
-            cabina = urlMedia + "24-toneladas/cabina-de-camion-de-24-toneladas-sinotruk.webp"
-            marcas = urlMedia + "24-toneladas/marcas-vehicentro.webp"
+            cabina = urlMedia + "28-toneladas/cabina-de-camion-de-28-toneladas-sinotruk.webp"
+            marcas = urlMedia + "28-toneladas/marcas-vehicentro.webp"
             internas1 = [
-                urlMedia + "24-toneladas/volante-deportivo.webp",
-                urlMedia + "24-toneladas/cabina-con-litera.webp",
-                urlMedia + "24-toneladas/radio-touch-mp5.webp",
-                urlMedia + "24-toneladas/elevavidrios-electricos.webp",
-                urlMedia + "24-toneladas/control-hidraulico.webp",
-                urlMedia + "24-toneladas/componentes-wabco.webp"
+                urlMedia + "28-toneladas/volante-deportivo.webp",
+                urlMedia + "28-toneladas/pantalla-android.webp",
+                urlMedia + "28-toneladas/palanca.webp",
+                urlMedia + "28-toneladas/computadora-bosch.webp",
+                urlMedia + "28-toneladas/wabco-dos.webp"
             ];
             internas2 = [
-                urlMedia + "24-toneladas/automatica.webp",
-                urlMedia + "24-toneladas/palanca-de-cambios.webp",
-                urlMedia + "24-toneladas/mandos-al-volante.webp",
-                urlMedia + "24-toneladas/asiento-neumatico.webp",
-                urlMedia + "24-toneladas/portavasos.webp",
-                urlMedia + "24-toneladas/climatizador.webp"
+                urlMedia + "28-toneladas/uneta.webp",
+                urlMedia + "28-toneladas/wabco.webp",
+                urlMedia + "28-toneladas/bloqueo.webp",
+                urlMedia + "28-toneladas/control-hidraulico.webp"
             ];
 
-            medidas = urlMedia + "24-toneladas/dimensiones-de-camion-de-24-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "24-toneladas/dimensiones-de-camion-de-24-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "24-toneladas/motor.mp3"
+            medidas = urlMedia + "28-toneladas/dimensiones-de-camion-de-28-toneladas-sinotruk.webp"
+            medidasMovil = urlMedia + "28-toneladas/dimensiones-de-camion-de-28-toneladas-sinotruk-responsive.webp"
+            audio_motor = urlMedia + "28-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
@@ -135,23 +131,22 @@ function Camion() {
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
 
-            contenedorVidaUtil = <div className="ajustetextovidautil"><p>Disponible en AMT</p></div>
+            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
 
             break;
 
         //28 toneladas
         case "cabezal-40500-AMT":
-            console.log('cabezal-40500-AMT')
-            nombreCamion = "Cabezal 40500-AMT"
-            camionSerie = "Cabezal 40500-AMT"
+            nombreCamion = "Cabezal 400HP 40500 AMT| T7H"
+            camionSerie = "T7H 400HP 40500 AMT"
             nombreSerie = "Serie T7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/Web28TT7H390"
             images = [
                 urlMedia + "28-toneladas/camion-blanco-sinotruk-de-28-toneladas-ecuador.webp",
                 urlMedia + "28-toneladas/camion-blanco-sinotruk-de-28-toneladas-de-frente-ecuador.webp"
             ];
-            textoMotor1 = "390 HP"
-            textoMotor2 = "Modelo T7H-390"
+            textoMotor1 = "400 HP"
+            textoMotor2 = "SUPER MINIMULA 40500 AMT"
             textoMotor3 = "Ficha técnica"
             precio = precios.v_ocho
             cuotas = `Cuotas desde: ${precios.v_ocho_cuota}`
@@ -249,55 +244,56 @@ function Camion() {
 
         //42 toneladas
         case "cabezal-52000-AMT":
-            console.log('Cabezal 52000-AMT')
-            nombreCamion = "Cabezal 52000-AMT"
-            camionSerie = "Cabezal 52000-AMT"
-            nombreSerie = "Serie T7H"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB42TT7H390"
+            nombreCamion = "TRACTO MULA C7H 52000 AMT"
+            camionSerie = "C7H 540HP 52000 AMT"
+            nombreSerie = "Serie C7H"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540"
             images = [
-                urlMedia + "42-toneladas/camion-blanco-sinotruk-de-42-toneladas-ecuador.webp",
-                urlMedia + "42-toneladas/camion-blanco-sinotruk-de-42-toneladas-de-frente-ecuador.webp"
+                urlMedia + "48-toneladas/portadac7h48.jpg",
+                urlMedia + "48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
-            textoMotor1 = "390 HP"
-            textoMotor2 = "Modelo T7H-390"
+            textoMotor1 = "540 HP"
+            textoMotor2 = "TRACTO MULA C7H 52000 AMT"
             textoMotor3 = "Ficha técnica"
-            precio = precios.c_dos
-            cuotas = `Cuotas desde: ${precios.c_dos_cuota}`
-            motor = urlMedia + "42-toneladas/motor-sinotruk-de-camion-de-42-toneladas-ecuador.webp"
-            garantia = urlMedia + "42-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "42-toneladas/tecnologia-alemana.webp"
+            precio = precios.c_ocho
+            cuotas = `Cuotas desde: ${precios.c_ocho_cuota}`
+            motor = urlMedia + "48-toneladas/motor-sinotruk-de-camion-de-48-toneladas-ecuador.webp"
+            garantia = urlMedia + "48-toneladas/5-anos-de-garantia.webp"
+            tecnologia = urlMedia + "48-toneladas/tecnologia-alemana.webp"
             caracteristicas = [
-                urlMedia + "42-toneladas/camion-de-42-toneladas-potencia-390hp.webp",
-                urlMedia + "42-toneladas/camion-de-42-toneladas-cilindraje.webp",
-                urlMedia + "42-toneladas/camion-de-42-toneladas-freno-a-las-valvulas.webp",
-                urlMedia + "42-toneladas/inyeccion.webp"
+                urlMedia + "48-toneladas/camion-de-48-toneladas-potencia-540hp.webp",
+                urlMedia + "48-toneladas/camion-de-48-toneladas-cilindraje.webp",
+                urlMedia + "48-toneladas/camion-de-48-toneladas-freno-a-las-valvulas.webp",
+                urlMedia + "48-toneladas/inyeccion.webp"
             ]
-            cabina = urlMedia + "42-toneladas/cabina-de-camion-de-42-toneladas-sinotruk.webp"
-            marcas = urlMedia + "42-toneladas/marcas-vehicentro.webp"
+            cabina = urlMedia + "48-toneladas/cabina-de-camion-de-48-toneladas-sinotruk.webp"
+            marcas = urlMedia + "48-toneladas/marcas-vehicentro.webp"
             internas1 = [
-                urlMedia + "42-toneladas/volante-deportivo.webp",
-                urlMedia + "42-toneladas/pantalla-android.webp",
-                urlMedia + "42-toneladas/palanca.webp",
-                urlMedia + "42-toneladas/computadora-bosch.webp",
-                urlMedia + "42-toneladas/wabco-dos.webp"
+                urlMedia + "48-toneladas/nevera.webp",
+                urlMedia + "48-toneladas/palanca-de-cambios.webp",
+                urlMedia + "48-toneladas/control-en-tablero.webp",
+                urlMedia + "48-toneladas/control-en-el-tablero-dos.webp",
+                urlMedia + "48-toneladas/volante-deportivo.webp",
+                urlMedia + "48-toneladas/vidrios-electricos.webp"
             ];
             internas2 = [
-                urlMedia + "42-toneladas/uneta.webp",
-                urlMedia + "42-toneladas/wabco.webp",
-                urlMedia + "42-toneladas/bloqueo.webp",
-                urlMedia + "42-toneladas/control-hidraulico.webp"
+                urlMedia + "48-toneladas/cabina-con-litera.webp",
+                urlMedia + "48-toneladas/compartimientos.webp",
+                urlMedia + "48-toneladas/bloqueo.webp",
+                urlMedia + "48-toneladas/puerto-usb.webp",
+                urlMedia + "48-toneladas/transmision-automatica.webp"
             ];
 
-            medidas = urlMedia + "42-toneladas/dimensiones-de-camion-de-42-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "42-toneladas/dimensiones-de-camion-de-42-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "42-toneladas/motor.mp3"
+            medidas = urlMedia + "48-toneladas/dimensiones-de-camion-de-48-toneladas-sinotruk.webp"
+            medidasMovil = urlMedia + "48-toneladas/dimensiones-de-camion-de-48-toneladas-sinotruk-responsive.webp"
+            audio_motor = urlMedia + "48-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
 
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
-            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
+            contenedorVidaUtil = <div className="ajustetextovidautil"><p>Disponible en AMT</p></div>
 
             break;
 
@@ -363,7 +359,7 @@ function Camion() {
             nombreSerie = "Serie C7H"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB48TC7H540"
             images = [
-                urlMedia + "48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-ecuador.webp",
+                urlMedia + "48-toneladas/portadac7h48.jpg",
                 urlMedia + "48-toneladas/camion-amarillo-sinotruk-de-48-toneladas-de-frente-ecuador.webp"
             ];
             textoMotor1 = "540 HP"
@@ -478,11 +474,11 @@ function Camion() {
 
     switch ((useParams("id").id)) {
 
-        case "cabezal-t5g-4187":
-            imagen = urlMedia + "24-toneladas/camion-de-24-toneladas-en-la-carretera-sinotruk.webp"
+        case "cabezal-40500-AMT":
+            imagen = urlMedia + "28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "cabezal-t7h-390-28-toneladas":
+        case "cabezal-40500":
             imagen = urlMedia + "28-toneladas/camion-de-28-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
@@ -498,7 +494,7 @@ function Camion() {
             imagen = urlMedia + "45-toneladas/camion-de-45-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "cabezal-c7h-540":
+        case "cabezal-52000-AMT":
             imagen = urlMedia + "48-toneladas/camion-de-48-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
@@ -567,7 +563,7 @@ function Camion() {
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
                     <div onClick={openFormContact} className="flex-row textoMotor1">{textoMotor1}</div>
-                    <div onClick={openFormContact} className="flex-row textoMotor2"><h1>{`Cabezal ${textoMotor2}`}</h1></div>
+                    <div onClick={openFormContact} className="flex-row textoMotor2"><h1>{`${textoMotor2}`}</h1></div>
                     <div onClick={openFormContact} className="flex-row textoMotor3">{textoMotor3}</div>
                     <div onClick={openFormContact} className="flex-row textoMotorFlecha"><img src={urlMedia + "arrow-rojo.png"} alt="arrow" /></div>
                     <div onClick={openFormContact} className="flex-row textoMotor4">Escucha tu motor</div>

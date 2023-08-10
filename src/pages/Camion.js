@@ -82,123 +82,120 @@ function Camion() {
 
         //10 toneladas
         case "camion-40500-AMT":
-            nombreCamion = "Camión de 10 toneladas | T5G-1167"
-            camionSerie = "T5G 1167 / 10 TON"
-            nombreSerie = "Serie T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB10TT5G1167"
-            console.log('10 Toneladas')
-            images = [
-                urlMedia + "10-toneladas/camion-blanco-sinotruk-de-10-toneladas-ecuador.webp",
-                urlMedia + "10-toneladas/camion-blancocabina-sinotruk-de-10-toneladas-ecuador-de-frente.webp"
-            ];
-            textoMotor1 = "240 HP"
-            textoMotor2 = "Modelo T5G-1167 - 10 Ton"
-            textoMotor3 = "Ficha Técnica"
-            precio = precios.diez
-            cuotas = `Cuotas desde: ${precios.diez_cuota}`
-            motor = urlMedia + "10-toneladas/motor-sinotruk-de-camion-de-10-toneladas-ecuador.webp"
-            garantia = urlMedia + "10-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "10-toneladas/tecnologia-alemana.webp"
-            caracteristicas = [
-                urlMedia + "10-toneladas/camion-de-10-toneladas-potencia-240hp.webp",
-                urlMedia + "10-toneladas/camion-de-10-toneladas-6-cilindros-en-linea.webp",
-                urlMedia + "10-toneladas/camion-de-10-toneladas-freno-a-camion-de-10-toneladas-freno-a-las-valvulas.webp",
-                urlMedia + "10-toneladas/camion-de-10-toneladas-inyeccion-common-rail.webp"
-            ]
-            cabina = urlMedia + "10-toneladas/cabina-de-camion-de-10-toneladas-sinotruk.webp"
-            marcas = urlMedia + "10-toneladas/marcas-vehicentro.webp"
-            internas1 = [
-                urlMedia + "10-toneladas/volante-deportivo-de-camion-de-10-toneladas.webp",
-                urlMedia + "10-toneladas/palanca-de-cambios-de-camion-de-10-toneladas.webp",
-                urlMedia + "10-toneladas/asiento-neumatico-dos.webp",
-                urlMedia + "10-toneladas/eleva-vidrios-electricos.webp",
-                urlMedia + "10-toneladas/radio-touch-mp5.webp"
-            ];
-            internas2 = [
-                urlMedia + "10-toneladas/climatizador.webp",
-                urlMedia + "10-toneladas/radio-touch-mp5.webp",
-                urlMedia + "10-toneladas/cabina.webp",
-                urlMedia + "10-toneladas/portavasos.webp"
-            ];
+        
+        nombreCamion = "Cabezal 40500"
+        camionSerie = "T5G 350HP 40500 AMT"
+        nombreSerie = "Serie T5G"
+        bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
+        images = [
+            urlMedia + "19-toneladas/19tonHeroR.jpeg",
+            urlMedia + "19-toneladas/camion-amarillo-sinotruk-de-19-toneladas-ecuador.webp"
+        ];
+        textoMotor1 = "350 HP"
+        textoMotor2 = "MINIMULA T5G 40500"
+        textoMotor3 = "Ficha técnica"
+        precio = precios.d_nueve
+        cuotas = `Cuotas desde: ${precios.d_nueve_cuota}`
+        motor = urlMedia + "19-toneladas/motor-sinotruk-de-camion-de-19-toneladas-ecuador.webp"
+        garantia = urlMedia + "19-toneladas/5-anos-de-garantia.webp"
+        tecnologia = urlMedia + "19-toneladas/tecnologia-alemana.webp"
+        caracteristicas = [
+            urlMedia + "19-toneladas/camion-de-19-toneladas-potencia-340hp.webp",
+            urlMedia + "19-toneladas/camion-de-19-toneladas-6-cilindros-en-linea.webp",
+            urlMedia + "19-toneladas/camion-de-19-toneladas-freno-a-las-valvulas.webp",
+            urlMedia + "19-toneladas/camion-de-19-toneladas-inyeccion-common-rail.webp"
+        ]
+        cabina = urlMedia + "19-toneladas/cabina-de-camion-de-19-toneladas-sinotruk.webp"
+        marcas = urlMedia + "19-toneladas/marcas-vehicentro.webp"
+        internas1 = [
+            urlMedia + "19-toneladas/volante-deportivo-de-camion-de-19-toneladas.webp",
+            urlMedia + "19-toneladas/palanca-de-cambios-de-camion-de-19-toneladas.webp",
+            urlMedia + "19-toneladas/asiento-neumatico.webp",
+            urlMedia + "19-toneladas/eleva-vidrios-electricos.webp",
+            urlMedia + "19-toneladas/radio-touch-mp5.webp"
+        ];
+        internas2 = [
+            urlMedia + "19-toneladas/climatizador.webp",
+            urlMedia + "19-toneladas/radio-touch-mp5.webp",
+            urlMedia + "19-toneladas/cabina.webp",
+            urlMedia + "19-toneladas/portavasos.webp"
+        ];
+        medidas = urlMedia + "19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk.webp"
+        medidasMovil = urlMedia + "19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk-responsive.webp"
+        audio_motor = urlMedia + "19-toneladas/motor.mp3"
 
-            medidas = urlMedia + "10-toneladas/dimensiones-de-camion-de-10-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "10-toneladas/dimensiones-de-camion-de-10-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "10-toneladas/motor.mp3"
-
-            internas = internas1.concat(internas2)
-            contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
-            contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
-                <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
-            </div>
+        internas = internas1.concat(internas2)
+        contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
+        contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
+            <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
+        </div>
 
 
             break;
 
         //9 toneladas
         case "camion-40500":
-            nombreCamion = "Camión 40500"
-            camionSerie = "40500"
+            nombreCamion = "Cabezal 40500"
+            camionSerie = "T5G 350HP 40500"
             nombreSerie = "Serie T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVHCR9T1167"
-            console.log('9 toneladas')
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB19T1257"
             images = [
-                urlMedia + "9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador.webp",
-                urlMedia + "9-toneladas/camion-blanco-sinotruk-de-9-toneladas-ecuador-de-frente.webp"
+                urlMedia + "19-toneladas/19tonHeroR.jpeg",
+                urlMedia + "19-toneladas/camion-amarillo-sinotruk-de-19-toneladas-ecuador.webp"
             ];
-            textoMotor1 = "210 HP"
-            textoMotor2 = "Modelo T5G-1167 - 9 Ton"
+            textoMotor1 = "350 HP"
+            textoMotor2 = "MINIMULA T5G 40500"
             textoMotor3 = "Ficha técnica"
-            precio = precios.nueve
-            cuotas = `Cuotas desde: ${precios.nueve_cuota}`
-            motor = urlMedia + "9-toneladas/motor-sinotruk-de-camion-de-9-toneladas-ecuador.webp"
-            garantia = urlMedia + "9-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "9-toneladas/tecnologia-alemana.webp"
+            precio = precios.d_nueve
+            cuotas = `Cuotas desde: ${precios.d_nueve_cuota}`
+            motor = urlMedia + "19-toneladas/motor-sinotruk-de-camion-de-19-toneladas-ecuador.webp"
+            garantia = urlMedia + "19-toneladas/5-anos-de-garantia.webp"
+            tecnologia = urlMedia + "19-toneladas/tecnologia-alemana.webp"
             caracteristicas = [
-                urlMedia + "9-toneladas/camion-de-9-toneladas-potencia-210hp.webp",
-                urlMedia + "9-toneladas/camion-de-9-toneladas-4-cilindros-en-linea.webp",
-                urlMedia + "9-toneladas/camion-de-9-toneladas-freno-a-camion-de-10-toneladas-freno-a-las-valvulas.webp",
-                urlMedia + "9-toneladas/camion-de-9-toneladas-inyeccion-common-rail.webp"
+                urlMedia + "19-toneladas/camion-de-19-toneladas-potencia-340hp.webp",
+                urlMedia + "19-toneladas/camion-de-19-toneladas-6-cilindros-en-linea.webp",
+                urlMedia + "19-toneladas/camion-de-19-toneladas-freno-a-las-valvulas.webp",
+                urlMedia + "19-toneladas/camion-de-19-toneladas-inyeccion-common-rail.webp"
             ]
-            cabina = urlMedia + "9-toneladas/cabina-de-camion-de-9-toneladas-sinotruk.webp"
-            marcas = urlMedia + "9-toneladas/marcas-vehicentro.webp"
+            cabina = urlMedia + "19-toneladas/cabina-de-camion-de-19-toneladas-sinotruk.webp"
+            marcas = urlMedia + "19-toneladas/marcas-vehicentro.webp"
             internas1 = [
-                urlMedia + "9-toneladas/volante-deportivo-de-camion-de-9-toneladas.webp",
-                urlMedia + "9-toneladas/palanca-de-cambios-de-camion-de-9-toneladas.webp",
-                urlMedia + "9-toneladas/asiento-neumatico.webp",
-                urlMedia + "9-toneladas/eleva-vidrios-electricos.webp"
+                urlMedia + "19-toneladas/volante-deportivo-de-camion-de-19-toneladas.webp",
+                urlMedia + "19-toneladas/palanca-de-cambios-de-camion-de-19-toneladas.webp",
+                urlMedia + "19-toneladas/asiento-neumatico.webp",
+                urlMedia + "19-toneladas/eleva-vidrios-electricos.webp",
+                urlMedia + "19-toneladas/radio-touch-mp5.webp"
             ];
             internas2 = [
-                urlMedia + "9-toneladas/climatizador.webp",
-                urlMedia + "9-toneladas/radio-touch-mp5.webp",
-                urlMedia + "9-toneladas/cabina.webp",
-                urlMedia + "9-toneladas/portavasos.webp"
+                urlMedia + "19-toneladas/climatizador.webp",
+                urlMedia + "19-toneladas/radio-touch-mp5.webp",
+                urlMedia + "19-toneladas/cabina.webp",
+                urlMedia + "19-toneladas/portavasos.webp"
             ];
-
-            medidas = urlMedia + "9-toneladas/dimensiones-de-camion-de-9-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "9-toneladas/dimensiones-de-camion-de-9-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "9-toneladas/motor.mp3"
+            medidas = urlMedia + "19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk.webp"
+            medidasMovil = urlMedia + "19-toneladas/dimensiones-de-camion-de-19-toneladas-sinotruk-responsive.webp"
+            audio_motor = urlMedia + "19-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
             contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
-
             break;
 
         //12 toneladas
         case "camion-17000":
             console.log('camion-17000')
             nombreCamion = "Camión 17000"
-            camionSerie = "Camión 17000"
+            camionSerie = "T5G 250HP 17000"
             nombreSerie = "Serie T5G"
             bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
                 urlMedia + "12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
                 urlMedia + "12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador-de-frente.webp"
             ];
-            textoMotor1 = "240 HP"
-            textoMotor2 = "Modelo T5G-1167 - 12 Ton"
+            textoMotor1 = "250 HP"
+            textoMotor2 = "T5G 17000"
             textoMotor3 = "Ficha técnica"
             precio = precios.doce
             cuotas = `Cuotas desde: ${precios.doce_cuota}`
@@ -236,53 +233,52 @@ function Camion() {
             contenedorMarcas = <div className="boxRightHeader  half" style={{ width: '100 %' }} >
                 <img src={marcas} width="1500" height="750" className="slideMain" alt="Punto de Venta" />
             </div>
-
             break;
 
         //13 toneladas
         case "camion-17000-AMT":
             console.log('camion-17000-AMT')
             nombreCamion = "Camión 17000-AMT"
-            camionSerie = "Camión 17000-AMT"
+            camionSerie = "T5G 250HP 17000 AMT"
             nombreSerie = "Serie T5G"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB13T1167"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB12TT5G1167"
             images = [
-                urlMedia + "13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador.webp",
-                urlMedia + "13-toneladas/camion-blanco-sinotruk-de-13-toneladas-ecuador-de-frente.webp"
+                urlMedia + "12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador.webp",
+                urlMedia + "12-toneladas/camion-blanco-sinotruk-de-12-toneladas-ecuador-de-frente.webp"
             ];
-            textoMotor1 = "280 HP"
-            textoMotor2 = "Modelo T5G-1167 - 13 Ton"
-            textoMotor3 = "Ficha Técnica"
-            precio = precios.trece
-            cuotas = `Cuotas desde: ${precios.trece_cuota}`
-            motor = urlMedia + "13-toneladas/motor-sinotruk-de-camion-de-13-toneladas-ecuador.webp"
-            garantia = urlMedia + "13-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "13-toneladas/tecnologia-alemana.webp"
+            textoMotor1 = "250 HP"
+            textoMotor2 = "T5G 17000 AMT"
+            textoMotor3 = "Ficha técnica"
+            precio = precios.doce
+            cuotas = `Cuotas desde: ${precios.doce_cuota}`
+            motor = urlMedia + "12-toneladas/motor-sinotruk-de-camion-de-12-toneladas-ecuador.webp"
+            garantia = urlMedia + "12-toneladas/5-anos-de-garantia.webp"
+            tecnologia = urlMedia + "12-toneladas/tecnologia-alemana.webp"
             caracteristicas = [
-                urlMedia + "13-toneladas/camion-de-13-toneladas-potencia-280hp.webp",
-                urlMedia + "13-toneladas/camion-de-13-toneladas-6-cilindros-en-linea.webp",
-                urlMedia + "13-toneladas/camion-de-13-toneladas-freno-a-las-valvulas.webp",
-                urlMedia + "13-toneladas/camion-de-13-toneladas-inyeccion-common-rail.webp"
+                urlMedia + "12-toneladas/camion-de-12-toneladas-potencia-240hp.webp",
+                urlMedia + "12-toneladas/camion-de-12-toneladas-6-cilindros-en-linea.webp",
+                urlMedia + "12-toneladas/camion-de-12-toneladas-freno-a-las-valvulas.webp",
+                urlMedia + "12-toneladas/camion-de-12-toneladas-inyeccion-common-rail.webp"
             ]
-            cabina = urlMedia + "13-toneladas/cabina-de-camion-de-13-toneladas-sinotruk.webp"
-            marcas = urlMedia + "13-toneladas/marcas-vehicentro.webp"
+            cabina = urlMedia + "12-toneladas/cabina-de-camion-de-12-toneladas-sinotruk.webp"
+            marcas = urlMedia + "12-toneladas/marcas-vehicentro.webp"
             internas1 = [
-                urlMedia + "13-toneladas/volante-deportivo-de-camion-de-13-toneladas.webp",
-                urlMedia + "13-toneladas/palanca-de-cambios-de-camion-de-13-toneladas.webp",
-                urlMedia + "13-toneladas/asiento-neumatico.webp",
-                urlMedia + "13-toneladas/eleva-vidrios-electricos.webp",
-                urlMedia + "13-toneladas/radio-touch-mp5.webp"
+                urlMedia + "12-toneladas/volante-deportivo-de-camion-de-12-toneladas.webp",
+                urlMedia + "12-toneladas/palanca-de-cambios-de-camion-de-12-toneladas.webp",
+                urlMedia + "12-toneladas/asiento-neumatico-dos.webp",
+                urlMedia + "12-toneladas/eleva-vidrios-electricos.webp",
+                urlMedia + "12-toneladas/radio-touch-mp5.webp"
             ];
             internas2 = [
-                urlMedia + "13-toneladas/climatizador.webp",
-                urlMedia + "13-toneladas/radio-touch-mp5.webp",
-                urlMedia + "13-toneladas/cabina.webp",
-                urlMedia + "13-toneladas/portavasos.webp"
+                urlMedia + "12-toneladas/climatizador.webp",
+                urlMedia + "12-toneladas/radio-touch-mp5.webp",
+                urlMedia + "12-toneladas/cabina.webp",
+                urlMedia + "12-toneladas/portavasos.webp"
             ];
 
-            medidas = urlMedia + "13-toneladas/dimensiones-de-camion-de-13-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "13-toneladas/dimensiones-de-camion-de-13-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "13-toneladas/motor.mp3"
+            medidas = urlMedia + "12-toneladas/dimensiones-de-camion-de-12-toneladas-sinotruk.webp"
+            medidasMovil = urlMedia + "12-toneladas/dimensiones-de-camion-de-12-toneladas-sinotruk-responsive.webp"
+            audio_motor = urlMedia + "12-toneladas/motor.mp3"
 
             internas = internas1.concat(internas2)
             contenedorVidaUtil = "Vida útil de más de 1.5 MILLONES de kilómetros"
@@ -452,7 +448,7 @@ function Camion() {
         case "FRS":
             console.log('FRS')
             nombreCamion = "FRS"
-            camionSerie = "FRS"
+            camionSerie = "FRS 170HP 10500"
             nombreSerie = "Serie 100"
             bdc = "https://bdcco.vehicentro.com:8443/ords/ws_vehicentro/api/conexiones/web/PRUEBA"
             images = [
@@ -549,48 +545,51 @@ function Camion() {
         case "NQS":
             console.log('NQS')
             nombreCamion = "NQS"
-            camionSerie = "NQS"
+            camionSerie = "NQS 156HP 9900"
             nombreSerie = "Serie 100"
-            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEBVH3.6T"
+            bdc = "https://bdc.vehicentro.com:9443/ords/ws_vehicentro/api/conexiones/wordpress/WEB6T1167"
             images = [
-                urlMedia + "3.6-toneladas/camion-blanco-sinotruk-de-3.6-toneladas-ecuador.webp",
-                urlMedia + "3.6-toneladas/camion-blanco-sinotruk-de-3.6-toneladas-de-frente-ecuador.webp"
+                urlMedia + "6-toneladas/camion-blanco-sinotruk-de-6-toneladas-ecuador.webp",
+                urlMedia + "6-toneladas/camion-blanco-sinotruk-de-6-toneladas-de-frente-ecuador.webp"
+
             ];
-            textoMotor1 = "100% Aire"
-            textoMotor2 = "Modelo 1047 - 3.6 Ton"
+            textoMotor1 = "156 HP"
+            textoMotor2 = "Camión NQS 9900"
             textoMotor3 = "Ficha técnica"
-            precio = precios.tres_seis
-            cuotas = `Cuotas desde: ${precios.tres_seis_cuota}`
-            motor = urlMedia + "3.6-toneladas/motor-sinotruk-de-camion-de-3.6-toneladas-ecuador.webp"
-            garantia = urlMedia + "3.6-toneladas/5-anos-de-garantia.webp"
-            tecnologia = urlMedia + "3.6-toneladas/serie-100.webp"
+            precio = precios.seis
+            cuotas = `Cuotas desde: ${precios.seis_cuota}`
+            motor = urlMedia + "6-toneladas/motor-sinotruk-de-camion-de-6-toneladas-ecuador.webp"
+            garantia = urlMedia + "6-toneladas/5-anos-de-garantia.webp"
+            tecnologia = urlMedia + "serie-100/serie100Solos.webp"
 
             caracteristicas = [
-                urlMedia + "3.6-toneladas/camion-de-3.6-toneladas-potencia-87hp.webp",
-                urlMedia + "3.6-toneladas/camion-de-3.6-toneladas-cilindraje.webp",
-                urlMedia + "3.6-toneladas/camion-de-3.6-toneladas-freno-de-aire.webp",
-                urlMedia + "3.6-toneladas/camion-de-3.6-toneladas-inyeccion-common-rail.webp"
+                urlMedia + "6-toneladas/camion-de-6-toneladas-potencia-154hp.webp",
+                urlMedia + "6-toneladas/camion-de-6-toneladas-cilindraje.webp",
+                urlMedia + "6-toneladas/camion-de-6-toneladas-freno-de-aire.webp",
+                urlMedia + "6-toneladas/camion-de-6-toneladas-inyeccion-common-rail.webp"
             ]
-            cabina = urlMedia + "3.6-toneladas/cabina-de-camion-de-3.6-toneladas-sinotruk.webp"
+            cabina = urlMedia + "6-toneladas/cabina-de-camion-de-6-toneladas-sinotruk.webp"
             marcas = ""
             internas1 = [
-                urlMedia + "3.6-toneladas/volante-deportivo.webp",
-                urlMedia + "3.6-toneladas/ventilacion.webp"
+                urlMedia + "6-toneladas/palanca-de-cambios.webp",
+                urlMedia + "6-toneladas/Mandos-al-volante.webp",
+                urlMedia + "6-toneladas/vidrios-electricos.webp"
             ];
             internas2 = [
-                urlMedia + "3.6-toneladas/palanca-de-cambios.webp",
-                urlMedia + "3.6-toneladas/bloqueo.webp"
+                urlMedia + "6-toneladas/frenos-de-aire.webp",
+                urlMedia + "6-toneladas/bloqueo.webp"
             ];
             internas1b = [
-                urlMedia + "3.6-toneladas/radio-mp5.webp",
-                urlMedia + "3.6-toneladas/vidrios-electricos.webp"
+                urlMedia + "6-toneladas/tablero-con-pantalla.webp",
+                urlMedia + "6-toneladas/ventilacion.webp"
             ];
             internas2b = [
-                urlMedia + "3.6-toneladas/cabina.webp"
+                urlMedia + "6-toneladas/radio-android-con-icar.webp",
+                urlMedia + "6-toneladas/Litera.webp"
             ];
-            medidas = urlMedia + "3.6-toneladas/dimensiones-de-camion-de-3.6-toneladas-sinotruk.webp"
-            medidasMovil = urlMedia + "3.6-toneladas/dimensiones-de-camion-de-3.6-toneladas-sinotruk-responsive.webp"
-            audio_motor = urlMedia + "3.6-toneladas/motor.mp3"
+            medidas = urlMedia + "6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk.webp"
+            medidasMovil = urlMedia + "6-toneladas/dimensiones-de-camion-de-6-toneladas-sinotruk-responsive.webp"
+            audio_motor = urlMedia + "6-toneladas/motor.mp3"
 
 
             internas = ((internas1.concat(internas2)).concat(internas1b)).concat(internas2b)
@@ -611,34 +610,20 @@ function Camion() {
             );
 
             contenedorMarcas = <div style={{ display: `contents` }} >
-                {internas1b.length > 1 &&
-                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <Fade >
-                            {slide3}
-                        </Fade>
-                    </div>
-                }
-                {internas1b.length == 1 &&
-                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <img src={internas1b[0]} alt="" />
-                    </div>
-                }
-
-                {internas2b.length > 1 &&
-                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <Fade >
-                            {slide3b}
-                        </Fade>
-                    </div>
-                }
-                {internas2b.length == 1 &&
-                    <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
-                        <img src={internas2b[0]} alt="" />
-                    </div>
-                }
+                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                    <Fade >
+                        {slide3}
+                    </Fade>
+                </div>
+                <div className="boxRightHeader  half noResponsive" style={{ width: `50%` }}>
+                    <Fade >
+                        {slide3b}
+                    </Fade>
+                </div>
             </div>
 
-            contenedorVidaUtil = <div className="banner"><img src={urlMedia + "3.6-toneladas/homologado.webp"} /></div>
+            contenedorVidaUtil = "Disponible con caja Eaton"
+
             break;
 
 
@@ -948,7 +933,7 @@ function Camion() {
             imagen = urlMedia + "5-toneladas/camion-de-5-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "camion-de-6-toneladas-1067":
+        case "NQS":
             imagen = urlMedia + "6-toneladas/camion-de-6-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
@@ -964,7 +949,7 @@ function Camion() {
             imagen = urlMedia + "10-toneladas/camion-de-10-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "camion-12-toneladas-t5g-1167":
+        case "camion-17000":
             imagen = urlMedia + "12-toneladas/camion-de-12-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
@@ -980,12 +965,12 @@ function Camion() {
             imagen = urlMedia + "18-toneladas/camion-de-18-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "camion-de-19-toneladas-t5g-1257":
+        case "camion-40500":
             imagen = urlMedia + "19-toneladas/camion-de-19-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
-        case "camion-20-toneladas-1256":
-            imagen = urlMedia + "20-toneladas/camion-de-20-toneladas-en-la-carretera-sinotruk.webp"
+        case "camion-40500-amt":
+            imagen = urlMedia + "19-toneladas/camion-de-19-toneladas-en-la-carretera-sinotruk.webp"
             break;
 
         default:
@@ -1047,7 +1032,7 @@ function Camion() {
                 <img src={motor} width="1400" height="1000" className="slideMain" alt="Punto de Venta" />
                 <div className="boxText flex-table row textoSobrepuesto">
                     <div onClick={openFormContact} className="flex-row textoMotor1">{textoMotor1}</div>
-                    <div onClick={openFormContact} className="flex-row textoMotor2"><h1>{`Camion ${textoMotor2}`}</h1></div>
+                    <div onClick={openFormContact} className="flex-row textoMotor2"><h1>{`${textoMotor2}`}</h1></div>
                     <div onClick={openFormContact} className="flex-row textoMotor3">{textoMotor3}</div>
                     <div onClick={openFormContact} className="flex-row textoMotorFlecha"><img src={urlMedia + "arrow-rojo.png"} alt="arrow" /></div>
                     <div onClick={openFormContact} className="flex-row textoMotor4">Escucha tu motor</div>

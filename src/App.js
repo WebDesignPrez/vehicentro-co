@@ -74,7 +74,8 @@ function App() {
 
   return (
 
-    <BrowserRouter >
+     <BrowserRouter basename="/co">
+        {/* <BrowserRouter> */}
       <Helmet>
         <title>Vehicentro</title>
         <meta name="description" content="Vehicentro" />

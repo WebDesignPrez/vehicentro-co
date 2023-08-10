@@ -124,7 +124,7 @@ function Block1() {
             <div className="imgContainerHeader imgHeader1" height="600">
 
                 <div className="overlayBox" height="200">
-                    <p className="titleBox "><span className="rojo">R</span>ESPALDO - <span className="rojo">R</span>EPUESTOS</p>
+                    <p className="titleBox "><span className="rojo">R</span>ESPALDO - <span className="rojo">G</span>ARANTÍA - <span className="rojo">R</span>EPUESTOS</p>
                     <div className="linksBox testimonio test">
                         <NavLink to="/garantia" src="">LA MEJOR GARANTÍA DEL PAÍS</NavLink>
                     </div>
@@ -137,9 +137,9 @@ function Block1() {
                     </div>
                 </div>
                 <div className="overlayBox" height="200">
-                    <a href="/experiencia" className="titleBox">SINOTRUKEROS</a>
+                    <NavLink to="/experiencia" className="titleBox">SINOTRUKEROS</NavLink>
                     <div className="linksBox testimonio">
-                        <a href="/experiencia" className="line2" src="">VIDEOS TESTIMONIALES</a>
+                        <NavLink to="/experiencia" className="line2">VIDEOS TESTIMONIALES</NavLink>
                     </div>
                 </div>
                 <h1>Venta de camiones en Ecuador</h1>
@@ -147,9 +147,9 @@ function Block1() {
             </div>
             <div className="imgContainerHeader imgHeader2 noResponsive" height="600">
                 <div className="overlayBox" height="200">
-                    <a href="/experiencia" className="titleBox">SINOTRUKEROS</a>
+                    <NavLink to="/experiencia" className="titleBox">SINOTRUKEROS</NavLink>
                     <div className="linksBox testimonio">
-                        <a href="/experiencia" className="line2" src="">VIDEOS TESTIMONIALES</a>
+                        <NavLink to="/experiencia" className="line2">VIDEOS TESTIMONIALES</NavLink>
                     </div>
                 </div>
             </div>
@@ -275,15 +275,15 @@ function Block3() {
         <>
             <div className="block3 boxBlock">
                 <div>
-                    <a href="/serie/100"><img src={urlMedia + "home/serie-100.webp"} width="500" height="389" alt="Camiones de carga liviana en Ecuador" /></a>
+                    <NavLink to="/serie/100"><img src={urlMedia + "home/serie-100.webp"} width="500" height="389" alt="Camiones de carga liviana en Ecuador" /></NavLink>
                     <div className="bottomContainer">
                         <p className="titleBox">SERIE</p>
                         <NavLink className="titleBox2" to="/serie/100">100</NavLink>
                         <div className="linksBox">
-                            <a className="line2" to="/camiones/NQS" onClick={() => { openFormContact("camion-NQS-156HP-9900") }}>NQS</a>
-                            <a className="line2" to="/camiones/FRS" onClick={() => { openFormContact("camion-FRS-170HP-10500") }}>FRS</a>
-                            {/* <NavLink className="line2" to="/camiones/FRS" >FRS</NavLink>
-                            <NavLink className="line2" to="/camiones/NQS" >NQS</NavLink> */}
+                            {/* <a className="line2" to="/camiones/NQS" onClick={() => { openFormContact("camion-NQS-156HP-9900") }}>NQS</a>
+                            <a className="line2" to="/camiones/FRS" onClick={() => { openFormContact("camion-FRS-170HP-10500") }}>FRS</a> */}
+                            <NavLink className="line2" to="/camiones/NQS" >1560HP NQS</NavLink>
+                            <NavLink className="line2" to="/camiones/FRS" >170HP FRS</NavLink>
                         </div>
                     </div>
                 </div>
@@ -316,32 +316,32 @@ function Block3() {
                     </div>
                 </div>
                 <div>
-                    <a href="/serie/t5g"><img src={urlMedia + "home/serie-t5g.webp"} width="900" height="700" alt="Camiones de carga pesada en Ecuador" /></a>
+                    <NavLink to="/serie/t5g"><img src={urlMedia + "home/serie-t5g.webp"} width="900" height="700" alt="Camiones de carga pesada en Ecuador" /></NavLink>
                     <div className="bottomContainer">
                         <p className="titleBox">SERIE</p>
                         <NavLink className="titleBox2" to="/serie/t5g">T5G</NavLink>
                         <div className="linksBox">
-                            <a className="line2" to="/camiones/camion-17000" onClick={() => { openFormContact("camion-T5G-250HP-17000") }}>17.000</a>
+                            {/* <a className="line2" to="/camiones/camion-17000" onClick={() => { openFormContact("camion-T5G-250HP-17000") }}>17.000</a>
                             <a className="line2" to="/camiones/camion-17000-AMT" onClick={() => { openFormContact("camion-T5G-250HP-17000-AMT") }}>17.000 AMT</a>
                             <a className="line2" to="/camiones/camion-40500" onClick={() => { openFormContact("MINIMULA-T5G-350HP-40500") }}>40.500</a>
-                            <a className="line2" to="/camiones/camion-40500-AMT" onClick={() => { openFormContact("MINIMULA-T5G-350HP-40500-AMT") }}>40.500 AMT</a>
-                            {/* <NavLink className="line2" to="/camiones/camion-40500">40.500</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-40500-AMT">40.500 AMT</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-17000">17.000</NavLink><br></br>
-                            <NavLink className="line2" to="/camiones/camion-17000-AMT">17.000 AMT</NavLink><br></br> */}
+                            <a className="line2" to="/camiones/camion-40500-AMT" onClick={() => { openFormContact("MINIMULA-T5G-350HP-40500-AMT") }}>40.500 AMT</a> */}
+                            <NavLink className="line2" to="/camiones/camion-17000">250HP 17.000</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-17000-AMT">250HP 17.000 AMT</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-40500">350HP 40.500</NavLink><br></br>
+                            <NavLink className="line2" to="/camiones/camion-40500-AMT">350HP 40.500 AMT</NavLink><br></br>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <a href="/serie/t7h"> <img src={urlMedia + "home/serie-t7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /></a>
+                    <NavLink to="serie/t7h"> <img src={urlMedia + "home/serie-t7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /></NavLink>
                     <div className="bottomContainer">
                         <p className="titleBox">SERIE</p>
                         <NavLink className="titleBox2" to="/serie/t7h">T7H</NavLink>
                         <div className="linksBox">
-                            {/* <NavLink className="line2" to="/cabezales/cabezal-40500">40.500</NavLink>
-                            <NavLink className="line2" to="/cabezales/cabezal-40500-AMT">40.500 AMT</NavLink> */}
-                            <a className="line2" to="/cabezales/cabezal-40500" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500") }}>40.500</a>
-                            <a className="line2" to="/cabezales/cabezal-40500-AMT" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500-AMT") }}>40.500 AMT</a>
+                            <NavLink className="line2" to="/cabezales/cabezal-40500">400HP 40.500</NavLink>
+                            <NavLink className="line2" to="/cabezales/cabezal-40500-AMT">400HP 40.500 AMT</NavLink>
+                            {/* <a className="line2" to="/cabezales/cabezal-40500" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500") }}>40.500</a>
+                            <a className="line2" to="/cabezales/cabezal-40500-AMT" onClick={() => { openFormContact("SUPER-MINIMULA-T7H-400HP-40500-AMT") }}>40.500 AMT</a> */}
                         </div>
                     </div>
                 </div>
@@ -369,13 +369,13 @@ function Block3() {
                     </div>
                 </div> */}
                 <div>
-                    <a href="/serie/c7h"> <img src={urlMedia + "home/serie-c7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /> </a>
+                    <NavLink to="serie/c7h"> <img src={urlMedia + "home/serie-c7h.webp"} width="900" height="700" alt="Cabezales de venta en Ecuador" /> </NavLink>
                     <div className="bottomContainer">
                         <p className="titleBox">SERIE</p>
                         <NavLink className="titleBox2" to="/serie/c7h">C7H</NavLink>
                         <div className="linksBox">
-                            {/* <NavLink className="line2" to="/cabezales/cabezal-52000-AMT">52.000 AMT</NavLink> */}
-                            <a className="line2" to="/cabezales/cabezal-52000-AMT" onClick={() => { openFormContact("TRACTO-MULA-C7H-540HP-52000-AMT") }}>52.000 AMT</a>
+                            <NavLink className="line2" to="/cabezales/cabezal-52000-AMT">540HP 52.000 AMT</NavLink>
+                            {/* <a className="line2" to="/cabezales/cabezal-52000-AMT" onClick={() => { openFormContact("TRACTO-MULA-C7H-540HP-52000-AMT") }}>52.000 AMT</a> */}
                         </div>
                     </div>
                 </div>
@@ -395,11 +395,11 @@ function Block4() {
 
                 <Slide>
                     <div className="each-slide-effect">
-                        <div style={{ 'backgroundImage': `url(../images/home/camion-sinotruk-basura.webp)`, height: `43vw` }}>
+                        <div style={{ 'backgroundImage': `url(../images/home/camion-sinotruk-basura.webp)`, height: `42vw` }}>
                         </div>
                     </div>
                     <div className="each-slide-effect">
-                        <div style={{ 'backgroundImage': `url(../images/home/camion-con-balde.webp)`, height: `43vw` }}>
+                        <div style={{ 'backgroundImage': `url(../images/home/camion-con-balde.webp)`, height: `42vw` }}>
                         </div>
                     </div>
                     <div className="each-slide-effect">
@@ -408,12 +408,12 @@ function Block4() {
                     </div>
                 </Slide>
                 <div className="boxText flex-table row linksBox">
-                    <a href="/proximamente"><div className="flex-row textMain textMain2">VEHÍCULOS ESPECIALES</div></a>
+                    <NavLink to="/proximamente"><div className="flex-row textMain textMain2">VEHÍCULOS ESPECIALES</div></NavLink>
                 </div>
             </div>
             <div className="boxRight tecnologia">
                 <div className="boxLeft c7h">
-                    <video preload="none" width="320" height="240" controls autoPlay={true} playsInline={true} muted loop src={urlMedia + "home/tamara2.mp4"} className="videoWidth" />
+                    <video preload="none"  controls autoPlay={true} playsInline={true} muted loop src={urlMedia + "home/potenciaColombiaBajo.mp4"} className="videoWidth" />
                 </div>
             </div>
         </div>
@@ -437,10 +437,10 @@ function Menu2() {
 function Banner() {
     return (
         <div className="posRelative banner">
-            <a href="/concesionarios"><img className="desktopImg slideMain" src={urlMedia + "home/webMapaColombia2.jpg"} width="1790" height="590" alt="Puntos de Venta de Camiones Sinotruk en Ecuador" /></a>
+            <NavLink to="/concesionarios"><img className="desktopImg slideMain" src={urlMedia + "home/webMapaColombia2.jpg"} width="1790" height="590" alt="Puntos de Venta de Camiones Sinotruk en Ecuador" /></NavLink>
             <img className="movilImg slideMain" src={urlMedia + "home/movilColombiaMapa.jpg"} width="2432" height="1675" alt="Punto de Venta" />
             <div className="boxText flex-table row">
-                <a href="/concesionarios"><div className="flex-row textMain textMain2 noResponsive">Puntos Vehicentro a nivel Nacional</div></a>
+                <NavLink to="/concesionarios"><div className="flex-row textMain textMain2 noResponsive">Puntos Vehicentro a nivel Nacional</div></NavLink>
             </div>
         </div>
     )

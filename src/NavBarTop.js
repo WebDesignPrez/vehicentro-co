@@ -311,7 +311,7 @@ export default function NavBarTop() {
             <div className="line3"></div>
         </div>
         <div className="logo">
-            <a href="/"><img src={urlMedia+"vehicentro-logo-blanco.png"} width="230" height="80" /></a>
+            <NavLink to="/"><img src={urlMedia+"vehicentro-logo-blanco.png"} width="230" height="80" /></NavLink>
         </div>
        
 

@@ -55,7 +55,7 @@ function Content2() {
         <img src={urlMedia+"repuestos/logo-sunward.webp"} width="1000" height="760" className="slideMain" alt="Excavadora" />
       </div>
       <div className="boxNews companiatext2">
-        <p className="repuestotexto">Contamos con una red de 14 concesionarios a nivel nacional, 5 talleres de mantenimiento vehicular y el stock de repuestos más amplio y completo del pais.</p>
+        <p className="repuestotexto">Contamos con 2 concesionarios en Bogotá, talleres de mantenimiento vehicular y el stock de repuestos más amplio y completo del pais.</p>
       </div>
     </div>
   )

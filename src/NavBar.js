@@ -523,7 +523,7 @@ export default function NavBar() {
 
         <ul className="nav-links">
             <li>
-                <a className="" href="#" option="sinotruk">CAMIONES</a>
+                <a href="/co/#" option="sinotruk">CAMIONES</a>
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>
@@ -615,7 +615,7 @@ export default function NavBar() {
             </li> */}
 
             <li>
-                <a href="#" option="tecnologia">TECNOLOGÍA</a>
+                <a href="/co/#" option="tecnologia">TECNOLOGÍA</a>
                 <div className="item-level-7 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="7"></div>
@@ -635,13 +635,13 @@ export default function NavBar() {
             </li>
 
             <li className="item-level-5">
-                <a href="/camion-en-uso/camion-de-48-toneladas">CAMIONES EN USO</a>
+                <NavLink to="/camion-en-uso/camion-de-48-toneladas">CAMIONES EN USO</NavLink>
                 <div className="item-level-5 nav-header nav-header-h" >
                 </div>
             </li>
 
             <li>
-                <a href="/concesionarios" >CONCESIONARIOS</a>
+                <a href="/co/concesionarios" >CONCESIONARIOS</a>
                 <div className="item-level-3 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="3"></div>
@@ -695,7 +695,7 @@ export default function NavBar() {
             </li>
 
             <li>
-                <a href="#" option="compania">COMPAÑÍA</a>
+                <a option="compania">COMPAÑÍA</a>
                 <div className="item-level-6 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="6"></div>
@@ -706,7 +706,7 @@ export default function NavBar() {
                             <p className="colItem meniu"><NavLink to="/compania">Nosotros</NavLink></p>
                             <a href="https://bdc.vehicentro.com:9443/ords/ws_vehicentro/r/crm/login" className="colItem meniu negro">BDC</a>
                             <p className="colItem meniu"><NavLink to="/trabaja-con-nosotros">Trabaja con nosotros</NavLink></p>
-                            <a href="repuestos" className="colItem meniu negro">Repuestos</a><br></br>
+                            <NavLink to="repuestos" className="colItem meniu negro">Repuestos</NavLink><br></br>
                             <a className="colItem meniu negro" id="js-btn">Políticas</a>
                         </div>
                     </div>
