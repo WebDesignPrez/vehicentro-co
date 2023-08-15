@@ -1030,8 +1030,7 @@ p.titleFooter {
 
 .internal .nav-links {
     z-index: 100;
-    height: 100vh;
-    
+    height: 70vh;
 }
 
 .react-slideshow-container .default-nav:first-of-type,

@@ -218,33 +218,30 @@ export default function NavBar() {
                     document.querySelector(".menu1").classList.remove("logob")
                 }
             });
-            /* sinotruk.addEventListener("click", () => {
-                nav.classList.toggle("nav-active");
-                navSearch[0].classList.toggle("nav-search-active");
+        //      sinotruk.addEventListener("click", () => {
+        //          nav.classList.toggle("nav-active");
+        //          navSearch[0].classList.toggle("nav-search-active");
+        //                 document.querySelector('.logoHome').classList.toggle("logoNav");
+        //          navh.classList.toggle("nav-inactive");
+        //                 navLinks.forEach((link, index) => {
+        //            if (link.style.animation) {
+        //              link.style.animation = "";
+        //            } else {
+        //              link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
+        //            }
+        //          });
+        //      document.querySelector(".menu1").classList.add("logob")
 
-                document.querySelector('.logoHome').classList.toggle("logoNav");
-                navh.classList.toggle("nav-inactive");
-
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = "";
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards 0.5s `;
-                    }
-                });
-
-                document.querySelector(".menu1").classList.add("logob")
-
-                if (auxMovil == 0)
-                    resetMenu();
-
-                burger.classList.toggle("toggle");
-                if (burger.classList.contains('toggle')) {
-
-                } else {
-                    document.querySelector(".menu1").classList.remove("logob")
-                }
-            }); */
+        //        if (auxMovil == 0)
+        //           resetMenu();
+        
+        // burger.classList.toggle("toggle");
+        //         if (burger.classList.contains('toggle')) {
+        
+        //          } else {
+        //            document.querySelector(".menu1").classList.remove("logob")
+        //         }
+        //     });
 
            /*  sunward.addEventListener("click", () => {
                 nav.classList.toggle("nav-active");
@@ -506,24 +503,9 @@ export default function NavBar() {
         </div>
         <SearchBar />
 
-        {/*         <div className="navSearch">
-            <input className="search-nav-input" data-testid="search-input" type="search" title="Search" placeholder="Buscar..." id="global-search-input" onChange={handleChange} />
-            {menuBusqueda.length > 0 &&
-                <div className="result">
-                    {menuBusqueda.map((item, index) => (
-                        <li>
-                            <NavLink to={item.url}>
-                                {item.desc}
-                            </NavLink>
-                        </li>
-                    ))}
-                </div>
-            }
-        </div> */}
-
         <ul className="nav-links">
             <li>
-                <a href="/co/#" option="sinotruk">CAMIONES</a>
+                <a className="" href="/co/#" option="sinotruk">CAMIONES</a>
                 <div className="item-level-0 nav-header nav-header-h" >
                     <div className="headerSubMenu">
                         <div className="closeMovil" data-id="0"></div>

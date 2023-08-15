@@ -160,7 +160,7 @@ function Block1() {
 function Block2() {
     return (
         < div className="block2 noResponsive" >
-            <video preload="none" width="1920" height="1076" controls autoPlay={true} playsInline={true} muted loop src={urlMedia + "home/vehinstein-tv.mp4"} className="videoWidth" />
+            <video preload="none" width="1920" height="1076" controls autoPlay={true} playsInline={true} muted loop src={urlMedia + "home/colombiaInicioVein.mp4"} className="videoWidth" />
         </div >
     )
 }
@@ -392,8 +392,10 @@ function Block4() {
     return (
         <div className="block4 boxBlock boxesIni posRelative content3">
             <div className="boxLeft playMotor colorLinksSobreTexto">
-
-                <Slide>
+                <div className="boxLeft c7h">
+                    <img src={urlMedia + "home/alianzaWeb.webp"}/>
+                </div>
+                {/* <Slide>
                     <div className="each-slide-effect">
                         <div style={{ 'backgroundImage': `url(../images/home/camion-sinotruk-basura.webp)`, height: `42vw` }}>
                         </div>
@@ -409,7 +411,7 @@ function Block4() {
                 </Slide>
                 <div className="boxText flex-table row linksBox">
                     <NavLink to="/proximamente"><div className="flex-row textMain textMain2">VEHÍCULOS ESPECIALES</div></NavLink>
-                </div>
+                </div> */}
             </div>
             <div className="boxRight tecnologia">
                 <div className="boxLeft c7h">

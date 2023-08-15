@@ -45,14 +45,8 @@ function Content2() {
         <a className='btn6' option="Ambato" href='https://api.whatsapp.com/send?phone=593991374302&text=Hola,%20necesito%20m%C3%A1s%20informaci%C3%B3n.'>WhatsApp</a>
       </div>
       </div>
-      <div className="boxNews companiaimg2">
+      <div className="boxNews companiaimg2 new">
         <img src={urlMedia+"repuestos/logo-sinotruk.webp"} width="1000" height="760" className="slideMain" alt="Series100" />
-      </div>
-      <div className="boxNews companiaimg2">
-        <img src={urlMedia+"repuestos/logo-keyton.webp"} width="1000" height="760" className="slideMain" alt="Mixer" />
-      </div>
-      <div className="boxNews companiaimg2">
-        <img src={urlMedia+"repuestos/logo-sunward.webp"} width="1000" height="760" className="slideMain" alt="Excavadora" />
       </div>
       <div className="boxNews companiatext2">
         <p className="repuestotexto">Contamos con 2 concesionarios en Bogotá, talleres de mantenimiento vehicular y el stock de repuestos más amplio y completo del pais.</p>

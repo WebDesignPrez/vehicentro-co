@@ -199,9 +199,9 @@ export default function NavBarTop() {
                 }
             }
             burger.addEventListener("click", burgerEvent);
-           /*  sinotruk.addEventListener("click", burgerEvent);
-            sunward.addEventListener("click", burgerEvent); */
-
+            sinotruk.addEventListener("click", burgerEvent);
+            //sunward.addEventListener("click", burgerEvent);
+            
             if(tecnologia!=null){
             tecnologia.addEventListener("click", burgerEvent);}
             // keyton.addEventListener("click", burgerEvent);
@@ -317,8 +317,8 @@ export default function NavBarTop() {
 
         <ul className="nav-links-h">
             <li><NavLink to="/">INICIO</NavLink></li>
-           {/*  <li ><a className="sinotruk mouseA" option="sinotruk">CAMIONES</a></li>
-            <li ><a className="sunward mouseA" option="sunward">MAQUINARIA</a></li> */}
+           <li ><a className="sinotruk mouseA" option="sinotruk">CAMIONES</a></li>
+            {/* <li ><a className="sunward mouseA" option="sunward">MAQUINARIA</a></li> */}
             <li className="tecnologiaCss" option="tecnologia">TECNOLOGÍA</li>
             <li className="camionesCss"><NavLink to="/camion-en-uso/camion-de-48-toneladas">CAMIONES EN USO</NavLink></li>
             <li className="concesionarios camionesCss"><NavLink to="/concesionarios">CONCESIONARIOS</NavLink></li>
